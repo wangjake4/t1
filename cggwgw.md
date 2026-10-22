@@ -1,0 +1,904 @@
+代发 wailian999
+
+C#:   public User(string name) { Name = name; }
+来源：http://dali.smart0.xyz/Article/details/gt2pwfpzgfs.html
+
+[G03] 实例属性
+来源：http://dali.9152youxi.cn/Article/details/gt2gyydkudw.html
+
+Py:   self.name = "x"
+来源：http://dali.havefunace.top/Article/details/gt2fpxgxdll.html
+
+PHP:  public string $name = "x";
+来源：http://dali.jianghu66.top/Article/details/gt2hzpvkjtb.html
+
+JS:   this.name = "x";
+来源：http://dali.shanyushiyangtech.top/Article/details/gt2slzhicca.html
+
+TS:   name: string = "x";
+来源：http://dali.fengsongda.top/Article/details/gt2wjgiodqx.html
+
+Java: private String name;
+来源：http://dali.ydzc1.top/Article/details/gt2ewepqrnl.html
+
+Go:   u := User{Name: "x"}         // 结构体字段
+来源：http://dali.aibaodan.cn/Article/details/gt2ngevospw.html
+
+Ruby: @name = "x"
+来源：http://dali.0kj1m.cn/Article/details/gt2lyrzfjcw.html
+
+C#:   public string Name { get; set; } = "x";
+来源：http://dali.yj20258888.top/Article/details/gt2gjlsblno.html
+
+[G04] 定义方法
+来源：http://dali.pycfn.com/Article/details/gt2ioncqpdl.html
+
+Py:   def greet(self): return self.name
+来源：http://dali.cashguo.top/Article/details/gt2xdictaei.html
+
+PHP:  public function greet(): string { return $this->name; }
+来源：http://dali.aizwys.cn/Article/details/gt2tujnldqv.html
+
+JS:   greet() { return this.name; }
+来源：http://dali.gzhubu.top/Article/details/gt2lnhijlae.html
+
+TS:   greet(): string { return this.name; }
+来源：http://dali.jinqigfzy.top/Article/details/gt2fsxmojuz.html
+
+Java: String greet() { return name; }
+来源：http://dali.wangdashe.top/Article/details/gt2brtiinpt.html
+
+Go:   func (u User) Greet() string { return u.Name }
+来源：http://dali.feifeiyinyue.top/Article/details/gt2sfjnxtao.html
+
+Ruby: def greet; @name; end
+来源：http://dali.jqgfzy.top/Article/details/gt2tzrmfcdy.html
+
+C#:   public string Greet() => Name;
+来源：http://dali.kuanghao11.cn/Article/details/gt2kxsrtfqf.html
+
+[G05] 继承
+来源：http://dali.tianlin.xyz/Article/details/gt2obusosri.html
+
+Py:   class Admin(User): pass
+来源：http://dali.hnxiangtu.top/Article/details/gt2sbugafpe.html
+
+PHP:  class Admin extends User {}
+来源：http://dali.hysaishi.cn/Article/details/gt2nfehqlnt.html
+
+JS:   class Admin extends User {}
+来源：http://dali.yonumen.top/Article/details/gt2sxdbyiuk.html
+
+TS:   class Admin extends User {}
+来源：http://dali.cdnleiting.top/Article/details/gt2wolfvunr.html
+
+Java: class Admin extends User {}
+来源：http://dali.yanxiufei.cn/Article/details/gt2ypqiwvuo.html
+
+Go:   type Admin struct { User }     // 用嵌入代替继承
+来源：http://dali.jyoumei.cn/Article/details/gt2oddxmysz.html
+
+Ruby: class Admin < User; end
+来源：http://dali.ydzc1.top/Article/details/gt2sxtbdifd.html
+
+C#:   class Admin : User {}
+来源：http://dali.daria6918.cn/Article/details/gt2dhfcvlhn.html
+
+[G06] 重写方法
+来源：http://dali.jinqigfzy.top/Article/details/gt2gshkpgrc.html
+
+Py:   def greet(self): return "admin"
+来源：http://dali.guannengcc.top/Article/details/gt2bczmlixa.html
+
+PHP:  public function greet(): string { return "admin"; }
+来源：http://dali.haohaochexian.top/Article/details/gt2bvmttypj.html
+
+JS:   greet() { return "admin"; }
+来源：http://dali.pycfn.com/Article/details/gt2gqagaqgt.html
+
+TS:   greet(): string { return "admin"; }
+来源：http://dali.hammf.cn/Article/details/gt2pownxfky.html
+
+Java: @Override String greet() { return "admin"; }
+来源：http://dali.tian-w.cn/Article/details/gt2maryylvo.html
+
+Go:   // 嵌入类型定义同名方法即覆盖
+来源：http://dali.cheryme.top/Article/details/gt2ncpfgski.html
+
+Ruby: def greet; "admin"; end
+来源：http://dali.jinqigfzy.top/Article/details/gt2qypwckeq.html
+
+C#:   public override string Greet() => "admin";
+来源：http://dali.zhaomingkeji.xyz/Article/details/gt2ehnuiifc.html
+
+[G07] 调用父类方法
+来源：http://dali.yj20258888.top/Article/details/gt2givlzwky.html
+
+Py:   super().greet()
+来源：http://dali.zhaomingkeji.xyz/Article/details/gt2qeuhnrqh.html
+
+PHP:  parent::greet();
+来源：http://dali.jinghuilouyu.cn/Article/details/gt2vyrkowvi.html
+
+JS:   super.greet();
+来源：http://dali.smart0.xyz/Article/details/gt2aknsgioe.html
+
+TS:   super.greet();
+来源：http://dali.cqqwz.cn/Article/details/gt2iwpgiopt.html
+
+Java: super.greet();
+来源：http://dali.guowangkeji.top/Article/details/gt2qwpdedtr.html
+
+Go:   u.User.Greet()               // 显式调用嵌入字段的方法
+来源：http://dali.birdmap.top/Article/details/gt2syezjwri.html
+
+Ruby: super
+来源：http://dali.zhijiandao.cn/Article/details/gt2ovsewwdp.html
+
+C#:   base.Greet();
+来源：http://dali.zdqjudy.top/Article/details/gt2rwkswnpo.html
+
+[G08] 静态方法与属性
+来源：http://dali.gzhubu.top/Article/details/gt2mbukckrw.html
+
+Py:   @staticmethod⏎def f(): ...      # 类方法用 @classmethod，首个参数为 cls
+来源：http://dali.xinyue.icu/Article/details/gt2ocblsblq.html
+
+PHP:  public static function f() {}
+来源：http://dali.zhaomingkeji.xyz/Article/details/gt2azqoaznu.html
+
+JS:   static f() {}
+来源：http://dali.gotoacloud.top/Article/details/gt2eisxgemo.html
+
+TS:   static f(): void {}
+来源：http://dali.andypj.xyz/Article/details/gt2bsuojbct.html
+
+Java: static void f() {}
+来源：http://dali.xziqi.cn/Article/details/gt2sfzafcus.html
+
+Go:   // 无 static：用包级函数，按包名调用
+来源：http://dali.yueranfly.top/Article/details/gt2uorsosrg.html
+
+Ruby: def self.f; end
+来源：http://dali.yj20258888.top/Article/details/gt2weqzxmaa.html
+
+C#:   public static void F() {}
+来源：http://dali.nanxinkj.top/Article/details/gt2avqhqhln.html
+
+[G09] 接口 / 抽象类
+来源：http://dali.bjfxy.top/Article/details/gt2haphympy.html
+
+Py:   from abc import ABC, abstractmethod
+来源：http://dali.yongpay.top/Article/details/gt2iammdqzg.html
+
+PHP:  interface Shape { public function area(): float; }
+来源：http://dali.pengpengdd.cyou/Article/details/gt2dbwcdtut.html
+
+JS:   // 无接口：靠约定或 JSDoc
+来源：http://dali.cdnleiting.top/Article/details/gt2regpskfi.html
+
+TS:   interface Shape { area(): number; }
+来源：http://dali.jyoumei.cn/Article/details/gt2gtzknmfk.html
+
+Java: interface Shape { double area(); }
+来源：http://dali.zdqjudy.top/Article/details/gt2bmkixhqd.html
+
+Go:   type Shape interface { Area() float64 }
+来源：http://dali.jyoumei.cn/Article/details/gt2vkpclbcm.html
+
+Ruby: # 无接口：用 module 混入或鸭子类型
+来源：http://dali.xylfe.cn/Article/details/gt2ygoszgvw.html
+
+C#:   interface IShape { double Area(); }
+来源：http://dali.chenzaomai.com/Article/details/gt2fcgpbakb.html
+
+[G10] 访问控制
+来源：http://dali.smart0.xyz/Article/details/gt2nwxrlcgi.html
+
+Py:   约定 _protected / __private（不强制）
+来源：http://dali.zycfv.cn/Article/details/gt2qvgtdibo.html
+
+PHP:  public / protected / private
+来源：http://dali.chenlongwang.top/Article/details/gt2uipvfulr.html
+
+JS:   #private 字段；其余公开
+来源：http://dali.guannengcc.top/Article/details/gt2kudlagkl.html
+
+TS:   public / protected / private
+来源：http://dali.9152youxi.cn/Article/details/gt2kvpavnqs.html
+
+Java: public / protected / private / 默认包级
+来源：http://dali.9152youxi.cn/Article/details/gt2pgekbznl.html
+
+Go:   首字母大写可导出，小写仅包内可见
+来源：http://dali.hongshengwenyu.top/Article/details/gt2gtcilbwc.html
+
+Ruby: public / protected / private
+来源：http://dali.aizwys.cn/Article/details/gt2uzuikwba.html
+
+C#:   public / protected / private / internal
+来源：http://dali.pengpengdd.cyou/Article/details/gt2nfrjbinn.html
+
+[G11] getter / setter
+来源：http://dali.svipenyu.cn/Article/details/gt2zbjgbtbd.html
+
+Py:   @property 与 @x.setter
+来源：http://dali.xziqi.cn/Article/details/gt2nnrjsxbx.html
+
+PHP:  public function getName(): string { return $this->name; }
+来源：http://dali.ppjwa.cn/Article/details/gt2cefyupbt.html
+
+JS:   get name() { return this._name; }
+来源：http://dali.zdqjudy.top/Article/details/gt2habmbpck.html
+
+TS:   get name(): string { return this._name; }
+来源：http://dali.ivvv.top/Article/details/gt2zmggetkw.html
+
+Java: public String getName() { return name; }
+来源：http://dali.sweek.top/Article/details/gt2bzrvtrfg.html
+
+Go:   func (u User) GetName() string { return u.Name }
+来源：http://dali.aizwys.cn/Article/details/gt2prnhhbda.html
+
+Ruby: attr_accessor :name
+来源：http://dali.jinqigufen.top/Article/details/gt2vtaoiajx.html
+
+C#:   public string Name { get; set; }
+来源：http://dali.ivvv.top/Article/details/gt2salrrlzt.html
+
+[G12] 对象转字符串
+来源：http://dali.ppjwa.cn/Article/details/gt2kyqfgcxf.html
+
+Py:   def __str__(self): return self.name
+来源：http://dali.smart0.xyz/Article/details/gt2yzgpjohf.html
+
+PHP:  public function __toString(): string { return $this->name; }
+来源：http://dali.smart0.xyz/Article/details/gt2snaoncgw.html
+
+JS:   toString() { return this.name; }
+来源：http://dali.jinyuanbaomall.cn/Article/details/gt2jgdwemwq.html
+
+TS:   toString(): string { return this.name; }
+来源：http://dali.zycfv.cn/Article/details/gt2vtweocnv.html
+
+Java: @Override public String toString() { return name; }
+来源：http://dali.316326.xyz/Article/details/gt2kpqpiglf.html
+
+Go:   func (u User) String() string { return u.Name }
+来源：http://dali.hammf.cn/Article/details/gt2bcpzkoph.html
+
+Ruby: def to_s; @name; end
+来源：http://dali.ybcxt.top/Article/details/gt2dpxohbrt.html
+
+C#:   public override string ToString() => Name;
+来源：http://dali.dianchejie.cn/Article/details/gt2shaefiss.html
+
+[G13] 判断对象类型
+来源：http://dali.jinghuilouyu.cn/Article/details/gt2rqblvvij.html
+
+Py:   isinstance(u, User)
+来源：http://dali.hongshengwenyu.top/Article/details/gt2collttce.html
+
+PHP:  $u instanceof User
+来源：http://dali.quarkkingdee.top/Article/details/gt2avneoptu.html
+
+JS:   u instanceof User
+来源：http://dali.wangdashe.top/Article/details/gt2ehysyyms.html
+
+TS:   u instanceof User
+来源：http://dali.tianlin.xyz/Article/details/gt2ryjpjmbo.html
+
+Java: u instanceof User
+来源：http://dali.yanxiufei.cn/Article/details/gt2qydapxrn.html
+
+Go:   u, ok := v.(User)            // 类型断言
+来源：http://dali.cheryme.top/Article/details/gt2hpedvrnf.html
+
+Ruby: u.is_a?(User)
+来源：http://dali.yongpay.top/Article/details/gt2mrdmjusa.html
+
+C#:   u is User
+来源：http://dali.yj20258.top/Article/details/gt2xvxmjglz.html
+
+[G14] 数据类 / record
+来源：http://dali.yj202588.top/Article/details/gt2aqxhyxlg.html
+
+Py:   @dataclass⏎class User: name: str; age: int
+来源：http://dali.jyoumei.cn/Article/details/gt2zxjbgino.html
+
+PHP:  // 用 readonly 属性模拟
+来源：http://dali.hywenlv.cn/Article/details/gt2knkjbhoq.html
+
+JS:   // 无内置：普通类或对象字面量
+来源：http://dali.sxryk.cn/Article/details/gt2gcgaoogo.html
+
+TS:   type User = { name: string; age: number };
+来源：http://dali.jianghu66.top/Article/details/gt2cqohgege.html
+
+Java: record User(String name, int age) {}
+来源：http://dali.yvedp.cn/Article/details/gt2eramvmjq.html
+
+Go:   type User struct { Name string; Age int }
+来源：http://dali.jinqigfzy.top/Article/details/gt2rwlfwohx.html
+
+Ruby: User = Struct.new(:name, :age)   # 或 Ruby 3.2+ 的 Data.define
+来源：http://dali.hysaishi.cn/Article/details/gt2lgexxtjk.html
+
+C#:   record User(string Name, int Age);
+来源：http://dali.zhijiandao.cn/Article/details/gt2newcnkoe.html
+
+[G15] 枚举
+来源：http://dali.c1oappe.top/Article/details/gt2apvwhkqe.html
+
+Py:   from enum import Enum;  class Color(Enum): RED = 1
+来源：http://dali.mhx1999.top/Article/details/gt2mqtjaiev.html
+
+PHP:  enum Color: string { case Red = "red"; }
+来源：http://dali.9152youxi.cn/Article/details/gt2gcrmtgdx.html
+
+JS:   const Color = Object.freeze({ RED: 1, GREEN: 2 });
+来源：http://dali.smart0.xyz/Article/details/gt2pmgiauza.html
+
+TS:   enum Color { Red = 1, Green = 2 }
+来源：http://dali.jiagoushi.top/Article/details/gt2ikelrhle.html
+
+Java: enum Color { RED, GREEN }
+来源：http://dali.chenzaomai.com/Article/details/gt2vpriwkgy.html
+
+Go:   type Color int;  const (Red Color = iota; Green)
+来源：http://dali.xinyue.icu/Article/details/gt2piatblkf.html
+
+Ruby: Color = %i[red green].freeze
+来源：http://dali.nanxinkj.top/Article/details/gt2fquejhoi.html
+
+C#:   enum Color { Red = 1, Green = 2 }
+来源：http://dali.kuanghao11.cn/Article/details/gt2znkkurzi.html
+
+[G16] 对象转数组 / 字典
+来源：http://dali.havefunace.top/Article/details/gt2bvsapxam.html
+
+Py:   dataclasses.asdict(obj);  obj.__dict__
+来源：http://dali.xylfe.cn/Article/details/gt2bzvrkqac.html
+
+PHP:  get_object_vars($obj);
+来源：http://dali.xinyue.icu/Article/details/gt2owxcqhgh.html
+
+JS:   Object.entries(obj)
+来源：http://dali.hysaishi.cn/Article/details/gt2rxfummlc.html
+
+TS:   Object.entries(obj)
+来源：http://dali.xziqi.cn/Article/details/gt2jwigqlpr.html
+
+Java: // 用 Jackson 等序列化库，或手写 toMap()
+来源：http://dali.kuanghao11.cn/Article/details/gt2jeskchwi.html
+
+Go:   // 手写转换，或用 mapstructure 库
+来源：http://dali.tianlin.xyz/Article/details/gt2zinxltvf.html
+
+Ruby: obj.instance_variables
+来源：http://dali.yj20258.top/Article/details/gt2ukgopkjt.html
+
+C#:   // 用反射或 System.Text.Json
+来源：http://dali.gaohongyu789.top/Article/details/gt2zcbzsnqu.html
+
+================================================================================
+来源：http://dali.c1oappe.top/Article/details/gt2mzhvtlhm.html
+
+H. 异常与错误处理
+来源：http://dali.feifeiyinyue.top/Article/details/gt2msurkzjo.html
+
+================================================================================
+来源：http://dali.shanyushiyangkeji.top/Article/details/gt2wkxnmbab.html
+
+[H01] try / catch 基础
+来源：http://dali.shanyushiyangtech.top/Article/details/gt2qqziyzdh.html
+
+Py:   try: f()⏎except Exception as e: print(e)
+来源：http://dali.cdnleiting.top/Article/details/gt2ndoybsxp.html
+
+PHP:  try { f(); } catch (Exception $e) { echo $e->getMessage(); }
+来源：http://dali.gotoacloud.top/Article/details/gt2mocyhhbj.html
+
+JS:   try { f(); } catch (e) { console.error(e); }
+来源：http://dali.jianghu66.top/Article/details/gt2imbrkzgg.html
+
+TS:   try { f(); } catch (e: unknown) { console.error(e); }
+来源：http://dali.gogol.net.cn/Article/details/gt2jvshtwni.html
+
+Java: try { f(); } catch (Exception e) { System.out.println(e.getMessage()); }
+来源：http://dali.yonumen.top/Article/details/gt2yzkesmgu.html
+
+Go:   if err := f(); err != nil { log.Println(err) }   // Go 用返回值而非异常
+来源：http://dali.zhongyouzk.top/Article/details/gt2hkppyfdf.html
+
+Ruby: begin; f; rescue => e; puts e.message; end
+来源：http://dali.snrcjt.cn/Article/details/gt2ztotjgee.html
+
+C#:   try { F(); } catch (Exception e) { Console.WriteLine(e.Message); }
+来源：http://dali.snrcjt.cn/Article/details/gt2phukxudo.html
+
+[H02] finally / ensure 收尾
+来源：http://dali.zhaomingkeji.xyz/Article/details/gt2japvlznd.html
+
+Py:   try: f()⏎finally: cleanup()
+来源：http://dali.guowangkeji.top/Article/details/gt2lkjanwst.html
+
+PHP:  try { f(); } finally { cleanup(); }
+来源：http://dali.yvedp.cn/Article/details/gt2nrglidpx.html
+
+JS:   try { f(); } finally { cleanup(); }
+来源：http://dali.cucudq.cn/Article/details/gt2eivuydbj.html
+
+TS:   try { f(); } finally { cleanup(); }
+来源：http://dali.hammf.cn/Article/details/gt2oqfitgwj.html
+
+Java: try { f(); } finally { cleanup(); }
+来源：http://dali.feifeiyinyue.top/Article/details/gt2xlcpkksf.html
+
+Go:   defer cleanup()             // 函数返回时执行
+来源：http://dali.gzhubu.top/Article/details/gt2ctljnnvb.html
+
+Ruby: begin; f; ensure; cleanup; end
+来源：http://dali.xziqi.cn/Article/details/gt2dhwrnsgx.html
+
+C#:   try { F(); } finally { Cleanup(); }
+来源：http://dali.guowangkeji.top/Article/details/gt2dtcvrrgj.html
+
+[H03] 主动抛出异常
+来源：http://dali.yonumen.top/Article/details/gt2sxlafing.html
+
+Py:   raise ValueError("错误信息")
+来源：http://dali.cdnleiting.top/Article/details/gt2zxooogmr.html
+
+PHP:  throw new InvalidArgumentException("错误信息");
+来源：http://dali.ydzc1.top/Article/details/gt2eotacrrz.html
+
+JS:   throw new Error("错误信息");
+来源：http://dali.hnxiangtu.top/Article/details/gt2rijfkosm.html
+
+TS:   throw new Error("错误信息");
+来源：http://dali.fengsongda.top/Article/details/gt2bbypjrng.html
+
+Java: throw new IllegalArgumentException("错误信息");
+来源：http://dali.jlsjyb.cn/Article/details/gt2euadbmxv.html
+
+Go:   return fmt.Errorf("错误信息: %w", err)
+来源：http://dali.shanyushiyangtech.top/Article/details/gt2gkxiicbb.html
+
+Ruby: raise ArgumentError, "错误信息"
+来源：http://dali.ehwqpu.com/Article/details/gt2fuviqndy.html
+
+C#:   throw new ArgumentException("错误信息");
+来源：http://dali.nanxinkj.top/Article/details/gt2ttoxaybz.html
+
+[H04] 自定义异常类型
+来源：http://dali.zhoulong.xyz/Article/details/gt2psvgrdve.html
+
+Py:   class MyError(Exception): pass
+来源：http://dali.meibo888.top/Article/details/gt2ewdvoses.html
+
+PHP:  class MyError extends RuntimeException {}
+来源：http://dali.quarkkingdee.top/Article/details/gt2xuyxpopx.html
+
+JS:   class MyError extends Error {}
+来源：http://dali.wangshuangyany.cn/Article/details/gt2unasjqbf.html
+
+TS:   class MyError extends Error {}
+来源：http://dali.yj202588.top/Article/details/gt2gmhpeydl.html
+
+Java: class MyException extends RuntimeException {}
+来源：http://dali.shzxlz.cn/Article/details/gt2gxpuwafd.html
+
+Go:   type MyError struct{ Msg string };  func (e MyError) Error() string { return e.Msg }
+来源：http://dali.yueranfly.top/Article/details/gt2adqtabia.html
+
+Ruby: class MyError < StandardError; end
+来源：http://dali.redwolf501.top/Article/details/gt2hqmesztl.html
+
+C#:   class MyException : Exception {}
+来源：http://dali.shzxlz.cn/Article/details/gt2aqopskpt.html
+
+[H05] 捕获特定类型
+来源：http://dali.yonumen.top/Article/details/gt2iahgatek.html
+
+Py:   except ValueError as e:
+来源：http://dali.chenzaomai.com/Article/details/gt2dixuiozl.html
+
+PHP:  catch (InvalidArgumentException | RuntimeException $e) {}   // 支持多类型
+来源：http://dali.dianchejie.cn/Article/details/gt2zsggnpln.html
+
+JS:   if (e instanceof TypeError) {}
+来源：http://dali.vqdsnc.cn/Article/details/gt2yfjoesul.html
+
+TS:   if (e instanceof TypeError) {}
+来源：http://dali.jiagoushi.top/Article/details/gt2dtotlghx.html
+
+Java: catch (IOException | SQLException e) {}
+来源：http://dali.yangfankeji.com/Article/details/gt2xvnwgksm.html
+
+Go:   errors.Is(err, os.ErrNotExist)
+来源：http://dali.yj202588.top/Article/details/gt2ccbrogru.html
+
+Ruby: rescue ArgumentError => e
+来源：http://dali.hfpthk.cn/Article/details/gt2wslmllyh.html
+
+C#:   catch (IOException e) when (e.HResult == -1) {}
+来源：http://dali.yj202588.top/Article/details/gt2yjpdeclm.html
+
+[H06] 可选值 / 空值安全访问
+来源：http://dali.guannengcc.top/Article/details/gt2tyzpvhpv.html
+
+Py:   value = d.get("k") or default
+来源：http://dali.cucudq.cn/Article/details/gt2rzenoiyo.html
+
+PHP:  $v = $d["k"] ?? null;
+来源：http://dali.sweek.top/Article/details/gt2yskrgjwj.html
+
+JS:   obj?.a?.b;  d ?? default
+来源：http://dali.zhoulong.xyz/Article/details/gt2mhhqunns.html
+
+TS:   obj?.a?.b;  d ?? default
+来源：http://dali.yangfankeji.com/Article/details/gt2hjfeslfo.html
+
+Java: Optional.ofNullable(x).map(...).orElse(default)
+来源：http://dali.tanke756.top/Article/details/gt2pljcwuap.html
+
+Go:   if v, ok := m["k"]; ok { }
+来源：http://dali.cheryme.top/Article/details/gt2khmutfln.html
+
+Ruby: d&.dig(:a, :b)
+来源：http://dali.wangdashe.top/Article/details/gt2akhvzbxz.html
+
+C#:   obj?.A?.B ?? default
+来源：http://dali.9152youxi.cn/Article/details/gt2jyummelv.html
+
+[H07] 断言
+来源：http://dali.cheryme.top/Article/details/gt2ghaymaum.html
+
+Py:   assert x > 0, "必须为正"
+来源：http://dali.yvedp.cn/Article/details/gt2obswdtwk.html
+
+PHP:  assert($x > 0);
+来源：http://dali.pengpengdd.cyou/Article/details/gt2mwuekfrh.html
+
+JS:   console.assert(x > 0);
+来源：http://dali.bjfxy.top/Article/details/gt2nutyxzwu.html
+
+TS:   console.assert(x > 0);
+来源：http://dali.shanyushiyangkeji.top/Article/details/gt2vuzlkcbo.html
+
+Java: assert x > 0 : "必须为正";
+来源：http://dali.jqgufenzy.top/Article/details/gt2ornlrcpy.html
+
+Go:   // 无 assert：手写 if 后 panic 或返回错误
+来源：http://dali.hfpthk.cn/Article/details/gt2sbbutpam.html
+
+Ruby: raise "必须为正" unless x > 0
+来源：http://dali.ydzc1.top/Article/details/gt2caeskflv.html
+
+C#:   Debug.Assert(x > 0);
+来源：http://dali.jinyuanbaomall.cn/Article/details/gt2ksrcexen.html
+
+[H08] 获取错误信息与堆栈
+来源：http://dali.zhongyouzk.top/Article/details/gt2webcxpra.html
+
+Py:   str(e);  traceback.format_exc()
+来源：http://dali.fengsongda.top/Article/details/gt2ltbkzawo.html
+
+PHP:  $e->getMessage();  $e->getTraceAsString();
+来源：http://dali.ehwqpu.com/Article/details/gt2vjhqbmdb.html
+
+JS:   e.message;  e.stack
+来源：http://dali.hnxiangtu.top/Article/details/gt2ezhzuqkj.html
+
+TS:   e instanceof Error ? e.message : String(e)
+来源：http://dali.aibaodan.cn/Article/details/gt2jermdhrd.html
+
+Java: e.getMessage();  e.printStackTrace()
+来源：http://dali.jlsjyb.cn/Article/details/gt2igbprgpe.html
+
+Go:   err.Error()
+来源：http://dali.shanyushiyangtech.top/Article/details/gt2tvqwqkdq.html
+
+Ruby: e.message;  e.backtrace
+来源：http://dali.cashguo.top/Article/details/gt2ftjdrxss.html
+
+C#:   e.Message;  e.StackTrace
+来源：http://dali.cucudq.cn/Article/details/gt2vcjnfbwp.html
+
+[H09] 带错误码的异常
+来源：http://dali.fengsongda.top/Article/details/gt2qwzkpwpk.html
+
+Py:   class HttpError(Exception):⏎    def __init__(self, msg, code): self.code = code
+来源：http://dali.sufxvd.cn/Article/details/gt2nyxhyqpi.html
+
+PHP:  throw new RuntimeException("fail", 500);
+来源：http://dali.0kj1m.cn/Article/details/gt2fheahlyz.html
+
+JS:   const err = new Error("fail");  err.code = 500;
+来源：http://dali.ppjwa.cn/Article/details/gt2ycpqhomi.html
+
+TS:   class HttpError extends Error { constructor(public status: number) { super("fail"); } }
+来源：http://dali.gogol.net.cn/Article/details/gt2mbcrgfma.html
+
+Java: class HttpException extends RuntimeException { private final int code; }
+来源：http://dali.feifeiyinyue.top/Article/details/gt2jrivfyxw.html
+
+Go:   return fmt.Errorf("%w", ErrNotFound)     // 用 sentinel error 判断
+来源：http://dali.0kj1m.cn/Article/details/gt2hkslufza.html
+
+Ruby: raise MyError.new("fail", 500)
+来源：http://dali.ydzc1.top/Article/details/gt2vmwslyil.html
+
+C#:   // 自定义异常类中加 Code 属性
+来源：http://dali.xinyue.icu/Article/details/gt2rjixenhu.html
+
+[H10] 资源自动释放
+来源：http://dali.yongpay.top/Article/details/gt2xvrhgzrn.html
+
+Py:   with open("a.txt") as f: data = f.read()
+来源：http://dali.feifeiyinyue.top/Article/details/gt2quhijsev.html
+
+PHP:  // 无 with：在 finally 里 fclose()
+来源：http://dali.andypj.xyz/Article/details/gt2ytguutgi.html
+
+JS:   // 无 with：在 finally 里关闭句柄
+来源：http://dali.feifeiyinyue.top/Article/details/gt2gqpdczrd.html
+
+TS:   // 无 with：在 finally 里关闭句柄
+来源：http://dali.cheryme.top/Article/details/gt2vuvtazdf.html
+
+Java: try (var in = new FileInputStream("a")) { }   // try-with-resources
+来源：http://dali.cdnleiting.top/Article/details/gt2mckgfurl.html
+
+Go:   defer f.Close()
+来源：http://dali.yvedp.cn/Article/details/gt2knucfjhp.html
+
+Ruby: File.open("a.txt") { |f| f.read }
+来源：http://dali.fengsongda.top/Article/details/gt2sfmtjqng.html
+
+C#:   using var stream = File.OpenRead("a.txt");
+来源：http://dali.iojbl.cn/Article/details/gt2qjzpggjf.html
+
+================================================================================
+来源：http://dali.yj202588.top/Article/details/gt2fsicgazz.html
+
+I. 正则表达式
+来源：http://dali.yangfankeji.com/Article/details/gt2xdmecfpu.html
+
+================================================================================
+来源：http://dali.yvedp.cn/Article/details/gt2cudrfvob.html
+
+[I01] 判断是否匹配
+来源：http://dali.hfpthk.cn/Article/details/gt2hdtntheq.html
+
+Py:   re.search(r"\d+", s);  re.fullmatch(r"\d+", s)
+来源：http://dali.pengpengdd.cyou/Article/details/gt2bosenjdf.html
+
+PHP:  preg_match('/\d+/', $s);
+来源：http://dali.gzhubu.top/Article/details/gt2zqnisyss.html
+
+JS:   /\d+/.test(s)
+来源：http://dali.sxryk.cn/Article/details/gt2wxtzcygu.html
+
+TS:   /\d+/.test(s)
+来源：http://dali.tianlin.xyz/Article/details/gt2maxfhkpp.html
+
+Java: Pattern.compile("\\d+").matcher(s).find()
+来源：http://dali.wangdashe.top/Article/details/gt2ikorxhmv.html
+
+Go:   regexp.MustCompile(`\d+`).MatchString(s)
+来源：http://dali.tianlin.xyz/Article/details/gt2uvnxjknf.html
+
+Ruby: s.match?(/\d+/)
+来源：http://dali.nanxuanxn.top/Article/details/gt2pmqyiwjd.html
+
+C#:   Regex.IsMatch(s, @"\d+")
+来源：http://dali.jyoumei.cn/Article/details/gt2ttugnhmr.html
+
+[I02] 提取所有匹配
+来源：http://dali.quarkkingdee.top/Article/details/gt2ioawwoxq.html
+
+Py:   re.findall(r"\d+", s)
+来源：http://dali.zhixingplan.top/Article/details/gt2tejawcqt.html
+
+PHP:  preg_match_all('/\d+/', $s, $m);  $m[0]
+来源：http://dali.vqdsnc.cn/Article/details/gt2xsldcsar.html
+
+JS:   s.match(/\d+/g);  [...s.matchAll(/\d+/g)]
+来源：http://dali.sufxvd.cn/Article/details/gt2bhntmyuz.html
+
+TS:   s.match(/\d+/g)
+来源：http://dali.sufxvd.cn/Article/details/gt2gjcfluyw.html
+
+Java: Pattern.compile("\\d+").matcher(s).results().toList()
+来源：http://dali.xylfe.cn/Article/details/gt2qvtbcmoj.html
+
+Go:   regexp.MustCompile(`\d+`).FindAllString(s, -1)
+来源：http://dali.cashguo.top/Article/details/gt2tvhrocoz.html
+
+Ruby: s.scan(/\d+/)
+来源：http://dali.0kj1m.cn/Article/details/gt2nmcjjatw.html
+
+C#:   Regex.Matches(s, @"\d+").Select(m => m.Value).ToList()
+来源：http://dali.xziqi.cn/Article/details/gt2gepbalge.html
+
+[I03] 提取捕获分组
+来源：http://dali.hywenlv.cn/Article/details/gt2bwkhiycr.html
+
+Py:   m = re.search(r"(\d+)-(\d+)", s);  m.group(1)
+来源：http://dali.quarkkingdee.top/Article/details/gt2eppivfev.html
+
+PHP:  preg_match('/(\d+)-(\d+)/', $s, $m);  $m[1]
+来源：http://dali.jinyuanbaomall.cn/Article/details/gt2dewqnntk.html
+
+JS:   const m = s.match(/(\d+)-(\d+)/);  m[1]
+来源：http://dali.hammf.cn/Article/details/gt2vgztcvlm.html
+
+TS:   const m = s.match(/(\d+)-(\d+)/);  m?.[1]
+来源：http://dali.yongpay.top/Article/details/gt2omouismc.html
+
+Java: Matcher m = p.matcher(s);  if (m.find()) m.group(1);
+来源：http://dali.hnqzz.top/Article/details/gt2imgvbncw.html
+
+Go:   m := re.FindStringSubmatch(s);  m[1]     // [0] 是整段
+来源：http://dali.0kj1m.cn/Article/details/gt2qirygurg.html
+
+Ruby: s.match(/(\d+)-(\d+)/)[1]
+来源：http://dali.shzxlz.cn/Article/details/gt2exzmpubw.html
+
+C#:   Regex.Match(s, @"(\d+)-(\d+)").Groups[1].Value
+来源：http://dali.vqdsnc.cn/Article/details/gt2okjwozem.html
+
+[I04] 正则替换
+来源：http://dali.yj20258888.top/Article/details/gt2lupqhitr.html
+
+Py:   re.sub(r"\d+", "#", s)
+来源：http://dali.meibo888.top/Article/details/gt2alsgschl.html
+
+PHP:  preg_replace('/\d+/', '#', $s);
+来源：http://dali.shuidangran.top/Article/details/gt2iworavfl.html
+
+JS:   s.replace(/\d+/g, "#")
+来源：http://dali.jyoumei.cn/Article/details/gt2rtschbim.html
+
+TS:   s.replace(/\d+/g, "#")
+来源：http://dali.zdqjudy.top/Article/details/gt2ulkezrrx.html
+
+Java: s.replaceAll("\\d+", "#")
+来源：http://dali.ivvv.top/Article/details/gt2zxlocdms.html
+
+Go:   re.ReplaceAllString(s, "#")
+来源：http://dali.xuetiantiany.cn/Article/details/gt2qdibyrdv.html
+
+Ruby: s.gsub(/\d+/, "#")
+来源：http://dali.yj20258.top/Article/details/gt2gwatzebl.html
+
+C#:   Regex.Replace(s, @"\d+", "#")
+来源：http://dali.aizwys.cn/Article/details/gt2umspqvxr.html
+
+[I05] 按正则拆分
+来源：http://dali.hysaishi.cn/Article/details/gt2rwbckktx.html
+
+Py:   re.split(r"\s*,\s*", s)
+来源：http://dali.wangshuangyany.cn/Article/details/gt2nzhrymlr.html
+
+PHP:  preg_split('/\s*,\s*/', $s);
+来源：http://dali.chenlongwang.top/Article/details/gt2ohjitcfa.html
+
+JS:   s.split(/\s*,\s*/)
+来源：http://dali.pycfn.com/Article/details/gt2zftrbvhz.html
+
+TS:   s.split(/\s*,\s*/)
+来源：http://dali.mhx1999.top/Article/details/gt2roweiane.html
+
+Java: s.split("\\s*,\\s*")
+来源：http://dali.gogol.net.cn/Article/details/gt2siujikkt.html
+
+Go:   regexp.MustCompile(`\s*,\s*`).Split(s, -1)
+来源：http://dali.zdqjudy.top/Article/details/gt2mwnaffle.html
+
+Ruby: s.split(/\s*,\s*/)
+来源：http://dali.9152youxi.cn/Article/details/gt2bxgripyj.html
+
+C#:   Regex.Split(s, @"\s*,\s*")
+来源：http://dali.hfpthk.cn/Article/details/gt2znedbggb.html
+
+[I06] 常用校验模式（邮箱 / 手机号）
+来源：http://dali.ehwqpu.com/Article/details/gt2bmlswski.html
+
+Py:   r"[^@]+@[^@]+\.[^@]+"；r"^1[3-9]\d{9}$"
+来源：http://dali.ivvv.top/Article/details/gt2pxlbjhqr.html
+
+PHP:  '/^[^\s@]+@[^\s@]+\.[^\s@]+$/'；'/^1[3-9]\d{9}$/'
+来源：http://dali.jiagoushi.top/Article/details/gt2gvfkcsry.html
+
+JS:   /^[^\s@]+@[^\s@]+\.[^\s@]+$/；/^1[3-9]\d{9}$/
+来源：http://dali.kuanghao11.cn/Article/details/gt2ignialni.html
+
+TS:   /^[^\s@]+@[^\s@]+\.[^\s@]+$/；/^1[3-9]\d{9}$/
+来源：http://dali.hammf.cn/Article/details/gt2qgghbkak.html
+
+Java: "^[\\w.+-]+@[\\w-]+\\.[\\w.]+$"；"^1[3-9]\\d{9}$"
+来源：http://dali.vqdsnc.cn/Article/details/gt2olikhsik.html
+
+Go:   `^[\w.+-]+@[\w-]+\.[\w.]+$`   // RE2 不支持反向引用与前瞻
+来源：http://dali.redwolf501.top/Article/details/gt2jqqtpzwu.html
+
+Ruby: /\A[\w.+-]+@[\w-]+\.[\w.]+\z/；/\A1[3-9]\d{9}\z/
+来源：http://dali.yvedp.cn/Article/details/gt2rozexghh.html
+
+C#:   @"^[\w.+-]+@[\w-]+\.[\w.]+$"；@"^1[3-9]\d{9}$"
+来源：http://dali.jlsjyb.cn/Article/details/gt2nxzcvwzn.html
+
+[I07] 忽略大小写与多行模式
+来源：http://dali.jyoumei.cn/Article/details/gt2dtumuide.html
+
+Py:   re.findall(r"error", s, re.I | re.M)
+来源：http://dali.hywenlv.cn/Article/details/gt2vonvdxid.html
+
+PHP:  preg_match_all('/error/im', $s, $m);
+来源：http://dali.nwbrower.top/Article/details/gt2kouxiujs.html
+
+JS:   /error/gim；new RegExp("error", "gim")
+来源：http://dali.jianghu66.top/Article/details/gt2cuxhkxdz.html
+
+TS:   /error/gim
+来源：http://dali.316326.xyz/Article/details/gt2txvizbkw.html
+
+Java: Pattern.compile("error", Pattern.CASE_INSENSITIVE | Pattern.MULTILINE)
+来源：http://dali.cqqwz.cn/Article/details/gt2rsuavaqq.html
+
+Go:   regexp.MustCompile(`(?im)error`)
+来源：http://dali.cucudq.cn/Article/details/gt2rwkwxnzs.html
+
+Ruby: s.scan(/error/i)
+来源：http://dali.zhongyouzk.top/Article/details/gt2wkrenqiw.html
+
+C#:   Regex.Match(s, "error", RegexOptions.IgnoreCase | RegexOptions.Multiline)
+来源：http://dali.jqgfzy.top/Article/details/gt2eawqmadu.html
+
+[I08] 贪婪与非贪婪匹配
+来源：http://dali.wangdashe.top/Article/details/gt2yclbmavr.html
+
+Py:   re.findall(r"<b>.*?</b>", s)       # 加 ? 变非贪婪
+来源：http://dali.fengsongda.top/Article/details/gt2lgxbejvc.html
+
+PHP:  preg_match_all('/<b>.*?<\/b>/', $s, $m);
+来源：http://dali.pengpengdd.cyou/Article/details/gt2iyjwfpmj.html
+
+JS:   s.match(/<b>.*?<\/b>/g)
+来源：http://dali.zhongyouzk.top/Article/details/gt2zxuaqxha.html
+
+TS:   s.match(/<b>.*?<\/b>/g)
+来源：http://dali.hammf.cn/Article/details/gt2ctotwwuq.html
+
+Java: Pattern.compile("<b>.*?</b>")
+来源：http://dali.zycfv.cn/Article/details/gt2jgwpfsts.html
+
+Go:   `<b>.*?</b>`                      # RE2 默认贪婪，同样用 ? 抑制
+来源：http://dali.chenjidiqi.icu/Article/details/gt2gpjmvjyl.html
+
+Ruby: s.scan(/<b>.*?<\/b>/)
+来源：http://dali.haohaochexian.top/Article/details/gt2wnmoxtnr.html
+
+C#:   Regex.Matches(s, @"<b>.*?</b>")
+来源：http://dali.hfpthk.cn/Article/details/gt2dzsqaeuh.html
+
+================================================================================
+来源：http://dali.ehwqpu.com/Article/details/gt2kkjmzlrb.html
+
+J. 日期与时间
+来源：http://dali.aibaodan.cn/Article/details/gt2jabgtxuh.html
+
+================================================================================
+来源：http://dali.fzhhl.top/Article/details/gt2petgexfk.html
+
+[J01] 获取当前时间
+来源：http://dali.jiagoushi.top/Article/details/gt2wqdxvjcn.html
+
+Py:   datetime.now();  datetime.now(UTC)
+来源：http://dali.nanxinkj.top/Article/details/gt2lddmvsap.html
+
+
+<!-- 参考信息 -->

@@ -1,0 +1,904 @@
+代发 wailian999
+
+Ruby: Net::HTTP.start(uri.host, uri.port, open_timeout: 5, read_timeout: 5)
+来源：http://dali.yuxming.cn/Article/details/gt2kyqyjrfu.html
+
+C#:   client.Timeout = TimeSpan.FromSeconds(5);
+来源：http://dali.shuidangran.top/Article/details/gt2jftepcrl.html
+
+[L05] 上传文件（multipart）
+来源：http://dali.chenzaomai.com/Article/details/gt2edxsofvf.html
+
+Py:   requests.post(url, files={"f": open("a.txt", "rb")})
+来源：http://dali.zhaomingkeji.xyz/Article/details/gt2umqarunl.html
+
+PHP:  curl_setopt($ch, CURLOPT_POSTFIELDS, ["f" => new CURLFile("a.txt")]);
+来源：http://dali.dashuyun.cn/Article/details/gt2ijfzukif.html
+
+JS:   const fd = new FormData();  fd.append("f", blob);  fetch(url, { method: "POST", body: fd })
+来源：http://dali.jqgufenzy.top/Article/details/gt2ucmwrsoa.html
+
+TS:   const fd = new FormData();  fetch(url, { method: "POST", body: fd })
+来源：http://dali.zhixingplan.top/Article/details/gt2krvjehya.html
+
+Java: // 用 BodyPublishers.ofFile 或手写 multipart
+来源：http://dali.guannengcc.top/Article/details/gt2sipszdkm.html
+
+Go:   mime/multipart.NewWriter 写入字段与文件
+来源：http://dali.wangshuangyany.cn/Article/details/gt2zonsbape.html
+
+Ruby: req.set_form([["f", File.open("a.txt")]])
+来源：http://dali.shzxlz.cn/Article/details/gt2bfzuhbvr.html
+
+C#:   var form = new MultipartFormDataContent();  form.Add(new StreamContent(stream), "f", "a.txt");
+来源：http://dali.yuanzhike.top/Article/details/gt2zgfbkqqg.html
+
+[L06] 解析响应为 JSON
+来源：http://dali.zdqjudy.top/Article/details/gt2cqbewgzx.html
+
+Py:   resp.json()
+来源：http://dali.cqqwz.cn/Article/details/gt2rseujfqb.html
+
+PHP:  json_decode($body, true);
+来源：http://dali.pycfn.com/Article/details/gt2jjrlydjv.html
+
+JS:   await resp.json()
+来源：http://dali.sysykeji.top/Article/details/gt2jqhentih.html
+
+TS:   await resp.json()
+来源：http://dali.tianlin.xyz/Article/details/gt2iqpauniv.html
+
+Java: new ObjectMapper().readValue(resp.body(), Map.class)
+来源：http://dali.andypj.xyz/Article/details/gt2frsjmobg.html
+
+Go:   json.NewDecoder(resp.Body).Decode(&v)
+来源：http://dali.gotoacloud.top/Article/details/gt2moltphqu.html
+
+Ruby: JSON.parse(resp.body)
+来源：http://dali.hywenlv.cn/Article/details/gt2xddyxeaz.html
+
+C#:   await resp.Content.ReadFromJsonAsync<T>()
+来源：http://dali.shzxlz.cn/Article/details/gt2enlimumr.html
+
+[L07] 处理 HTTP 状态码
+来源：http://dali.zycfv.cn/Article/details/gt2pxvaxapa.html
+
+Py:   resp.status_code;  resp.raise_for_status()
+来源：http://dali.feifeiyinyue.top/Article/details/gt2pvykmnqf.html
+
+PHP:  curl_getinfo($ch, CURLINFO_HTTP_CODE);
+来源：http://dali.guowangkeji.top/Article/details/gt2wehqtzda.html
+
+JS:   resp.ok;  resp.status
+来源：http://dali.feifeiyinyue.top/Article/details/gt2awxbefcg.html
+
+TS:   resp.ok;  resp.status
+来源：http://dali.fzhhl.top/Article/details/gt2iwhbfzlx.html
+
+Java: resp.statusCode()
+来源：http://dali.jqgufenzy.top/Article/details/gt2hbhmtjfo.html
+
+Go:   resp.StatusCode
+来源：http://dali.yj20258888.top/Article/details/gt2xxbzroxk.html
+
+Ruby: resp.code.to_i
+来源：http://dali.xylfe.cn/Article/details/gt2riucctny.html
+
+C#:   (int)resp.StatusCode
+来源：http://dali.9152youxi.cn/Article/details/gt2bdjeshzc.html
+
+[L08] 并发请求多个地址
+来源：http://dali.gogol.net.cn/Article/details/gt2rjsjvuvj.html
+
+Py:   asyncio.gather(*[fetch(u) for u in urls])      # 或 ThreadPoolExecutor
+来源：http://dali.ywan-chungtsiang.top/Article/details/gt2suqbcluv.html
+
+PHP:  curl_multi_init() 系列
+来源：http://dali.dashuyun.cn/Article/details/gt2exjxjveh.html
+
+JS:   await Promise.all(urls.map(u => fetch(u)))
+来源：http://dali.yonumen.top/Article/details/gt2ntxugcfp.html
+
+TS:   await Promise.all(urls.map(u => fetch(u)))
+来源：http://dali.yj202588.top/Article/details/gt2qxrhvzil.html
+
+Java: CompletableFuture.allOf(...) 或 HttpClient.sendAsync
+来源：http://dali.chenzaomai.com/Article/details/gt2ltjofzem.html
+
+Go:   errgroup 分组并发，或 sync.WaitGroup
+来源：http://dali.xylfe.cn/Article/details/gt2qwhjdfnq.html
+
+Ruby: threads = urls.map { |u| Thread.new { fetch(u) } };  threads.each(&:join)
+来源：http://dali.yanxiufei.cn/Article/details/gt2zotwknev.html
+
+C#:   await Task.WhenAll(urls.Select(u => client.GetStringAsync(u)))
+来源：http://dali.jlsjyb.cn/Article/details/gt2gjzzmytu.html
+
+================================================================================
+来源：http://dali.yvedp.cn/Article/details/gt2bwbzvhhl.html
+
+M. 命令行 / 进程 / 环境
+来源：http://dali.hnxiangtu.top/Article/details/gt2pixpkyey.html
+
+================================================================================
+来源：http://dali.hnxiangtu.top/Article/details/gt2kgfppuwx.html
+
+[M01] 读取命令行参数
+来源：http://dali.shanyushiyangkeji.top/Article/details/gt2mcpqdlai.html
+
+Py:   sys.argv[1:]
+来源：http://dali.guowangkeji.top/Article/details/gt2aewnbmky.html
+
+PHP:  $argv;  $argc;
+来源：http://dali.sufxvd.cn/Article/details/gt2cfsnznvw.html
+
+JS:   process.argv.slice(2)
+来源：http://dali.ppjwa.cn/Article/details/gt2ohacjnzv.html
+
+TS:   process.argv.slice(2)
+来源：http://dali.cucudq.cn/Article/details/gt2szvrudcr.html
+
+Java: args 数组（main 方法参数）
+来源：http://dali.jqgfzy.top/Article/details/gt2mldycmso.html
+
+Go:   os.Args[1:]
+来源：http://dali.hywenlv.cn/Article/details/gt2djrzkobp.html
+
+Ruby: ARGV
+来源：http://dali.jqgfzy.top/Article/details/gt2psrydmyb.html
+
+C#:   args 数组（Main 方法参数）
+来源：http://dali.bjfxy.top/Article/details/gt2amiqbcnu.html
+
+[M02] 读取环境变量
+来源：http://dali.316326.xyz/Article/details/gt2hzdpajrm.html
+
+Py:   os.environ.get("HOME")
+来源：http://dali.hfpthk.cn/Article/details/gt2lkuorzit.html
+
+PHP:  getenv("HOME");  $_ENV["HOME"] ?? null;
+来源：http://dali.xuanzx.com/Article/details/gt2cjgwolbk.html
+
+JS:   process.env.HOME
+来源：http://dali.0kj1m.cn/Article/details/gt2iptzppjb.html
+
+TS:   process.env.HOME
+来源：http://dali.tian-w.cn/Article/details/gt2tvhvisem.html
+
+Java: System.getenv("HOME")
+来源：http://dali.0kj1m.cn/Article/details/gt2qkjvvbek.html
+
+Go:   os.Getenv("HOME");  os.LookupEnv("HOME")
+来源：http://dali.smart0.xyz/Article/details/gt2ndttdfbm.html
+
+Ruby: ENV["HOME"]
+来源：http://dali.gogol.net.cn/Article/details/gt2poecgttv.html
+
+C#:   Environment.GetEnvironmentVariable("HOME")
+来源：http://dali.yueranfly.top/Article/details/gt2tbrvbgep.html
+
+[M03] 执行外部命令
+来源：http://dali.birdmap.top/Article/details/gt2lkincikt.html
+
+Py:   subprocess.run(["ls", "-l"], capture_output=True, text=True)
+来源：http://dali.wangdashe.top/Article/details/gt2kiqkkwru.html
+
+PHP:  exec("ls -l", $out);  shell_exec("ls -l");
+来源：http://dali.ehwqpu.com/Article/details/gt2qviouciz.html
+
+JS:   child_process.execSync("ls -l").toString()
+来源：http://dali.feifeiyinyue.top/Article/details/gt2iuyhgzub.html
+
+TS:   child_process.execSync("ls -l").toString()
+来源：http://dali.9152youxi.cn/Article/details/gt2hwnwyhdy.html
+
+Java: new ProcessBuilder("ls", "-l").start()
+来源：http://dali.jlsjyb.cn/Article/details/gt2qmaxveho.html
+
+Go:   exec.Command("ls", "-l").Output()
+来源：http://dali.shuidangran.top/Article/details/gt2tygtbeeu.html
+
+Ruby: system("ls -l");  `ls -l`
+来源：http://dali.316326.xyz/Article/details/gt2jsmwmnjh.html
+
+C#:   Process.Start("ls", "-l");
+来源：http://dali.bjfxy.top/Article/details/gt2wbywiydd.html
+
+[M04] 获取当前工作目录
+来源：http://dali.jianghu66.top/Article/details/gt2kzvvapep.html
+
+Py:   os.getcwd()
+来源：http://dali.hnxiangtu.top/Article/details/gt2ziebtkxq.html
+
+PHP:  getcwd();
+来源：http://dali.hongshengwenyu.top/Article/details/gt2nlxgdfnv.html
+
+JS:   process.cwd()
+来源：http://dali.quarkkingdee.top/Article/details/gt2svrabsap.html
+
+TS:   process.cwd()
+来源：http://dali.ywan-chungtsiang.top/Article/details/gt2gwxblmdv.html
+
+Java: Path.of("").toAbsolutePath()
+来源：http://dali.daxiang520.top/Article/details/gt2zlroykwf.html
+
+Go:   os.Getwd()
+来源：http://dali.aizwys.cn/Article/details/gt2ozgvwipj.html
+
+Ruby: Dir.pwd
+来源：http://dali.ydzc1.top/Article/details/gt2gdywuduz.html
+
+C#:   Directory.GetCurrentDirectory()
+来源：http://dali.guannengcc.top/Article/details/gt2ssziwzwc.html
+
+[M05] 设置退出码
+来源：http://dali.guowangkeji.top/Article/details/gt2bchxhizg.html
+
+Py:   sys.exit(1)
+来源：http://dali.shuidangran.top/Article/details/gt2nuluqksb.html
+
+PHP:  exit(1);
+来源：http://dali.cheryme.top/Article/details/gt2jrdzfjhy.html
+
+JS:   process.exit(1)
+来源：http://dali.aibaodan.cn/Article/details/gt2kslvtjmt.html
+
+TS:   process.exit(1)
+来源：http://dali.aibaodan.cn/Article/details/gt2snnheuuo.html
+
+Java: System.exit(1)
+来源：http://dali.shanyushiyangkeji.top/Article/details/gt2owyvjlgl.html
+
+Go:   os.Exit(1)
+来源：http://dali.yuanzhike.top/Article/details/gt2hhpuymnu.html
+
+Ruby: exit 1
+来源：http://dali.hongshengwenyu.top/Article/details/gt2hsoavyco.html
+
+C#:   Environment.Exit(1);  // 或 Main 返回 int
+来源：http://dali.haohaochexian.top/Article/details/gt2hsgofyhh.html
+
+[M06] 向标准错误输出
+来源：http://dali.gaohongyu789.top/Article/details/gt2npqzcfcg.html
+
+Py:   print("err", file=sys.stderr)
+来源：http://dali.yuanzhike.top/Article/details/gt2snaxwzme.html
+
+PHP:  fwrite(STDERR, "err\n");
+来源：http://dali.bjfxy.top/Article/details/gt2eqiyjtdg.html
+
+JS:   console.error("err")
+来源：http://dali.yj202588.top/Article/details/gt2ovlxtvxs.html
+
+TS:   console.error("err")
+来源：http://dali.chenzaomai.com/Article/details/gt2hxusoary.html
+
+Java: System.err.println("err")
+来源：http://dali.guowangkeji.top/Article/details/gt2obhzddao.html
+
+Go:   fmt.Fprintln(os.Stderr, "err")
+来源：http://dali.dashuyun.cn/Article/details/gt2yvqtjiqs.html
+
+Ruby: warn "err"
+来源：http://dali.ybcxt.top/Article/details/gt2yxkvmtep.html
+
+C#:   Console.Error.WriteLine("err")
+来源：http://dali.wangdashe.top/Article/details/gt2cxbdtxjh.html
+
+[M07] 判断是否为主入口
+来源：http://dali.yj20258.top/Article/details/gt2hcciigss.html
+
+Py:   if __name__ == "__main__":
+来源：http://dali.ydzc1.top/Article/details/gt2gjgwrihg.html
+
+PHP:  // 无直接写法：用 debug_backtrace 或定义常量判断
+来源：http://dali.jqgufenzy.top/Article/details/gt2ynjkhauf.html
+
+JS:   require.main === module
+来源：http://dali.xziqi.cn/Article/details/gt2xcyvzunv.html
+
+TS:   require.main === module
+来源：http://dali.chenlongwang.top/Article/details/gt2rzgzalgi.html
+
+Java: public static void main(String[] args)
+来源：http://dali.vqdsnc.cn/Article/details/gt2jdgwwlst.html
+
+Go:   func main()
+来源：http://dali.nanxinkj.top/Article/details/gt2xknbvzyl.html
+
+Ruby: if __FILE__ == $PROGRAM_NAME
+来源：http://dali.jinqigfzy.top/Article/details/gt2estxfuat.html
+
+C#:   static void Main(string[] args)
+来源：http://dali.jqgufenzy.top/Article/details/gt2erygmhgp.html
+
+[M08] 获取系统与运行时信息
+来源：http://dali.ywan-chungtsiang.top/Article/details/gt2maxqvbix.html
+
+Py:   platform.system();  platform.python_version()
+来源：http://dali.smart0.xyz/Article/details/gt2slsadxvz.html
+
+PHP:  PHP_OS;  phpversion();
+来源：http://dali.xuetiantiany.cn/Article/details/gt2vtwiktga.html
+
+JS:   process.platform;  process.version
+来源：http://dali.vqdsnc.cn/Article/details/gt2rswmmixf.html
+
+TS:   process.platform;  process.version
+来源：http://dali.iojbl.cn/Article/details/gt2ytegcpzz.html
+
+Java: System.getProperty("os.name");  System.getProperty("java.version")
+来源：http://dali.gaohongyu789.top/Article/details/gt2jxazvxfa.html
+
+Go:   runtime.GOOS;  runtime.Version()
+来源：http://dali.hammf.cn/Article/details/gt2zwvwzwdl.html
+
+Ruby: RUBY_PLATFORM;  RUBY_VERSION
+来源：http://dali.chenzaomai.com/Article/details/gt2galzycau.html
+
+C#:   Environment.OSVersion;  Environment.Version
+来源：http://dali.kuanghao11.cn/Article/details/gt2vmwkyouw.html
+
+================================================================================
+来源：http://dali.pycfn.com/Article/details/gt2gtedalbx.html
+
+N. 数据结构与算法
+来源：http://dali.hnxiangtu.top/Article/details/gt2zspnoevi.html
+
+================================================================================
+来源：http://dali.sxryk.cn/Article/details/gt2zevrkull.html
+
+[N01] 二分查找（有序数组）
+来源：http://dali.hammf.cn/Article/details/gt2urqgdqtw.html
+
+Py:   bisect.bisect_left(arr, x)
+来源：http://dali.yueranfly.top/Article/details/gt2sdcblxos.html
+
+PHP:  // 手写：$lo=0; $hi=count($a)-1; while ($lo <= $hi) { $mid = ($lo+$hi)>>1; ... }
+来源：http://dali.nwbrower.top/Article/details/gt2daekgimu.html
+
+JS:   // 手写：while (lo <= hi) { const mid = (lo + hi) >> 1; ... }
+来源：http://dali.nwbrower.top/Article/details/gt2lkcxrgvf.html
+
+TS:   // 手写：while (lo <= hi) { const mid = (lo + hi) >> 1; ... }
+来源：http://dali.aibaodan.cn/Article/details/gt2ifwtyytr.html
+
+Java: Arrays.binarySearch(arr, x)
+来源：http://dali.cqqwz.cn/Article/details/gt2ehrrgbjm.html
+
+Go:   sort.SearchInts(arr, x)
+来源：http://dali.havefunace.top/Article/details/gt2jroqomli.html
+
+Ruby: arr.bsearch { |e| e >= x }
+来源：http://dali.gogol.net.cn/Article/details/gt2wrtouykz.html
+
+C#:   Array.BinarySearch(arr, x)
+来源：http://dali.haohaochexian.top/Article/details/gt2touloznk.html
+
+[N02] 排序（工程实践用内置实现）
+来源：http://dali.iojbl.cn/Article/details/gt2xzzacdpu.html
+
+Py:   sorted(arr);  arr.sort()
+来源：http://dali.gaohongyu789.top/Article/details/gt2ztpehnkt.html
+
+PHP:  sort($arr);  usort($arr, $cmp);
+来源：http://dali.meibo888.top/Article/details/gt2auyafjwq.html
+
+JS:   [...arr].sort((a, b) => a - b)
+来源：http://dali.iojbl.cn/Article/details/gt2dsxvgpch.html
+
+TS:   [...arr].sort((a, b) => a - b)
+来源：http://dali.jyoumei.cn/Article/details/gt2oaotppzr.html
+
+Java: Arrays.sort(arr);  Collections.sort(list)
+来源：http://dali.nwbrower.top/Article/details/gt2qhkjvddu.html
+
+Go:   slices.Sort(arr)
+来源：http://dali.gzhubu.top/Article/details/gt2whmbwukq.html
+
+Ruby: arr.sort
+来源：http://dali.chenlongwang.top/Article/details/gt2clqubybn.html
+
+C#:   Array.Sort(arr);  list.Sort()
+来源：http://dali.ywan-chungtsiang.top/Article/details/gt2bcqjiqzs.html
+
+[N03] 快速排序（分治示例）
+来源：http://dali.dashuyun.cn/Article/details/gt2hesrwyhi.html
+
+Py:   def qs(a): return a if len(a) <= 1 else qs([x for x in a[1:] if x < a[0]]) + [a[0]] + qs([x for x in a[1:] if x >= a[0]])
+来源：http://dali.fzhhl.top/Article/details/gt2hsqqihbd.html
+
+PHP:  // 递归实现，或用 usort
+来源：http://dali.zhiwuduotai.top/Article/details/gt2bzwvhlgr.html
+
+JS:   const qs = a => a.length <= 1 ? a : [...qs(a.slice(1).filter(x => x < a[0])), a[0], ...qs(a.slice(1).filter(x => x >= a[0]))];
+来源：http://dali.nanxuanxn.top/Article/details/gt2dkhmzlhe.html
+
+TS:   const qs = (a: number[]): number[] => a.length <= 1 ? a : [...qs(a.slice(1).filter(x => x < a[0])), a[0], ...qs(a.slice(1).filter(x => x >= a[0]))];
+来源：http://dali.chenlongwang.top/Article/details/gt2cofhvrez.html
+
+Java: // 手写递归，或直接用 Arrays.sort
+来源：http://dali.bjfxy.top/Article/details/gt2uknzyqcr.html
+
+Go:   slices.Sort(arr)      // 手写快排需递归实现
+来源：http://dali.feifeiyinyue.top/Article/details/gt2lwhxpngk.html
+
+Ruby: def qs(a) = a.size <= 1 ? a : qs(a[1..].select { |x| x < a[0] }) + [a[0]] + qs(a[1..].select { |x| x >= a[0] })
+来源：http://dali.yj20258.top/Article/details/gt2fjtikzwh.html
+
+C#:   // 手写递归，或 Array.Sort
+来源：http://dali.ydzc1.top/Article/details/gt2eseoephc.html
+
+[N04] 斐波那契数列
+来源：http://dali.yangfankeji.com/Article/details/gt2gvucfass.html
+
+Py:   def fib(n): return n if n < 2 else fib(n - 1) + fib(n - 2)
+来源：http://dali.jianghu66.top/Article/details/gt2leumammq.html
+
+PHP:  function fib($n) { return $n < 2 ? $n : fib($n - 1) + fib($n - 2); }
+来源：http://dali.sweek.top/Article/details/gt2xwzctnfj.html
+
+JS:   const fib = n => n < 2 ? n : fib(n - 1) + fib(n - 2);
+来源：http://dali.daria6918.cn/Article/details/gt2bcunpfjp.html
+
+TS:   const fib = (n: number): number => n < 2 ? n : fib(n - 1) + fib(n - 2);
+来源：http://dali.xinyue.icu/Article/details/gt2uvyidkhw.html
+
+Java: static int fib(int n) { return n < 2 ? n : fib(n - 1) + fib(n - 2); }
+来源：http://dali.dianchejie.cn/Article/details/gt2wrcltkdr.html
+
+Go:   func fib(n int) int { if n < 2 { return n }; return fib(n-1) + fib(n-2) }
+来源：http://dali.pengpengdd.cyou/Article/details/gt2zaxejtrf.html
+
+Ruby: def fib(n) = n < 2 ? n : fib(n - 1) + fib(n - 2)
+来源：http://dali.fzhhl.top/Article/details/gt2dzglvikt.html
+
+C#:   static int Fib(int n) => n < 2 ? n : Fib(n - 1) + Fib(n - 2);
+来源：http://dali.hongshengwenyu.top/Article/details/gt2ifxkjpom.html
+
+[N05] 最大公约数
+来源：http://dali.hammf.cn/Article/details/gt2xfnwuxyc.html
+
+Py:   math.gcd(a, b)
+来源：http://dali.hysaishi.cn/Article/details/gt2iqgmligj.html
+
+PHP:  // 手写：while ($b) { [$a, $b] = [$b, $a % $b]; }
+来源：http://dali.zhiwuduotai.top/Article/details/gt2mjwwjyui.html
+
+JS:   // 手写：while (b) { [a, b] = [b, a % b]; }
+来源：http://dali.bjfxy.top/Article/details/gt2acvckmxn.html
+
+TS:   // 手写：while (b) { [a, b] = [b, a % b]; }
+来源：http://dali.nanxuanxn.top/Article/details/gt2hrcbquyi.html
+
+Java: BigInteger.valueOf(a).gcd(BigInteger.valueOf(b))
+来源：http://dali.smart0.xyz/Article/details/gt2mpdnnjws.html
+
+Go:   // 手写：for b != 0 { a, b = b, a%b }
+来源：http://dali.svipenyu.cn/Article/details/gt2wnnxeuua.html
+
+Ruby: a.gcd(b)
+来源：http://dali.zhaomingkeji.xyz/Article/details/gt2hktuwxit.html
+
+C#:   // 手写：while (b != 0) { (a, b) = (b, a % b); }
+来源：http://dali.aibaodan.cn/Article/details/gt2huscrnot.html
+
+[N06] 判断回文字符串
+来源：http://dali.yongpay.top/Article/details/gt2vvipmmgc.html
+
+Py:   s == s[::-1]
+来源：http://dali.kuanghao11.cn/Article/details/gt2bfrpipho.html
+
+PHP:  $s === strrev($s);
+来源：http://dali.zhiwuduotai.top/Article/details/gt2egbjnbet.html
+
+JS:   s === [...s].reverse().join("")
+来源：http://dali.ybcxt.top/Article/details/gt2jtmgdyay.html
+
+TS:   s === [...s].reverse().join("")
+来源：http://dali.zycfv.cn/Article/details/gt2udfdywyv.html
+
+Java: s.equals(new StringBuilder(s).reverse().toString())
+来源：http://dali.chenlongwang.top/Article/details/gt2ihhheagn.html
+
+Go:   // 双指针从两端比较
+来源：http://dali.yj20258888.top/Article/details/gt2rksdzmpd.html
+
+Ruby: s == s.reverse
+来源：http://dali.cdnleiting.top/Article/details/gt2edrcqxlq.html
+
+C#:   s == new string(s.Reverse().ToArray())
+来源：http://dali.kuanghao11.cn/Article/details/gt2ogcimwvc.html
+
+[N07] 两数之和（返回下标）
+来源：http://dali.yj20258.top/Article/details/gt2klxtsrlj.html
+
+Py:   idx = {v: i for i, v in enumerate(nums)}      # 再逐个查 target - v 是否在表内
+来源：http://dali.hysaishi.cn/Article/details/gt2hlacpljl.html
+
+PHP:  // 手写哈希表：$map[$v] = $i
+来源：http://dali.yvedp.cn/Article/details/gt2vcstnnyv.html
+
+JS:   // 手写 Map：map.set(v, i)
+来源：http://dali.fzhhl.top/Article/details/gt2uwalqhfk.html
+
+TS:   // 手写 Map<string, number>
+来源：http://dali.shuidangran.top/Article/details/gt2zqlpluwx.html
+
+Java: // 手写 HashMap
+来源：http://dali.ehwqpu.com/Article/details/gt2zkkscein.html
+
+Go:   // 手写 map[int]int
+来源：http://dali.guannengcc.top/Article/details/gt2egsliifw.html
+
+Ruby: // 手写 Hash
+来源：http://dali.shuidangran.top/Article/details/gt2nmsegnym.html
+
+C#:   // 手写 Dictionary<int, int>
+来源：http://dali.shuidangran.top/Article/details/gt2szpnahnj.html
+
+[N08] 生成全排列
+来源：http://dali.xuanzx.com/Article/details/gt2rurmbwnb.html
+
+Py:   itertools.permutations(arr)
+来源：http://dali.smart0.xyz/Article/details/gt2rbttuyeh.html
+
+PHP:  // 手写递归交换
+来源：http://dali.yuanzhike.top/Article/details/gt2yncgijwj.html
+
+JS:   // 手写回溯递归
+来源：http://dali.tanke756.top/Article/details/gt2owcklzre.html
+
+TS:   // 手写回溯递归
+来源：http://dali.yj202588.top/Article/details/gt2xiosqztv.html
+
+Java: // 手写回溯递归
+来源：http://dali.zhijiandao.cn/Article/details/gt2zyqjpwfx.html
+
+Go:   // 手写回溯递归
+来源：http://dali.cashguo.top/Article/details/gt2wzbgddmb.html
+
+Ruby: arr.permutation.to_a
+来源：http://dali.smart0.xyz/Article/details/gt2ykdcgcci.html
+
+C#:   // 手写回溯递归
+来源：http://dali.nwbrower.top/Article/details/gt2zvhysotl.html
+
+[N09] 栈与队列
+来源：http://dali.hywenlv.cn/Article/details/gt2utcqgphz.html
+
+Py:   stack.append(x) / stack.pop()；deque.popleft() 作队列
+来源：http://dali.zhijiandao.cn/Article/details/gt2lxqwnryw.html
+
+PHP:  array_push/array_pop 作栈；array_shift 作队列
+来源：http://dali.jyoumei.cn/Article/details/gt2dglwnhhj.html
+
+JS:   arr.push(x) / arr.pop() 作栈；arr.push / arr.shift 作队列
+来源：http://dali.hammf.cn/Article/details/gt2haasytwz.html
+
+TS:   arr.push(x) / arr.pop() 作栈
+来源：http://dali.aibaodan.cn/Article/details/gt2gbgalbhl.html
+
+Java: new ArrayDeque<>() 同时支持栈与队列
+来源：http://dali.fzhhl.top/Article/details/gt2nhgfappl.html
+
+Go:   append(s, x) 与 s[len(s)-1] 出栈
+来源：http://dali.nanxinkj.top/Article/details/gt2mldbdmkh.html
+
+Ruby: arr.push / arr.pop 作栈；arr.shift 作队列
+来源：http://dali.jinqigfzy.top/Article/details/gt2guowxrbf.html
+
+C#:   new Stack<T>() 与 new Queue<T>()
+来源：http://dali.ppjwa.cn/Article/details/gt2rrztwpme.html
+
+[N10] 链表节点定义
+来源：http://dali.sufxvd.cn/Article/details/gt2mfpttblz.html
+
+Py:   class Node:⏎    def __init__(self, v, nxt=None): self.v, self.next = v, nxt
+来源：http://dali.yj20258.top/Article/details/gt2cecxbseq.html
+
+PHP:  class Node { public $v; public $next = null; }
+来源：http://dali.nwbrower.top/Article/details/gt2ponfonts.html
+
+JS:   class Node { constructor(v) { this.v = v; this.next = null; } }
+来源：http://dali.jlsjyb.cn/Article/details/gt2cncjzitf.html
+
+TS:   class Node { constructor(public v: number, public next: Node | null = null) {} }
+来源：http://dali.ehwqpu.com/Article/details/gt2plynmuzk.html
+
+Java: class Node { int v; Node next; }
+来源：http://dali.chenlongwang.top/Article/details/gt2eqtuajyh.html
+
+Go:   type Node struct { V int; Next *Node }
+来源：http://dali.aibaodan.cn/Article/details/gt2nwwhttuq.html
+
+Ruby: Node = Struct.new(:v, :next)
+来源：http://dali.jianghu66.top/Article/details/gt2uciftbsm.html
+
+C#:   class Node { public int V; public Node? Next; }
+来源：http://dali.xinyue.icu/Article/details/gt2kptpimua.html
+
+[N11] 二叉树中序遍历
+来源：http://dali.sweek.top/Article/details/gt2fqfnpxem.html
+
+Py:   def inorder(n): return inorder(n.left) + [n.val] + inorder(n.right) if n else []
+来源：http://dali.xuetiantiany.cn/Article/details/gt2mijtywwe.html
+
+PHP:  // 手写递归函数
+来源：http://dali.yj20258888.top/Article/details/gt2xjpltzid.html
+
+JS:   const inorder = n => n ? [...inorder(n.left), n.val, ...inorder(n.right)] : [];
+来源：http://dali.zycfv.cn/Article/details/gt2qnxrdrdz.html
+
+TS:   const inorder = (n: T | null): number[] => n ? [...inorder(n.left), n.val, ...inorder(n.right)] : [];
+来源：http://dali.zhengqikj.top/Article/details/gt2cnaaqsxj.html
+
+Java: // 手写递归
+来源：http://dali.nwbrower.top/Article/details/gt2csupparj.html
+
+Go:   // 手写递归
+来源：http://dali.tianlin.xyz/Article/details/gt2scoygdij.html
+
+Ruby: def inorder(n) = n ? inorder(n.left) + [n.val] + inorder(n.right) : []
+来源：http://dali.cashguo.top/Article/details/gt2kymdlgma.html
+
+C#:   // 手写递归
+来源：http://dali.hywenlv.cn/Article/details/gt2imyadztm.html
+
+[N12] 动态规划：爬楼梯（每次 1 或 2 级）
+来源：http://dali.dashuyun.cn/Article/details/gt2guyobyxv.html
+
+Py:   from functools import reduce;  climb = lambda n: reduce(lambda p, _: (p[1], p[0] + p[1]), range(n), (1, 1))[0]
+来源：http://dali.guowangkeji.top/Article/details/gt2ubenzssk.html
+
+PHP:  // 递推：$a=1;$b=1;for(...){[$a,$b]=[$b,$a+$b];}
+来源：http://dali.daria6918.cn/Article/details/gt2wwxftuoi.html
+
+JS:   // 递推：let [a, b] = [1, 1]; for (let i = 0; i < n; i++) [a, b] = [b, a + b];
+来源：http://dali.yueranfly.top/Article/details/gt2oanoksao.html
+
+TS:   let [a, b] = [1, 1]; for (let i = 0; i < n; i++) [a, b] = [b, a + b];
+来源：http://dali.andypj.xyz/Article/details/gt2rwvamiey.html
+
+Java: // 递推：int a = 1, b = 1; 循环更新
+来源：http://dali.yj20258.top/Article/details/gt2hombsmdc.html
+
+Go:   // 递推：a, b := 1, 1; for i := 0; i < n; i++ { a, b = b, a+b }
+来源：http://dali.wangdashe.top/Article/details/gt2fzmwhsrf.html
+
+Ruby: a, b = 1, 1;  n.times { a, b = b, a + b }
+来源：http://dali.zhiwuduotai.top/Article/details/gt2uysaulji.html
+
+C#:   // 递推：int a = 1, b = 1; 循环更新
+来源：http://dali.jqgfzy.top/Article/details/gt2lzbaakih.html
+
+================================================================================
+来源：http://dali.haohaochexian.top/Article/details/gt2lmlterst.html
+
+O. 并发与异步
+来源：http://dali.shuidangran.top/Article/details/gt2sdiuprny.html
+
+================================================================================
+来源：http://dali.yanxiufei.cn/Article/details/gt2poxsamqz.html
+
+[O01] 启动一个线程
+来源：http://dali.mhx1999.top/Article/details/gt2okhrhtnt.html
+
+Py:   threading.Thread(target=f, args=(1,)).start()
+来源：http://dali.cdnleiting.top/Article/details/gt2ftlsndkm.html
+
+PHP:  // 无原生线程：用 pcntl_fork 或消息队列
+来源：http://dali.hfpthk.cn/Article/details/gt2xcteelkv.html
+
+JS:   // 单线程事件循环：CPU 密集用 worker_threads
+来源：http://dali.daria6918.cn/Article/details/gt2rulgolda.html
+
+TS:   // 同 JS
+来源：http://dali.jinqigfzy.top/Article/details/gt2cmqxxztp.html
+
+Java: new Thread(() -> f()).start()
+来源：http://dali.dianchejie.cn/Article/details/gt2srpzyhbw.html
+
+Go:   go f()
+来源：http://dali.yj20258.top/Article/details/gt2ckxdzgit.html
+
+Ruby: Thread.new { f }
+来源：http://dali.jlsjyb.cn/Article/details/gt2detqokuo.html
+
+C#:   Task.Run(() => F());
+来源：http://dali.xuanzx.com/Article/details/gt2zuuihcnc.html
+
+[O02] 使用线程池
+来源：http://dali.zycfv.cn/Article/details/gt2smhzuazu.html
+
+Py:   concurrent.futures.ThreadPoolExecutor(max_workers=4)
+来源：http://dali.sweek.top/Article/details/gt2rybsswdd.html
+
+PHP:  // 用 Swoole / ReactPHP 等扩展实现
+来源：http://dali.guowangkeji.top/Article/details/gt2ixdjmhfj.html
+
+JS:   // worker_threads 线程池
+来源：http://dali.yuxming.cn/Article/details/gt2rwhfscsg.html
+
+TS:   // worker_threads 线程池
+来源：http://dali.xuanzx.com/Article/details/gt2yjmwrkll.html
+
+Java: Executors.newFixedThreadPool(4)
+来源：http://dali.zhengqikj.top/Article/details/gt2ykufpieb.html
+
+Go:   // 协程轻量，无需池；限并发用带缓冲 channel 当信号量
+来源：http://dali.vqdsnc.cn/Article/details/gt2fdhzwjor.html
+
+Ruby: // 用 concurrent-ruby 的 ThreadPool
+来源：http://dali.yuanzhike.top/Article/details/gt2tfvaxjur.html
+
+C#:   Task.WhenAll(...)  或 Parallel.ForEach
+来源：http://dali.yueranfly.top/Article/details/gt2fjdcacrp.html
+
+[O03] 加锁保护共享数据
+来源：http://dali.ywan-chungtsiang.top/Article/details/gt2txdxdbhu.html
+
+Py:   with lock: shared += 1
+来源：http://dali.zhongyouzk.top/Article/details/gt2znyfbboi.html
+
+PHP:  // 用 flock() 做文件锁
+来源：http://dali.shzxlz.cn/Article/details/gt2kxfifqit.html
+
+JS:   // 单线程无需锁；跨线程共享内存用 Atomics
+来源：http://dali.0kj1m.cn/Article/details/gt2zuccoidl.html
+
+TS:   // 同 JS
+来源：http://dali.9152youxi.cn/Article/details/gt2rurdapog.html
+
+Java: synchronized (this) { shared++; }
+来源：http://dali.yueranfly.top/Article/details/gt2ofwygtmo.html
+
+Go:   mu.Lock();  defer mu.Unlock()
+来源：http://dali.yangfankeji.com/Article/details/gt2oghpgqoo.html
+
+Ruby: mutex.synchronize { shared += 1 }
+来源：http://dali.jianghu66.top/Article/details/gt2auvwzudz.html
+
+C#:   lock (gate) { shared++; }
+来源：http://dali.gogol.net.cn/Article/details/gt2jkcatzro.html
+
+[O04] 定义异步函数并等待
+来源：http://dali.pengpengdd.cyou/Article/details/gt2xsicoazb.html
+
+Py:   async def f():⏎    await g()
+来源：http://dali.pengpengdd.cyou/Article/details/gt2ozfunwfs.html
+
+PHP:  // 无原生 async：用 Fiber 或 Swoole
+来源：http://dali.cheryme.top/Article/details/gt2ztmdrxch.html
+
+JS:   async function f() { await g(); }
+来源：http://dali.gzhubu.top/Article/details/gt2thcvetwp.html
+
+TS:   async function f(): Promise<void> { await g(); }
+来源：http://dali.shanyushiyangkeji.top/Article/details/gt2ghuyilsh.html
+
+Java: // 用 CompletableFuture 或虚拟线程
+来源：http://dali.ppjwa.cn/Article/details/gt2neinxyhs.html
+
+Go:   // 无 async 关键字：直接 go 调用，用 channel 收结果
+来源：http://dali.pycfn.com/Article/details/gt2wcrbpffg.html
+
+Ruby: # 用 Fiber 或 async gem
+来源：http://dali.yj20258888.top/Article/details/gt2zgxhiugl.html
+
+C#:   async Task F() { await G(); }
+来源：http://dali.jinqigfzy.top/Article/details/gt2uyslvuae.html
+
+[O05] 并发执行并等待全部完成
+来源：http://dali.sweek.top/Article/details/gt2ekkdudji.html
+
+Py:   asyncio.gather(*tasks)
+来源：http://dali.yuxming.cn/Article/details/gt2vptoktde.html
+
+PHP:  // curl_multi 或 Amp 的 Promise\all
+来源：http://dali.havefunace.top/Article/details/gt2kwqlgxfi.html
+
+JS:   await Promise.all(tasks)
+来源：http://dali.tanke756.top/Article/details/gt2mlgtwsjc.html
+
+TS:   await Promise.all(tasks)
+来源：http://dali.svipenyu.cn/Article/details/gt2wuwbvpze.html
+
+Java: CompletableFuture.allOf(f1, f2).join()
+来源：http://dali.xuetiantiany.cn/Article/details/gt2zrjbmrzk.html
+
+Go:   sync.WaitGroup 或 errgroup.Wait()
+来源：http://dali.tian-w.cn/Article/details/gt2okscsluv.html
+
+Ruby: threads.map(&:join)
+来源：http://dali.vqdsnc.cn/Article/details/gt2rfsbuwgp.html
+
+C#:   await Task.WhenAll(t1, t2)
+来源：http://dali.fzhhl.top/Article/details/gt2aiikjmgw.html
+
+[O06] 使用进程池
+来源：http://dali.yj20258.top/Article/details/gt2lcrbswls.html
+
+Py:   concurrent.futures.ProcessPoolExecutor()
+来源：http://dali.zdqjudy.top/Article/details/gt2udweihde.html
+
+PHP:  // pcntl_fork 或多进程队列
+来源：http://dali.jqgfzy.top/Article/details/gt2nnclwusi.html
+
+JS:   // child_process / cluster 模块
+来源：http://dali.yongpay.top/Article/details/gt2nnogcokr.html
+
+TS:   // child_process / cluster 模块
+来源：http://dali.guowangkeji.top/Article/details/gt2yhstpkhn.html
+
+Java: // ForkJoinPool 或 ProcessBuilder
+来源：http://dali.smart0.xyz/Article/details/gt2exllveed.html
+
+Go:   // goroutine 已占用多核，直接并发即可
+来源：http://dali.hongshengwenyu.top/Article/details/gt2cujreyaj.html
+
+Ruby: // fork 块
+来源：http://dali.0kj1m.cn/Article/details/gt2loumnthk.html
+
+C#:   Parallel.For
+来源：http://dali.meibo888.top/Article/details/gt2kfxfjhiz.html
+
+================================================================================
+来源：http://dali.hnqzz.top/Article/details/gt2ktiblxti.html
+
+P. 常用工具函数
+来源：http://dali.shanyushiyangkeji.top/Article/details/gt2mbuaudhy.html
+
+================================================================================
+来源：http://dali.jiagoushi.top/Article/details/gt2lmcjuwgq.html
+
+[P01] 生成 UUID
+来源：http://dali.ybcxt.top/Article/details/gt2qaryfcbn.html
+
+Py:   str(uuid.uuid4())
+来源：http://dali.nwbrower.top/Article/details/gt2skbetkap.html
+
+PHP:  bin2hex(random_bytes(16));        // 或 ramsey/uuid
+来源：http://dali.cashguo.top/Article/details/gt2xnxbwusm.html
+
+JS:   crypto.randomUUID()
+来源：http://dali.iojbl.cn/Article/details/gt2mfzskkzb.html
+
+TS:   crypto.randomUUID()
+来源：http://dali.jinghuilouyu.cn/Article/details/gt2tvudbxmu.html
+
+Java: UUID.randomUUID().toString()
+来源：http://dali.havefunace.top/Article/details/gt2wwfbhwbc.html
+
+Go:   // 用 github.com/google/uuid
+来源：http://dali.tian-w.cn/Article/details/gt2pnpyfrze.html
+
+Ruby: SecureRandom.uuid
+来源：http://dali.zhaomingkeji.xyz/Article/details/gt2jwynjcqm.html
+
+C#:   Guid.NewGuid().ToString()
+来源：http://dali.316326.xyz/Article/details/gt2usecpaso.html
+
+[P02] MD5 / SHA256 摘要
+来源：http://dali.zhiwuduotai.top/Article/details/gt2vsarsudt.html
+
+Py:   hashlib.sha256(b).hexdigest();  hashlib.md5(b).hexdigest()
+来源：http://dali.jiagoushi.top/Article/details/gt2jzzvibuv.html
+
+PHP:  hash("sha256", $s);  md5($s);
+来源：http://dali.cqqwz.cn/Article/details/gt2ajpwrvmb.html
+
+JS:   crypto.createHash("sha256").update(s).digest("hex")     // Node
+来源：http://dali.iojbl.cn/Article/details/gt2cworhmpp.html
+
+TS:   crypto.createHash("sha256").update(s).digest("hex")
+来源：http://dali.tanke756.top/Article/details/gt2ghvkybna.html
+
+Java: MessageDigest.getInstance("SHA-256").digest(bytes)
+来源：http://dali.shanyushiyangtech.top/Article/details/gt2sjeutliz.html
+
+Go:   fmt.Sprintf("%x", sha256.Sum256([]byte(s)))
+来源：http://dali.hnxiangtu.top/Article/details/gt2jedpegjn.html
+
+
+<!-- 参考信息 -->

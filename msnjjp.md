@@ -1,0 +1,904 @@
+代发 wailian999
+
+[T29] Swift：guard 提前返回
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtowlcpexy.html
+
+guard let x = opt else { return }
+来源：http://dali.yueranfly.top/Article/details/gtqbzdtwap.html
+
+[T30] Swift：协议
+来源：http://dali.wangdashe.top/Article/details/gtzryvbrln.html
+
+protocol Shape { func area() -> Double }
+来源：http://dali.chenzaomai.com/Article/details/gtwspijzko.html
+
+[T31] Lua：Hello World
+来源：http://dali.birdmap.top/Article/details/gtdkdyfyqf.html
+
+print("Hello")
+来源：http://dali.snrcjt.cn/Article/details/gtxbvttckp.html
+
+[T32] Lua：局部变量
+来源：http://dali.hnxiangtu.top/Article/details/gtwayvbves.html
+
+local a = 1
+来源：http://dali.tanke756.top/Article/details/gtoydeghvg.html
+
+[T33] Lua：表（数组）
+来源：http://dali.feifeiyinyue.top/Article/details/gtxolkswwd.html
+
+local t = {1, 2, 3};  t[4] = 4
+来源：http://dali.yuanzhike.top/Article/details/gtattiwszm.html
+
+[T34] Lua：遍历表
+来源：http://dali.yj202588.top/Article/details/gtxvwoxipx.html
+
+for i, v in ipairs(t) do print(i, v) end
+来源：http://dali.0kj1m.cn/Article/details/gturynuncf.html
+
+[T35] Lua：字典表
+来源：http://dali.chenzaomai.com/Article/details/gtfxtbyoop.html
+
+local d = { a = 1 };  d.b = 2
+来源：http://dali.shuidangran.top/Article/details/gtxgdrbiyb.html
+
+[T36] Lua：函数
+来源：http://dali.guannengcc.top/Article/details/gtfdhneujc.html
+
+function add(a, b) return a + b end
+来源：http://dali.cdnleiting.top/Article/details/gtvbnlehxz.html
+
+[T37] Lua：字符串拼接
+来源：http://dali.guannengcc.top/Article/details/gtzaaelnqc.html
+
+"a" .. "b"
+来源：http://dali.chenjidiqi.icu/Article/details/gtldeogyfg.html
+
+[T38] Lua：条件
+来源：http://dali.xuetiantiany.cn/Article/details/gtrgapakni.html
+
+if x > 0 then print("正") end
+来源：http://dali.hysaishi.cn/Article/details/gtktpyqmlv.html
+
+[T39] Lua：模式匹配
+来源：http://dali.svipenyu.cn/Article/details/gtfpqhlodq.html
+
+string.find(s, "%d+")
+来源：http://dali.xylfe.cn/Article/details/gtfxfpxuzl.html
+
+[T40] Lua：元表
+来源：http://dali.316326.xyz/Article/details/gtqyjmzsll.html
+
+setmetatable({}, { __index = base })
+来源：http://dali.snrcjt.cn/Article/details/gtaincykkc.html
+
+[T41] Perl：Hello World
+来源：http://dali.chenlongwang.top/Article/details/gtjkqmhlro.html
+
+print "Hello\n";
+来源：http://dali.zycfv.cn/Article/details/gtgszmkirx.html
+
+[T42] Perl：变量类型
+来源：http://dali.yj20258.top/Article/details/gtpgrumgdm.html
+
+my $a = 1;  my @arr = (1, 2, 3);  my %h = (a => 1);
+来源：http://dali.zhongyouzk.top/Article/details/gtubcalwuh.html
+
+[T43] Perl：字符串插值
+来源：http://dali.nanxuanxn.top/Article/details/gtremmizls.html
+
+"值: $a"
+来源：http://dali.hammf.cn/Article/details/gtaymkjffe.html
+
+[T44] Perl：条件
+来源：http://dali.hnqzz.top/Article/details/gtpygceuwg.html
+
+if ($a > 0) { print "正"; }
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtruwtkwnb.html
+
+[T45] Perl：数组遍历
+来源：http://dali.shangyingyoupin.top/Article/details/gtuyirsway.html
+
+for my $x (@arr) { print $x; }
+来源：http://dali.9152youxi.cn/Article/details/gtyyvexmxh.html
+
+[T46] Perl：哈希操作
+来源：http://dali.shuidangran.top/Article/details/gtqybnuzwo.html
+
+$h{b} = 2;  for my $k (keys %h) { print "$k=$h{$k}"; }
+来源：http://dali.xuetiantiany.cn/Article/details/gtumlphyhq.html
+
+[T47] Perl：正则捕获
+来源：http://dali.fengsongda.top/Article/details/gtfmrtcyvw.html
+
+if ($s =~ /(\d+)/) { print $1; }
+来源：http://dali.shangyingyoupin.top/Article/details/gtinpzeouu.html
+
+[T48] Perl：正则替换
+来源：http://dali.guowangkeji.top/Article/details/gtqyrgqkgi.html
+
+$s =~ s/old/new/g;
+来源：http://dali.yj202588.top/Article/details/gtpvkxkvsl.html
+
+[T49] Perl：函数
+来源：http://dali.zhengqikj.top/Article/details/gtnjxxsziy.html
+
+sub add { my ($a, $b) = @_; return $a + $b; }
+来源：http://dali.shanyushiyangtech.top/Article/details/gtbqpymkug.html
+
+[T50] Perl：逐行读文件
+来源：http://dali.pycfn.com/Article/details/gtqehfrdmt.html
+
+open my $fh, "<", "a.txt" or die $!;
+来源：http://dali.shanyushiyangtech.top/Article/details/gthxclkjwe.html
+
+while (my $line = <$fh>) { print $line; }
+来源：http://dali.hnxiangtu.top/Article/details/gtwhronyfs.html
+
+[T51] Scala：Hello World
+来源：http://dali.zhixingplan.top/Article/details/gtzapeuibd.html
+
+println("Hello")
+来源：http://dali.smart0.xyz/Article/details/gticjffhhj.html
+
+[T52] Scala：变量
+来源：http://dali.316326.xyz/Article/details/gtlwyxseka.html
+
+val a = 1;  var b = 2
+来源：http://dali.jlsjyb.cn/Article/details/gtwddaupzi.html
+
+[T53] Scala：字符串插值
+来源：http://dali.yj202588.top/Article/details/gttqitnwgt.html
+
+s"值: $b"
+来源：http://dali.0kj1m.cn/Article/details/gtzngzbnhw.html
+
+[T54] Scala：集合映射
+来源：http://dali.mhx1999.top/Article/details/gtebmgdogu.html
+
+List(1, 2, 3).map(_ * 2)
+来源：http://dali.nanxinkj.top/Article/details/gtcgvjkmdo.html
+
+[T55] Scala：集合过滤
+来源：http://dali.hysaishi.cn/Article/details/gtrpirbrkz.html
+
+List(1, 2, 3).filter(_ > 1)
+来源：http://dali.shangyingyoupin.top/Article/details/gtebnmxaey.html
+
+[T56] Scala：样例类
+来源：http://dali.zhoulong.xyz/Article/details/gtkrjbioan.html
+
+case class User(name: String, age: Int)
+来源：http://dali.jinyuanbaomall.cn/Article/details/gtitxxflne.html
+
+[T57] Scala：模式匹配
+来源：http://dali.chenzaomai.com/Article/details/gthhuhnnej.html
+
+x match { case 1 => "一"; case _ => "其他" }
+来源：http://dali.jqgfzy.top/Article/details/gtnhzojrgn.html
+
+[T58] Scala：函数定义
+来源：http://dali.wangdashe.top/Article/details/gtztfcricf.html
+
+def add(a: Int, b: Int): Int = a + b
+来源：http://dali.zhoulong.xyz/Article/details/gtwobywtfd.html
+
+[T59] Scala：循环
+来源：http://dali.tianlin.xyz/Article/details/gtipjwxlbf.html
+
+for (i <- 1 to 10) println(i)
+来源：http://dali.tianlin.xyz/Article/details/gtrriurudj.html
+
+[T60] Scala：折叠
+来源：http://dali.ivvv.top/Article/details/gtboikmqzi.html
+
+List(1, 2, 3).foldLeft(0)(_ + _)
+来源：http://dali.yonumen.top/Article/details/gtneitwwgn.html
+
+================================================================================
+来源：http://dali.jqgfzy.top/Article/details/gtjhpdyoqd.html
+
+U. 高频实用片段（Python / PHP / JavaScript 各 40 条）
+来源：http://dali.c1oappe.top/Article/details/gtsgivfsdq.html
+
+================================================================================
+来源：http://dali.xuetiantiany.cn/Article/details/gtjwobljfx.html
+
+[U01] Py：创建虚拟环境
+来源：http://dali.chenlongwang.top/Article/details/gtoekrzzkg.html
+
+python -m venv .venv && source .venv/bin/activate
+来源：http://dali.aizwys.cn/Article/details/gtfhweifwm.html
+
+[U02] Py：导出 / 安装依赖
+来源：http://dali.zdqjudy.top/Article/details/gtbxbwrtqa.html
+
+pip freeze > requirements.txt;  pip install -r requirements.txt
+来源：http://dali.xuetiantiany.cn/Article/details/gtduomridd.html
+
+[U03] Py：加载 .env 配置
+来源：http://dali.andypj.xyz/Article/details/gtoivvfyuc.html
+
+from dotenv import load_dotenv; load_dotenv()
+来源：http://dali.feifeiyinyue.top/Article/details/gtyciprrwz.html
+
+[U04] Py：变量调试打印
+来源：http://dali.hnqzz.top/Article/details/gtwlkdkmqx.html
+
+print(f"{x=}")            # 输出 x=值，Python 3.8+
+来源：http://dali.tanke756.top/Article/details/gtmjzrvgiz.html
+
+[U05] Py：列表去重且保序
+来源：http://dali.fengsongda.top/Article/details/gtvejfzrix.html
+
+list(dict.fromkeys(arr))
+来源：http://dali.gzhubu.top/Article/details/gtzwugbejg.html
+
+[U06] Py：合并两个字典
+来源：http://dali.chenlongwang.top/Article/details/gtsluyavju.html
+
+{**a, **b}
+来源：http://dali.ehwqpu.com/Article/details/gtzwppfrjv.html
+
+[U07] Py：反转字典键值
+来源：http://dali.jinghuilouyu.cn/Article/details/gtsbnicnmp.html
+
+{v: k for k, v in d.items()}
+来源：http://dali.havefunace.top/Article/details/gtcauzfdgb.html
+
+[U08] Py：展平二维列表
+来源：http://dali.zhijiandao.cn/Article/details/gtdihvfqzi.html
+
+[y for x in nested for y in x]
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtgirpmqov.html
+
+[U09] Py：字典取最大值的键
+来源：http://dali.jqgfzy.top/Article/details/gtrfbfotlt.html
+
+max(d, key=d.get)
+来源：http://dali.zhengqikj.top/Article/details/gtkjipefih.html
+
+[U10] Py：按值排序字典
+来源：http://dali.gotoacloud.top/Article/details/gtepccoaui.html
+
+dict(sorted(d.items(), key=lambda kv: kv[1]))
+来源：http://dali.nwbrower.top/Article/details/gtaibnizms.html
+
+[U11] Py：生成器表达式
+来源：http://dali.jinqigufen.top/Article/details/gtnohpmwxm.html
+
+(x * 2 for x in arr)
+来源：http://dali.gotoacloud.top/Article/details/gtxhzhwtcz.html
+
+[U12] Py：取出现最多的 3 个元素
+来源：http://dali.fengsongda.top/Article/details/gtfckkajgi.html
+
+Counter(arr).most_common(3)
+来源：http://dali.zycfv.cn/Article/details/gtzhhtyjxk.html
+
+[U13] Py：固定长度队列
+来源：http://dali.jiagoushi.top/Article/details/gteedfohrb.html
+
+deque(maxlen=10)
+来源：http://dali.andypj.xyz/Article/details/gtccwwswhk.html
+
+[U14] Py：分组收集到列表
+来源：http://dali.sysykeji.top/Article/details/gtpyexoltr.html
+
+defaultdict(list)
+来源：http://dali.gzhubu.top/Article/details/gtyyvtfbhq.html
+
+[U15] Py：高精度计时
+来源：http://dali.gotoacloud.top/Article/details/gtedghwqyx.html
+
+t = time.perf_counter()
+来源：http://dali.bjfxy.top/Article/details/gtowqtjqou.html
+
+[U16] Py：命令行参数解析
+来源：http://dali.quarkkingdee.top/Article/details/gtlobangay.html
+
+ap = argparse.ArgumentParser();  ap.add_argument("--name");  args = ap.parse_args()
+来源：http://dali.yj20258.top/Article/details/gtsncyzhfh.html
+
+[U17] Py：初始化日志
+来源：http://dali.jqgfzy.top/Article/details/gttlfmogau.html
+
+logging.basicConfig(level=logging.INFO)
+来源：http://dali.daria6918.cn/Article/details/gtvqaellfy.html
+
+[U18] Py：预编译正则
+来源：http://dali.hysaishi.cn/Article/details/gtmlbremcp.html
+
+pat = re.compile(r"\d+")
+来源：http://dali.hfpthk.cn/Article/details/gtyvgnrefn.html
+
+[U19] Py：正则替换带回调
+来源：http://dali.zycfv.cn/Article/details/gtzzphfzur.html
+
+re.sub(r"\d+", lambda m: str(int(m.group()) * 2), s)
+来源：http://dali.svipenyu.cn/Article/details/gtwdcnjcjr.html
+
+[U20] Py：缓存函数结果
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtgkfhkcjo.html
+
+@functools.lru_cache(maxsize=None)
+来源：http://dali.tian-w.cn/Article/details/gtzvxfysmo.html
+
+[U21] Py：自定义上下文管理器
+来源：http://dali.ybcxt.top/Article/details/gtseurxsfc.html
+
+@contextlib.contextmanager
+来源：http://dali.cqqwz.cn/Article/details/gtzjpyoziw.html
+
+[U22] Py：矩阵转置
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtvvkxdjxg.html
+
+list(zip(*m))
+来源：http://dali.cashguo.top/Article/details/gtbifjhpyy.html
+
+[U23] Py：分块读取大文件
+来源：http://dali.gogol.net.cn/Article/details/gttiimrimk.html
+
+for chunk in iter(lambda: f.read(8192), b""):
+来源：http://dali.bjfxy.top/Article/details/gttwdxikmh.html
+
+[U24] Py：路径操作
+来源：http://dali.chenzaomai.com/Article/details/gtcqbwsqup.html
+
+Path("a/b.txt").parent.mkdir(parents=True, exist_ok=True)
+来源：http://dali.dashuyun.cn/Article/details/gtfchysqwx.html
+
+[U25] Py：CSV 按字典读
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtscvmcxte.html
+
+csv.DictReader(f)
+来源：http://dali.chenlongwang.top/Article/details/gtlceuzvzc.html
+
+[U26] Py：并发下载
+来源：http://dali.kuanghao11.cn/Article/details/gtrtxfmqll.html
+
+ThreadPoolExecutor(max_workers=8).map(fetch, urls)
+来源：http://dali.jyoumei.cn/Article/details/gtqkskdzkc.html
+
+[U27] Py：异步 HTTP
+来源：http://dali.smart0.xyz/Article/details/gtdgfljauv.html
+
+aiohttp.ClientSession() 配合 async with
+来源：http://dali.jinghuilouyu.cn/Article/details/gterwpmiss.html
+
+[U28] Py：类型别名
+来源：http://dali.jianghu66.top/Article/details/gtzkbbjvds.html
+
+UserId = int
+来源：http://dali.hammf.cn/Article/details/gtxyejjnrf.html
+
+[U29] Py：属性校验
+来源：http://dali.yongpay.top/Article/details/gtfpdenazs.html
+
+@property 与 @x.setter 配合
+来源：http://dali.yanxiufei.cn/Article/details/gtaacekfij.html
+
+[U30] Py：数据类
+来源：http://dali.nwbrower.top/Article/details/gtaehwjxry.html
+
+@dataclass(slots=True)
+来源：http://dali.fzhhl.top/Article/details/gtqrjqrweu.html
+
+[U31] Py：单测
+来源：http://dali.zhoulong.xyz/Article/details/gtvpjvqwni.html
+
+python -m pytest -q
+来源：http://dali.hysaishi.cn/Article/details/gtgjkcqqix.html
+
+[U32] Py：代码格式化
+来源：http://dali.jiagoushi.top/Article/details/gtpsyctrlg.html
+
+ruff format . && ruff check --fix .
+来源：http://dali.ydzc1.top/Article/details/gtomxezpdh.html
+
+[U33] Py：打包发布
+来源：http://dali.havefunace.top/Article/details/gtbkcespqz.html
+
+python -m build  （依赖 pyproject.toml）
+来源：http://dali.xinyue.icu/Article/details/gtjrcgtdaj.html
+
+[U34] Py：判断编码
+来源：http://dali.tanke756.top/Article/details/gtitkwulsh.html
+
+chardet.detect(raw)
+来源：http://dali.yonumen.top/Article/details/gtapsxvbid.html
+
+[U35] Py：发送邮件
+来源：http://dali.xylfe.cn/Article/details/gtvkemmbwf.html
+
+smtplib.SMTP_SSL(...).send_message(msg)
+来源：http://dali.haohaochexian.top/Article/details/gtxfagvwln.html
+
+[U36] Py：定时任务
+来源：http://dali.zhongyouzk.top/Article/details/gtqqabkfmf.html
+
+schedule.every(10).minutes.do(job)
+来源：http://dali.yuanzhike.top/Article/details/gtqfhxbuwc.html
+
+[U37] Py：读写 Excel
+来源：http://dali.aibaodan.cn/Article/details/gtqcwgeffu.html
+
+pandas.read_excel / DataFrame.to_excel
+来源：http://dali.zhengqikj.top/Article/details/gtbufsszeu.html
+
+[U38] Py：获取脚本所在目录
+来源：http://dali.jianghu66.top/Article/details/gtrnedkrzr.html
+
+Path(__file__).resolve().parent
+来源：http://dali.0kj1m.cn/Article/details/gtpgfquroj.html
+
+[U39] Py：判断是否在交互环境
+来源：http://dali.c1oappe.top/Article/details/gtwwkoigal.html
+
+sys.stdout.isatty()
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gtqlzbolly.html
+
+[U40] Py：打印到标准错误
+来源：http://dali.dianchejie.cn/Article/details/gtxlrlmrhz.html
+
+print("err", file=sys.stderr)
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtzphuqkag.html
+
+[U41] PHP：初始化 Composer 项目
+来源：http://dali.svipenyu.cn/Article/details/gttfdpwfuj.html
+
+composer init;  composer require guzzlehttp/guzzle
+来源：http://dali.sysykeji.top/Article/details/gtjvmhvywo.html
+
+[U42] PHP：PSR-4 自动加载
+来源：http://dali.ydzc1.top/Article/details/gtkcllzedm.html
+
+"autoload": { "psr-4": { "App\\": "src/" } }
+来源：http://dali.meibo888.top/Article/details/gtcnjeorju.html
+
+[U43] PHP：声明命名空间
+来源：http://dali.zhixingplan.top/Article/details/gtyztzwqya.html
+
+namespace App\Http;
+来源：http://dali.snrcjt.cn/Article/details/gtcxqczwgt.html
+
+[U44] PHP：开启严格类型
+来源：http://dali.yj202588.top/Article/details/gtjzplqwst.html
+
+declare(strict_types=1);
+来源：http://dali.hywenlv.cn/Article/details/gtjyifcjbq.html
+
+[U45] PHP：类型声明与返回类型
+来源：http://dali.fengsongda.top/Article/details/gthobwbkvs.html
+
+function add(int $a, int $b): int { return $a + $b; }
+来源：http://dali.sufxvd.cn/Article/details/gtjsisyohg.html
+
+[U46] PHP：可空类型
+来源：http://dali.hywenlv.cn/Article/details/gtbkupupbg.html
+
+?string $name = null
+来源：http://dali.jinqigufen.top/Article/details/gtfhobnvug.html
+
+[U47] PHP：联合类型
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtekqhuxkm.html
+
+int|string $id
+来源：http://dali.birdmap.top/Article/details/gtnkqibtzo.html
+
+[U48] PHP：纯枚举
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gtduxhdmrv.html
+
+enum Status: string { case Active = "active"; case Off = "off"; }
+来源：http://dali.nwbrower.top/Article/details/gthwwurvqj.html
+
+[U49] PHP：只读属性
+来源：http://dali.dashuyun.cn/Article/details/gtmqzfmunr.html
+
+public readonly string $name
+来源：http://dali.dashuyun.cn/Article/details/gtfwfmoggx.html
+
+[U50] PHP：构造器属性提升
+来源：http://dali.0kj1m.cn/Article/details/gtgmerzhlq.html
+
+public function __construct(private int $id) {}
+来源：http://dali.sweek.top/Article/details/gtcogoypbr.html
+
+[U51] PHP：数组解构
+来源：http://dali.sxryk.cn/Article/details/gtbykkrkfk.html
+
+[$a, $b] = $arr;
+来源：http://dali.jiagoushi.top/Article/details/gtdgsqafgs.html
+
+[U52] PHP：箭头函数
+来源：http://dali.tian-w.cn/Article/details/gtqaiyyfjs.html
+
+$double = fn($x) => $x * 2;
+来源：http://dali.hammf.cn/Article/details/gtahxabrwo.html
+
+[U53] PHP：空合并运算符
+来源：http://dali.zdqjudy.top/Article/details/gtabxbzyea.html
+
+$v = $a ?? $b ?? "default";
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtfqocrvjv.html
+
+[U54] PHP：空安全调用
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtgqtvfbxm.html
+
+$obj?->method()
+来源：http://dali.andypj.xyz/Article/details/gtzzfohjqk.html
+
+[U55] PHP：match 表达式
+来源：http://dali.chenzaomai.com/Article/details/gtbspeipji.html
+
+$s = match($x) { 1 => "一", default => "其他" };
+来源：http://dali.yuanzhike.top/Article/details/gtcwxorijz.html
+
+[U56] PHP：命名参数
+来源：http://dali.jinqigufen.top/Article/details/gtgigffpek.html
+
+f(a: 1, b: 2)
+来源：http://dali.fengsongda.top/Article/details/gtxlgtldyb.html
+
+[U57] PHP：字符串插值
+来源：http://dali.yonumen.top/Article/details/gthyiotvxh.html
+
+"值: {$a}"
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtmxtwuyuc.html
+
+[U58] PHP：数组三件套
+来源：http://dali.fzhhl.top/Article/details/gtyccgmzqi.html
+
+array_map($f, $a);  array_filter($a, $f);  array_reduce($a, $f, 0);
+来源：http://dali.yonumen.top/Article/details/gtmgeyhpcr.html
+
+[U59] PHP：自定义排序
+来源：http://dali.svipenyu.cn/Article/details/gtcfjfbzqf.html
+
+usort($arr, fn($a, $b) => $a["age"] <=> $b["age"]);
+来源：http://dali.zhoulong.xyz/Article/details/gtpemlafnn.html
+
+[U60] PHP：JSON 编解码
+来源：http://dali.0kj1m.cn/Article/details/gtxkstmmsy.html
+
+json_encode($d, JSON_UNESCAPED_UNICODE);  json_decode($s, true);
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtfkzjnxem.html
+
+[U61] PHP：正则
+来源：http://dali.jinqigufen.top/Article/details/gtjryesqaa.html
+
+preg_match('/(\d+)/', $s, $m);  preg_replace('/\d+/', '#', $s);
+来源：http://dali.0kj1m.cn/Article/details/gtqvwgrhow.html
+
+[U62] PHP：日期对象
+来源：http://dali.redwolf501.top/Article/details/gtaycuhdbv.html
+
+(new DateTimeImmutable())->format("Y-m-d");
+来源：http://dali.smart0.xyz/Article/details/gttqwjgmsp.html
+
+[U63] PHP：文件读写
+来源：http://dali.chenzaomai.com/Article/details/gtdcpnplhj.html
+
+file_get_contents($f);  file_put_contents($f, $data);
+来源：http://dali.hfpthk.cn/Article/details/gtoiaenrch.html
+
+[U64] PHP：目录遍历
+来源：http://dali.jyoumei.cn/Article/details/gtmadyqlpj.html
+
+glob("dir/*.php");  scandir("dir");
+来源：http://dali.daria6918.cn/Article/details/gtzggjkmot.html
+
+[U65] PHP：会话
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtlwwixsqd.html
+
+session_start();  $_SESSION["uid"] = 1;
+来源：http://dali.jinghuilouyu.cn/Article/details/gtksuqrvwp.html
+
+[U66] PHP：设置 Cookie
+来源：http://dali.mhx1999.top/Article/details/gtayllkgyw.html
+
+setcookie("token", $v, ["httponly" => true, "samesite" => "Lax"]);
+来源：http://dali.birdmap.top/Article/details/gtosqxxmvh.html
+
+[U67] PHP：处理文件上传
+来源：http://dali.sysykeji.top/Article/details/gtiimowtzu.html
+
+$_FILES["file"]["tmp_name"] 与 move_uploaded_file()
+来源：http://dali.aizwys.cn/Article/details/gtkvmdtlhq.html
+
+[U68] PHP：PDO 连接
+来源：http://dali.jyoumei.cn/Article/details/gttpthluse.html
+
+$pdo = new PDO("mysql:host=localhost;dbname=app", "root", "");
+来源：http://dali.shuidangran.top/Article/details/gtsowtdfxd.html
+
+[U69] PHP：PDO 预处理
+来源：http://dali.shzxlz.cn/Article/details/gtacpoatce.html
+
+$stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");  $stmt->execute([$id]);
+来源：http://dali.ppjwa.cn/Article/details/gtzjwipibs.html
+
+[U70] PHP：PDO 事务
+来源：http://dali.yongpay.top/Article/details/gtmyhvhlcz.html
+
+$pdo->beginTransaction();  $pdo->commit();  $pdo->rollBack();
+来源：http://dali.yvedp.cn/Article/details/gtcwpcyvfi.html
+
+[U71] PHP：抛出异常
+来源：http://dali.daria6918.cn/Article/details/gtldrnrfoc.html
+
+throw new RuntimeException("失败", 500);
+来源：http://dali.daxiang520.top/Article/details/gtzwjkahmr.html
+
+[U72] PHP：写错误日志
+来源：http://dali.cheryme.top/Article/details/gticktttnn.html
+
+error_log("失败: " . $e->getMessage());
+来源：http://dali.zhixingplan.top/Article/details/gtesimwnfg.html
+
+[U73] PHP：读取 ini 配置
+来源：http://dali.quarkkingdee.top/Article/details/gtzlupzglz.html
+
+parse_ini_file("config.ini", true)
+来源：http://dali.cucudq.cn/Article/details/gtteqdsnah.html
+
+[U74] PHP：读取环境变量
+来源：http://dali.jinyuanbaomall.cn/Article/details/gtfbcdqket.html
+
+getenv("APP_ENV") ?: "production"
+来源：http://dali.hnqzz.top/Article/details/gtnwgprrxs.html
+
+[U75] PHP：依赖注入
+来源：http://dali.xuanzx.com/Article/details/gtnqrdevkj.html
+
+composer require psr/container
+来源：http://dali.zhijiandao.cn/Article/details/gtcdlmjxau.html
+
+[U76] PHP：简单路由
+来源：http://dali.yanxiufei.cn/Article/details/gtdzhsgcqd.html
+
+$path = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+来源：http://dali.gzhubu.top/Article/details/gtpfuoznsi.html
+
+[U77] PHP：模板渲染
+来源：http://dali.yuxming.cn/Article/details/gtbsyalchz.html
+
+composer require twig/twig
+来源：http://dali.xylfe.cn/Article/details/gtsiqwmeao.html
+
+[U78] PHP：单元测试
+来源：http://dali.316326.xyz/Article/details/gterqoxrye.html
+
+composer require --dev phpunit/phpunit
+来源：http://dali.shangyingyoupin.top/Article/details/gtfdjqjhed.html
+
+[U79] PHP：静态分析
+来源：http://dali.316326.xyz/Article/details/gtcgbfqroq.html
+
+composer require --dev phpstan/phpstan
+来源：http://dali.iojbl.cn/Article/details/gtkmuwtpuz.html
+
+[U80] PHP：代码规范修复
+来源：http://dali.gzhubu.top/Article/details/gtnxmakfwq.html
+
+composer require --dev friendsofphp/php-cs-fixer
+来源：http://dali.nwbrower.top/Article/details/gtmvlhvryx.html
+
+[U81] JS：初始化项目
+来源：http://dali.yj20258.top/Article/details/gtipfotufl.html
+
+npm init -y;  npm i express
+来源：http://dali.aibaodan.cn/Article/details/gtvfnrnxyu.html
+
+[U82] JS：package.json 脚本
+来源：http://dali.zhoulong.xyz/Article/details/gttdevvvco.html
+
+"scripts": { "dev": "vite", "build": "vite build" }
+来源：http://dali.yuxming.cn/Article/details/gthqjfkdmp.html
+
+[U83] JS：ES Module 导入导出
+来源：http://dali.yvedp.cn/Article/details/gtnjdmlylv.html
+
+export const a = 1;  import { a } from "./m.js";
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gtgjpshtim.html
+
+[U84] JS：CommonJS 写法
+来源：http://dali.iojbl.cn/Article/details/gtkqhblcjs.html
+
+module.exports = { a };  const { a } = require("./m");
+来源：http://dali.zhongyouzk.top/Article/details/gtlwwdwhpd.html
+
+[U85] JS：可选链
+来源：http://dali.andypj.xyz/Article/details/gtwsiiegzq.html
+
+a?.b?.c
+来源：http://dali.dashuyun.cn/Article/details/gtbhmoqxzm.html
+
+[U86] JS：空值合并
+来源：http://dali.bjfxy.top/Article/details/gtguhbuwna.html
+
+a ?? b
+来源：http://dali.vqdsnc.cn/Article/details/gtqbbmlddy.html
+
+[U87] JS：解构默认值
+来源：http://dali.wangshuangyany.cn/Article/details/gtqiebilsz.html
+
+const { a = 1, b = 2 } = obj;
+来源：http://dali.9152youxi.cn/Article/details/gtwfmsibce.html
+
+[U88] JS：对象展开合并
+来源：http://dali.xinyue.icu/Article/details/gtmsyrdqvb.html
+
+{ ...a, ...b }
+来源：http://dali.sufxvd.cn/Article/details/gtosdopplz.html
+
+[U89] JS：数组去重
+来源：http://dali.nanxinkj.top/Article/details/gtbvnevisn.html
+
+[...new Set(arr)]
+来源：http://dali.9152youxi.cn/Article/details/gttybrdajq.html
+
+[U90] JS：数字数组排序
+来源：http://dali.fzhhl.top/Article/details/gtrlxtqwri.html
+
+[...arr].sort((a, b) => a - b)
+来源：http://dali.yuanzhike.top/Article/details/gtgcutqnwa.html
+
+[U91] JS：对象键值遍历
+来源：http://dali.dianchejie.cn/Article/details/gtwwfltdtc.html
+
+Object.entries(obj).forEach(([k, v]) => {});
+来源：http://dali.yj202588.top/Article/details/gtuskjntzz.html
+
+[U92] JS：深拷贝
+来源：http://dali.yongpay.top/Article/details/gtswonpzcz.html
+
+structuredClone(obj)
+来源：http://dali.fzhhl.top/Article/details/gtriazcyul.html
+
+[U93] JS：模板字符串
+来源：http://dali.daxiang520.top/Article/details/gtdufjxsml.html
+
+`共 ${n} 条`
+来源：http://dali.cheryme.top/Article/details/gtkexwmpqo.html
+
+[U94] JS：箭头函数
+来源：http://dali.chenzaomai.com/Article/details/gtpkrhuczj.html
+
+const double = x => x * 2;
+来源：http://dali.yj20258888.top/Article/details/gtjjlgskro.html
+
+[U95] JS：Promise 包装
+来源：http://dali.yueranfly.top/Article/details/gtvykrlqqx.html
+
+new Promise((resolve, reject) => {})
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gtlwvnarog.html
+
+[U96] JS：async/await 与异常
+来源：http://dali.zycfv.cn/Article/details/gtpiwxqnxg.html
+
+try { const d = await f(); } catch (e) { console.error(e); }
+来源：http://dali.0kj1m.cn/Article/details/gtsjyqvcfq.html
+
+[U97] JS：并发请求
+来源：http://dali.pycfn.com/Article/details/gtjlrojztg.html
+
+await Promise.all(urls.map(u => fetch(u)))
+来源：http://dali.dianchejie.cn/Article/details/gtrpdurehw.html
+
+[U98] JS：fetch 带 JSON
+来源：http://dali.feifeiyinyue.top/Article/details/gtooukbzdz.html
+
+await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(d) })
+来源：http://dali.sxryk.cn/Article/details/gtjkdwwgyq.html
+
+[U99] JS：事件监听
+来源：http://dali.yanxiufei.cn/Article/details/gtrrrylzhx.html
+
+el.addEventListener("click", e => {})
+来源：http://dali.iojbl.cn/Article/details/gtvwndxmjm.html
+
+[U100] JS：DOM 查询
+来源：http://dali.yj202588.top/Article/details/gtgpkxofhb.html
+
+document.querySelector(".item")
+来源：http://dali.havefunace.top/Article/details/gttgigonxt.html
+
+[U101] JS：classList 操作
+来源：http://dali.vqdsnc.cn/Article/details/gtzcylxcga.html
+
+el.classList.toggle("active")
+来源：http://dali.aibaodan.cn/Article/details/gtbfhqqfbb.html
+
+[U102] JS：本地存储
+来源：http://dali.birdmap.top/Article/details/gtxzcnczlx.html
+
+localStorage.setItem("k", JSON.stringify(v))
+来源：http://dali.xuanzx.com/Article/details/gtnqudxzer.html
+
+[U103] JS：定时器
+来源：http://dali.xziqi.cn/Article/details/gtqxuccsyc.html
+
+setTimeout(fn, 1000);  setInterval(fn, 1000);
+来源：http://dali.hnxiangtu.top/Article/details/gtlrqyctyy.html
+
+[U104] JS：防抖
+来源：http://dali.gzhubu.top/Article/details/gtgexzcnfs.html
+
+const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
+来源：http://dali.9152youxi.cn/Article/details/gtvkwtsday.html
+
+[U105] JS：节流
+来源：http://dali.chenlongwang.top/Article/details/gtedrlpkzk.html
+
+const throttle = (fn, ms) => { let last = 0; return (...a) => { const n = Date.now(); if (n - last >= ms) { last = n; fn(...a); } }; };
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtzenksrrj.html
+
+[U106] JS：日期格式化
+来源：http://dali.yangfankeji.com/Article/details/gtooojxtst.html
+
+new Intl.DateTimeFormat("zh-CN", { dateStyle: "medium" }).format(new Date())
+来源：http://dali.shanyushiyangtech.top/Article/details/gttdxjixuw.html
+
+[U107] JS：数字千分位
+来源：http://dali.yueranfly.top/Article/details/gtdmgkusvx.html
+
+new Intl.NumberFormat("en-US").format(1234567)
+来源：http://dali.hywenlv.cn/Article/details/gtmcrfizpx.html
+
+[U108] JS：随机整数
+来源：http://dali.redwolf501.top/Article/details/gtvmsdffqx.html
+
+Math.floor(Math.random() * (max - min + 1)) + min
+来源：http://dali.shzxlz.cn/Article/details/gtleguouvv.html
+
+[U109] JS：数组分组
+来源：http://dali.tanke756.top/Article/details/gtfzgvaoff.html
+
+Object.groupBy(arr, x => x.type)
+来源：http://dali.guowangkeji.top/Article/details/gtcsfucbyy.html
+
+[U110] JS：数组分块
+来源：http://dali.nanxinkj.top/Article/details/gtifbcmgpd.html
+
+arr.reduce((acc, x, i) => (i % size ? acc : [...acc, arr.slice(i, i + size)]), [])
+来源：http://dali.wangshuangyany.cn/Article/details/gtuhnkzpyr.html
+
+[U111] JS：对象转 Map
+来源：http://dali.chenjidiqi.icu/Article/details/gtzentbaup.html
+
+new Map(Object.entries(obj))
+来源：http://dali.zycfv.cn/Article/details/gtsjtnekat.html
+
+[U112] JS：字符串补位
+来源：http://dali.xinyue.icu/Article/details/gtrfvsibjx.html
+
+"7".padStart(3, "0")
+来源：http://dali.dashuyun.cn/Article/details/gtmvucaefq.html
+
+[U113] JS：正则替换全部
+来源：http://dali.zhiwuduotai.top/Article/details/gtcxyjoica.html
+
+s.replaceAll("a", "b")
+来源：http://dali.daxiang520.top/Article/details/gtybgvuigz.html
+
+[U114] JS：JSON 深比较
+来源：http://dali.xziqi.cn/Article/details/gtgjafztgb.html
+
+JSON.stringify(a) === JSON.stringify(b)
+来源：http://dali.jyoumei.cn/Article/details/gtyfvhldly.html
+
+[U115] JS：生成 UUID
+来源：http://dali.tanke756.top/Article/details/gtqbinbfak.html
+
+crypto.randomUUID()
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtoqalhliu.html
+
+[U116] JS：类型检查（JSDoc）
+来源：http://dali.shuidangran.top/Article/details/gtmtuertbg.html
+
+/** @param {string} name */ function f(name) {}
+来源：http://dali.jyoumei.cn/Article/details/gthqdsdkxr.html
+
+
+<!-- 参考信息 -->

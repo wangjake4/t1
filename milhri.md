@@ -1,0 +1,904 @@
+代发 wailian999
+
+[Q33] 多列分组
+来源：http://dali.feifeiyinyue.top/Article/details/gtjxdeafia.html
+
+SELECT city, gender, COUNT(*) FROM users GROUP BY city, gender;
+来源：http://dali.316326.xyz/Article/details/gtuitgclnh.html
+
+[Q34] 每组取第一条
+来源：http://dali.ivvv.top/Article/details/gtrqmqdbbm.html
+
+SELECT * FROM (
+来源：http://dali.316326.xyz/Article/details/gtzgkutodn.html
+
+SELECT *, ROW_NUMBER() OVER (PARTITION BY city ORDER BY age DESC) AS rn FROM users
+来源：http://dali.guannengcc.top/Article/details/gtadfmawqo.html
+
+) t WHERE rn = 1;
+来源：http://dali.jyoumei.cn/Article/details/gteegjkbml.html
+
+[Q35] 内连接
+来源：http://dali.shangyingyoupin.top/Article/details/gtyyqmyzcv.html
+
+SELECT u.name, o.amount FROM users u JOIN orders o ON o.user_id = u.id;
+来源：http://dali.ivvv.top/Article/details/gtwvizqmrw.html
+
+[Q36] 左连接
+来源：http://dali.hongshengwenyu.top/Article/details/gtnmgdcfvq.html
+
+SELECT u.name, o.amount FROM users u LEFT JOIN orders o ON o.user_id = u.id;
+来源：http://dali.yueranfly.top/Article/details/gtsevgevcz.html
+
+[Q37] 右连接
+来源：http://dali.nwbrower.top/Article/details/gtcvzteoee.html
+
+SELECT * FROM orders o RIGHT JOIN users u ON u.id = o.user_id;
+来源：http://dali.iojbl.cn/Article/details/gtksrmgpzl.html
+
+[Q38] 全外连接（PostgreSQL）
+来源：http://dali.jinyuanbaomall.cn/Article/details/gtkmjehaio.html
+
+SELECT * FROM a FULL OUTER JOIN b ON a.id = b.a_id;
+来源：http://dali.xziqi.cn/Article/details/gtlvywfojo.html
+
+[Q39] 自连接（查上下级）
+来源：http://dali.jinqigufen.top/Article/details/gtgrtfqtoe.html
+
+SELECT e.name, m.name AS manager FROM employees e
+来源：http://dali.smart0.xyz/Article/details/gtxvnqpjqw.html
+
+LEFT JOIN employees m ON e.manager_id = m.id;
+来源：http://dali.sufxvd.cn/Article/details/gtztcmrhhn.html
+
+[Q40] 交叉连接（笛卡尔积）
+来源：http://dali.yangfankeji.com/Article/details/gtahusqixv.html
+
+SELECT * FROM colors CROSS JOIN sizes;
+来源：http://dali.dashuyun.cn/Article/details/gtgrhinxbu.html
+
+[Q41] 多表连接
+来源：http://dali.xziqi.cn/Article/details/gtjoziinop.html
+
+SELECT o.id, u.name, p.title FROM orders o
+来源：http://dali.gzhubu.top/Article/details/gtmvqtqgxi.html
+
+JOIN users u ON u.id = o.user_id
+来源：http://dali.chenzaomai.com/Article/details/gtvfrcywuj.html
+
+JOIN products p ON p.id = o.product_id;
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtyiqgftfh.html
+
+[Q42] 连接条件附加过滤
+来源：http://dali.zhongyouzk.top/Article/details/gtxkdwvmgc.html
+
+SELECT u.name, o.amount FROM users u
+来源：http://dali.pengpengdd.cyou/Article/details/gtedrhrhfy.html
+
+JOIN orders o ON o.user_id = u.id AND o.amount > 100;
+来源：http://dali.meibo888.top/Article/details/gtzykcotlv.html
+
+[Q43] 标量子查询
+来源：http://dali.zhiwuduotai.top/Article/details/gtrysrgkls.html
+
+SELECT name, (SELECT COUNT(*) FROM orders o WHERE o.user_id = u.id) AS cnt FROM users u;
+来源：http://dali.vqdsnc.cn/Article/details/gthunmatns.html
+
+[Q44] IN 子查询
+来源：http://dali.chenzaomai.com/Article/details/gthfcfeqpq.html
+
+SELECT * FROM users WHERE id IN (SELECT user_id FROM orders);
+来源：http://dali.cheryme.top/Article/details/gtahklymbr.html
+
+[Q45] EXISTS 判断存在
+来源：http://dali.gotoacloud.top/Article/details/gtgpegkpcd.html
+
+SELECT * FROM users u WHERE EXISTS (SELECT 1 FROM orders o WHERE o.user_id = u.id);
+来源：http://dali.xylfe.cn/Article/details/gtdigpgqkd.html
+
+[Q46] NOT EXISTS 判断不存在
+来源：http://dali.daxiang520.top/Article/details/gtziwtruuf.html
+
+SELECT * FROM users u WHERE NOT EXISTS (SELECT 1 FROM orders o WHERE o.user_id = u.id);
+来源：http://dali.aizwys.cn/Article/details/gtrnpdmyap.html
+
+[Q47] 与平均值比较
+来源：http://dali.andypj.xyz/Article/details/gtosfhjbdt.html
+
+SELECT * FROM users WHERE age > (SELECT AVG(age) FROM users);
+来源：http://dali.chenzaomai.com/Article/details/gtarbrzngf.html
+
+[Q48] CTE 公用表表达式
+来源：http://dali.zhongyouzk.top/Article/details/gtvzexgfge.html
+
+WITH t AS (SELECT city, COUNT(*) AS c FROM users GROUP BY city)
+来源：http://dali.ivvv.top/Article/details/gtypcnrqak.html
+
+SELECT * FROM t WHERE c > 5;
+来源：http://dali.yj20258.top/Article/details/gtgyuawirj.html
+
+[Q49] 更新单行
+来源：http://dali.yuanzhike.top/Article/details/gtkxqnortj.html
+
+UPDATE users SET status = 1 WHERE id = 10;
+来源：http://dali.ybcxt.top/Article/details/gtxfilezeo.html
+
+[Q50] 批量更新
+来源：http://dali.pycfn.com/Article/details/gtaroronqm.html
+
+UPDATE users SET status = 2 WHERE created_at < '2024-01-01';
+来源：http://dali.mhx1999.top/Article/details/gtpchjzgve.html
+
+[Q51] 用子查询更新
+来源：http://dali.snrcjt.cn/Article/details/gtlrtyuxdc.html
+
+UPDATE users SET age = (SELECT MAX(age) FROM users) WHERE id = 1;
+来源：http://dali.ppjwa.cn/Article/details/gtwvggjmcc.html
+
+[Q52] 删除指定行
+来源：http://dali.bjfxy.top/Article/details/gtnhnfsczg.html
+
+DELETE FROM users WHERE id = 10;
+来源：http://dali.chenlongwang.top/Article/details/gtzxykvpub.html
+
+[Q53] 按条件删除
+来源：http://dali.fengsongda.top/Article/details/gtwgsestag.html
+
+DELETE FROM orders WHERE created_at < '2020-01-01';
+来源：http://dali.chenlongwang.top/Article/details/gtixelzczu.html
+
+[Q54] 清空表
+来源：http://dali.daxiang520.top/Article/details/gtqfmzprnc.html
+
+TRUNCATE TABLE logs;
+来源：http://dali.shangyingyoupin.top/Article/details/gtoqtovesm.html
+
+[Q55] 排名（并列占位）
+来源：http://dali.jiagoushi.top/Article/details/gtocgwxati.html
+
+SELECT name, RANK() OVER (ORDER BY score DESC) AS rk FROM scores;
+来源：http://dali.cheryme.top/Article/details/gtotvtxeno.html
+
+[Q56] 密集排名（并列不占位）
+来源：http://dali.yuanzhike.top/Article/details/gtagumyrmq.html
+
+SELECT name, DENSE_RANK() OVER (ORDER BY score DESC) FROM scores;
+来源：http://dali.yanxiufei.cn/Article/details/gtzfudibdo.html
+
+[Q57] 行号
+来源：http://dali.mhx1999.top/Article/details/gtlhaeiwib.html
+
+SELECT ROW_NUMBER() OVER (ORDER BY id) AS seq FROM users;
+来源：http://dali.haohaochexian.top/Article/details/gtkhqykvcu.html
+
+[Q58] 累计求和
+来源：http://dali.cdnleiting.top/Article/details/gtjnrntjpz.html
+
+SELECT id, amount, SUM(amount) OVER (ORDER BY id) AS running FROM orders;
+来源：http://dali.wangshuangyany.cn/Article/details/gtgkptvnrw.html
+
+[Q59] 分组内累计
+来源：http://dali.xuanzx.com/Article/details/gttzjlgzcs.html
+
+SELECT city, id, SUM(amount) OVER (PARTITION BY city ORDER BY id) FROM orders;
+来源：http://dali.pycfn.com/Article/details/gtdpeztbut.html
+
+[Q60] 取上一行 / 下一行
+来源：http://dali.wangshuangyany.cn/Article/details/gtgjjxvjng.html
+
+SELECT id, LAG(amount) OVER (ORDER BY id) AS prev,
+来源：http://dali.cdnleiting.top/Article/details/gtfnfwcyot.html
+
+LEAD(amount) OVER (ORDER BY id) AS next FROM orders;
+来源：http://dali.zycfv.cn/Article/details/gtypzaprzu.html
+
+[Q61] 移动平均
+来源：http://dali.0kj1m.cn/Article/details/gtmauojeqc.html
+
+SELECT id, AVG(amount) OVER (ORDER BY id ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) FROM orders;
+来源：http://dali.jinqigfzy.top/Article/details/gtiizrdlxv.html
+
+[Q62] 分组占比
+来源：http://dali.jyoumei.cn/Article/details/gtgvuaxeao.html
+
+SELECT city, COUNT(*) * 100.0 / SUM(COUNT(*)) OVER () AS pct FROM users GROUP BY city;
+来源：http://dali.yanxiufei.cn/Article/details/gtdjhngfcd.html
+
+[Q63] 开启事务
+来源：http://dali.andypj.xyz/Article/details/gtisowifil.html
+
+START TRANSACTION;                -- 或 BEGIN
+来源：http://dali.yvedp.cn/Article/details/gtbyksclsk.html
+
+[Q64] 提交事务
+来源：http://dali.ydzc1.top/Article/details/gtbqhnhoks.html
+
+COMMIT;
+来源：http://dali.shanyushiyangtech.top/Article/details/gtnyryuknj.html
+
+[Q65] 回滚事务
+来源：http://dali.zdqjudy.top/Article/details/gtcktbwbxq.html
+
+ROLLBACK;
+来源：http://dali.jqgufenzy.top/Article/details/gtizamvqgs.html
+
+[Q66] 行锁查询
+来源：http://dali.meibo888.top/Article/details/gtybxisaxn.html
+
+SELECT * FROM users WHERE id = 1 FOR UPDATE;
+来源：http://dali.gaohongyu789.top/Article/details/gtjgdcfqja.html
+
+[Q67] 设置隔离级别
+来源：http://dali.havefunace.top/Article/details/gtdyisjjjr.html
+
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+来源：http://dali.bjfxy.top/Article/details/gtijxeynsi.html
+
+[Q68] 保存点
+来源：http://dali.sufxvd.cn/Article/details/gthqjhzmzk.html
+
+SAVEPOINT sp1;
+来源：http://dali.zhongyouzk.top/Article/details/gtjzhmiyza.html
+
+ROLLBACK TO sp1;
+来源：http://dali.yvedp.cn/Article/details/gtvanfwlrc.html
+
+[Q69] 查看执行计划
+来源：http://dali.kuanghao11.cn/Article/details/gtwatisgcp.html
+
+EXPLAIN SELECT * FROM users WHERE email = 'a@a.com';
+来源：http://dali.wangdashe.top/Article/details/gtyrkkhowa.html
+
+[Q70] 更新统计信息
+来源：http://dali.yangfankeji.com/Article/details/gtlistdnxt.html
+
+ANALYZE TABLE users;
+来源：http://dali.0kj1m.cn/Article/details/gtmshhmegv.html
+
+[Q71] 查看建表语句
+来源：http://dali.jqgufenzy.top/Article/details/gtiujdjfcm.html
+
+SHOW CREATE TABLE users;          -- PostgreSQL: \d users
+来源：http://dali.hywenlv.cn/Article/details/gtnhizyuch.html
+
+[Q72] 查看索引
+来源：http://dali.pengpengdd.cyou/Article/details/gtcagmvzyz.html
+
+SHOW INDEX FROM users;
+来源：http://dali.shangyingyoupin.top/Article/details/gtgevghlxa.html
+
+[Q73] 查看表状态
+来源：http://dali.yuxming.cn/Article/details/gtdbsrlqhf.html
+
+SHOW TABLE STATUS LIKE 'users';
+来源：http://dali.jinyuanbaomall.cn/Article/details/gtbatvcevx.html
+
+[Q74] 强制使用索引
+来源：http://dali.ivvv.top/Article/details/gtrbhuhvfu.html
+
+SELECT * FROM users FORCE INDEX (idx_users_email) WHERE email = 'x';
+来源：http://dali.chenjidiqi.icu/Article/details/gtbixdsgyu.html
+
+[Q75] 日期格式化
+来源：http://dali.cdnleiting.top/Article/details/gtkgcxoacq.html
+
+SELECT DATE_FORMAT(created_at, '%Y-%m') FROM orders;
+来源：http://dali.daria6918.cn/Article/details/gtmeysacam.html
+
+-- PostgreSQL: to_char(created_at, 'YYYY-MM')
+来源：http://dali.shangyingyoupin.top/Article/details/gtuetkoqnb.html
+
+[Q76] 按天统计
+来源：http://dali.daria6918.cn/Article/details/gtlsyxiahz.html
+
+SELECT DATE(created_at) AS d, COUNT(*) FROM orders GROUP BY d;
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtfkztuqnv.html
+
+[Q77] 时间加减
+来源：http://dali.hnxiangtu.top/Article/details/gtlozgqydi.html
+
+SELECT DATE_ADD(NOW(), INTERVAL 7 DAY);   -- PostgreSQL: now() + interval '7 day'
+来源：http://dali.gzhubu.top/Article/details/gtmiheucks.html
+
+[Q78] 当前时间
+来源：http://dali.yuanzhike.top/Article/details/gtrmruxuya.html
+
+SELECT NOW(), CURDATE(), UNIX_TIMESTAMP();
+来源：http://dali.sweek.top/Article/details/gtwgcghlim.html
+
+[Q79] 字符串拼接
+来源：http://dali.xylfe.cn/Article/details/gtregexkut.html
+
+SELECT CONCAT(first_name, ' ', last_name) FROM users;   -- PostgreSQL: ||
+来源：http://dali.ybcxt.top/Article/details/gtnocamxpx.html
+
+[Q80] 字符串截取
+来源：http://dali.xuetiantiany.cn/Article/details/gtelyigydh.html
+
+SELECT SUBSTRING(name, 1, 3) FROM users;
+来源：http://dali.yonumen.top/Article/details/gtqghcdjtg.html
+
+[Q81] 字符串替换
+来源：http://dali.aibaodan.cn/Article/details/gteurdtopd.html
+
+SELECT REPLACE(name, 'a', 'b') FROM users;
+来源：http://dali.chenjidiqi.icu/Article/details/gtnrpanvrg.html
+
+[Q82] 字符长度与字节长度
+来源：http://dali.cdnleiting.top/Article/details/gtuphzmkhj.html
+
+SELECT CHAR_LENGTH(name), LENGTH(name) FROM users;
+来源：http://dali.sufxvd.cn/Article/details/gtgubzvewx.html
+
+[Q83] 大小写转换
+来源：http://dali.tianlin.xyz/Article/details/gtypkwnzps.html
+
+SELECT UPPER(name), LOWER(name) FROM users;
+来源：http://dali.feifeiyinyue.top/Article/details/gtfsbadftd.html
+
+[Q84] 去除首尾空格
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gtrtdzehsj.html
+
+SELECT TRIM(name) FROM users;
+来源：http://dali.pycfn.com/Article/details/gtvqegkpbh.html
+
+[Q85] 数值取整
+来源：http://dali.zhongyouzk.top/Article/details/gtnpyxlnzt.html
+
+SELECT ROUND(3.567, 2), CEIL(3.1), FLOOR(3.9);
+来源：http://dali.jqgufenzy.top/Article/details/gtnxwlpzrx.html
+
+[Q86] 读取 JSON 字段
+来源：http://dali.xinyue.icu/Article/details/gtpmawsiqz.html
+
+SELECT data->>'$.name' FROM t;    -- PostgreSQL: data->>'name'
+来源：http://dali.jinyuanbaomall.cn/Article/details/gtpzxfyetm.html
+
+[Q87] JSON 字段做条件
+来源：http://dali.hfpthk.cn/Article/details/gtirkqjoxs.html
+
+SELECT * FROM t WHERE JSON_EXTRACT(data, '$.age') > 18;
+来源：http://dali.fzhhl.top/Article/details/gthcopsmeq.html
+
+[Q88] 行转列（条件聚合）
+来源：http://dali.shanyushiyangtech.top/Article/details/gtspdxqmii.html
+
+SELECT SUM(CASE WHEN status = 1 THEN 1 ELSE 0 END) AS s1,
+来源：http://dali.xinyue.icu/Article/details/gtddrolhbh.html
+
+SUM(CASE WHEN status = 2 THEN 1 ELSE 0 END) AS s2 FROM users;
+来源：http://dali.daria6918.cn/Article/details/gtplrczekw.html
+
+[Q89] 判断表是否存在
+来源：http://dali.cdnleiting.top/Article/details/gthxwseohs.html
+
+SELECT COUNT(*) FROM information_schema.tables WHERE table_name = 'users';
+来源：http://dali.jlsjyb.cn/Article/details/gtkayehjkx.html
+
+[Q90] 生成序号列
+来源：http://dali.wangdashe.top/Article/details/gtylgoizac.html
+
+SELECT @i := @i + 1 AS seq, name FROM users, (SELECT @i := 0) x;
+来源：http://dali.pengpengdd.cyou/Article/details/gtfctuxjlu.html
+
+================================================================================
+来源：http://dali.jinqigfzy.top/Article/details/gtvvnlvvcw.html
+
+R. Bash 专题
+来源：http://dali.ppjwa.cn/Article/details/gtgbgpukyr.html
+
+================================================================================
+来源：http://dali.daxiang520.top/Article/details/gtwuyhqzkc.html
+
+[R01] shebang 与严格模式
+来源：http://dali.zdqjudy.top/Article/details/gtuqkaqnzu.html
+
+#!/usr/bin/env bash
+来源：http://dali.tianlin.xyz/Article/details/gtzwhjycxw.html
+
+set -euo pipefail
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtjmyzwuqj.html
+
+[R02] 变量赋值与使用
+来源：http://dali.c1oappe.top/Article/details/gteuebkajv.html
+
+name="Tom"; echo "$name"
+来源：http://dali.ehwqpu.com/Article/details/gtjwbbmovs.html
+
+[R03] 只读变量
+来源：http://dali.zhaomingkeji.xyz/Article/details/gttjleetdz.html
+
+readonly PI=3.14
+来源：http://dali.yangfankeji.com/Article/details/gtztqrktsc.html
+
+[R04] 位置参数
+来源：http://dali.yj20258888.top/Article/details/gtqogdwxlg.html
+
+echo "$0 $1 $2 | 全部: $@ | 个数: $#"
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtdjfpzxjn.html
+
+[R05] 参数默认值
+来源：http://dali.dashuyun.cn/Article/details/gtashpzivg.html
+
+name="${1:-default}"
+来源：http://dali.cqqwz.cn/Article/details/gtxarvtqpd.html
+
+[R06] 判断命令是否存在
+来源：http://dali.haohaochexian.top/Article/details/gtrfidbcug.html
+
+command -v git >/dev/null || { echo "缺少 git"; exit 1; }
+来源：http://dali.0kj1m.cn/Article/details/gtaowjenmq.html
+
+[R07] if 判断文件
+来源：http://dali.yvedp.cn/Article/details/gteuulasck.html
+
+if [[ -f "$f" ]]; then echo "是文件"; fi
+来源：http://dali.gotoacloud.top/Article/details/gthyucsijk.html
+
+[R08] 数值比较
+来源：http://dali.pycfn.com/Article/details/gtccqnbdlj.html
+
+if (( a > b )); then echo "a 更大"; fi
+来源：http://dali.yuxming.cn/Article/details/gtrhmwkpxp.html
+
+[R09] 字符串比较
+来源：http://dali.xylfe.cn/Article/details/gtttmomlfx.html
+
+if [[ "$a" == "$b" ]]; then echo "相等"; fi
+来源：http://dali.shanyushiyangtech.top/Article/details/gtcvxitddr.html
+
+[R10] 正则匹配
+来源：http://dali.sweek.top/Article/details/gtvfbctwed.html
+
+if [[ "$s" =~ ^[0-9]+$ ]]; then echo "纯数字"; fi
+来源：http://dali.xuetiantiany.cn/Article/details/gtfrexfynf.html
+
+[R11] case 多分支
+来源：http://dali.kuanghao11.cn/Article/details/gtbmbzxtyf.html
+
+case "$1" in
+来源：http://dali.zhengqikj.top/Article/details/gtnamahhhb.html
+
+start) echo "启动" ;;
+来源：http://dali.jlsjyb.cn/Article/details/gtjnmkzulo.html
+
+stop)  echo "停止" ;;
+来源：http://dali.fengsongda.top/Article/details/gtlprdayhx.html
+
+*)     echo "未知命令" ;;
+来源：http://dali.yangfankeji.com/Article/details/gtfmlkibej.html
+
+esac
+来源：http://dali.aibaodan.cn/Article/details/gtilkohnlc.html
+
+[R12] for 遍历文件
+来源：http://dali.ivvv.top/Article/details/gtishwcuqq.html
+
+for f in *.txt; do echo "$f"; done
+来源：http://dali.daxiang520.top/Article/details/gtjfayvksy.html
+
+[R13] for 计数循环
+来源：http://dali.zhongyouzk.top/Article/details/gtouxxakvf.html
+
+for i in {1..10}; do echo "$i"; done
+来源：http://dali.gaohongyu789.top/Article/details/gtrgzcemfl.html
+
+[R14] C 风格 for
+来源：http://dali.xuanzx.com/Article/details/gtavjqblqa.html
+
+for ((i = 0; i < 10; i++)); do echo "$i"; done
+来源：http://dali.chenjidiqi.icu/Article/details/gtzzqgpwgd.html
+
+[R15] while 逐行读文件
+来源：http://dali.feifeiyinyue.top/Article/details/gtyokvlukj.html
+
+while IFS= read -r line; do echo "$line"; done < file.txt
+来源：http://dali.ppjwa.cn/Article/details/gtftnaurwr.html
+
+[R16] until 等待条件
+来源：http://dali.zhoulong.xyz/Article/details/gteluuvkzi.html
+
+until [[ -f done.flag ]]; do sleep 1; done
+来源：http://dali.shanyushiyangtech.top/Article/details/gtligrfwst.html
+
+[R17] 数组定义与取值
+来源：http://dali.aibaodan.cn/Article/details/gtgicsfioq.html
+
+arr=(a b c); echo "${arr[0]}"
+来源：http://dali.hfpthk.cn/Article/details/gtppuuusrr.html
+
+[R18] 遍历数组
+来源：http://dali.andypj.xyz/Article/details/gtaqxjupum.html
+
+for x in "${arr[@]}"; do echo "$x"; done
+来源：http://dali.jyoumei.cn/Article/details/gtfpbgnsli.html
+
+[R19] 数组长度
+来源：http://dali.zdqjudy.top/Article/details/gtoiegvmct.html
+
+echo "${#arr[@]}"
+来源：http://dali.chenlongwang.top/Article/details/gtckpraayd.html
+
+[R20] 关联数组（字典）
+来源：http://dali.nanxuanxn.top/Article/details/gtyjbaurqw.html
+
+declare -A m; m[k]=v; echo "${m[k]}"
+来源：http://dali.zhoulong.xyz/Article/details/gtbhbhgcry.html
+
+[R21] 字符串长度
+来源：http://dali.birdmap.top/Article/details/gtngnqjmuk.html
+
+echo "${#s}"
+来源：http://dali.guannengcc.top/Article/details/gtivlirdby.html
+
+[R22] 截取子串
+来源：http://dali.cucudq.cn/Article/details/gtdygtyinv.html
+
+echo "${s:0:5}"
+来源：http://dali.hfpthk.cn/Article/details/gtvwnaodlk.html
+
+[R23] 字符串替换
+来源：http://dali.shuidangran.top/Article/details/gtlimrtqvh.html
+
+echo "${s/old/new}"; echo "${s//old/new}"    # 后者全部替换
+来源：http://dali.chenlongwang.top/Article/details/gttbqgxkfe.html
+
+[R24] 大小写转换
+来源：http://dali.havefunace.top/Article/details/gtdshjttvo.html
+
+echo "${s^^}"; echo "${s,,}"
+来源：http://dali.zhongyouzk.top/Article/details/gtrfhncrey.html
+
+[R25] 去后缀 / 去前缀
+来源：http://dali.ppjwa.cn/Article/details/gtzrhrtbpt.html
+
+echo "${f%.txt}"; echo "${f#./}"
+来源：http://dali.zycfv.cn/Article/details/gtznkvhnmc.html
+
+[R26] 命令替换
+来源：http://dali.jinqigufen.top/Article/details/gtjtijuupj.html
+
+now=$(date +%F); echo "$now"
+来源：http://dali.zhijiandao.cn/Article/details/gtwrtanmfd.html
+
+[R27] 算术展开
+来源：http://dali.shangyingyoupin.top/Article/details/gtokjoahhu.html
+
+echo $((1 + 2 * 3))
+来源：http://dali.shangyingyoupin.top/Article/details/gtqesphwit.html
+
+[R28] 浮点运算
+来源：http://dali.yj20258888.top/Article/details/gtyvofbnmk.html
+
+echo "scale=2; 10/3" | bc
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtnhricquz.html
+
+[R29] 定义函数
+来源：http://dali.smart0.xyz/Article/details/gtxkxmsfih.html
+
+add() { echo $(($1 + $2)); }; add 1 2
+来源：http://dali.daxiang520.top/Article/details/gtcpvnadxv.html
+
+[R30] 函数返回状态码
+来源：http://dali.hammf.cn/Article/details/gtczeneuya.html
+
+f() { return 0; }; f || echo "失败了"
+来源：http://dali.yueranfly.top/Article/details/gtelsrvlmx.html
+
+[R31] 局部变量
+来源：http://dali.shuidangran.top/Article/details/gtypiessjc.html
+
+f() { local x=1; echo "$x"; }
+来源：http://dali.yonumen.top/Article/details/gtbveswiep.html
+
+[R32] 参数个数校验
+来源：http://dali.yangfankeji.com/Article/details/gtmrqyzdem.html
+
+[[ $# -lt 2 ]] && { echo "用法: $0 a b"; exit 1; }
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtsikhopbb.html
+
+[R33] 捕获错误并提示行号
+来源：http://dali.xuanzx.com/Article/details/gtgmjkksrs.html
+
+trap 'echo "出错于第 $LINENO 行"' ERR
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtjraeocoz.html
+
+[R34] 退出时清理
+来源：http://dali.yuxming.cn/Article/details/gtzgazmwmk.html
+
+trap 'rm -f "$tmp"' EXIT
+来源：http://dali.quarkkingdee.top/Article/details/gtyodinbqu.html
+
+[R35] 后台执行并等待
+来源：http://dali.shuidangran.top/Article/details/gtjxgdlvrg.html
+
+sleep 5 & pid=$!; wait "$pid"
+来源：http://dali.cqqwz.cn/Article/details/gtfbrhaqjm.html
+
+[R36] 并发执行多个任务
+来源：http://dali.wangshuangyany.cn/Article/details/gtrsxuxpse.html
+
+for i in 1 2 3; do (sleep 1; echo "$i") & done; wait
+来源：http://dali.daria6918.cn/Article/details/gtnmuertkp.html
+
+[R37] 把输出赋给变量
+来源：http://dali.cheryme.top/Article/details/gtmldwwihg.html
+
+files=$(ls -1)
+来源：http://dali.quarkkingdee.top/Article/details/gtwxyhiens.html
+
+[R38] 管道串联
+来源：http://dali.0kj1m.cn/Article/details/gtirfanric.html
+
+cat a.txt | grep -i error | wc -l
+来源：http://dali.jinyuanbaomall.cn/Article/details/gtkusxqlsv.html
+
+[R39] 重定向标准输出与错误
+来源：http://dali.hammf.cn/Article/details/gtiwndzxeb.html
+
+cmd > out.log 2>&1
+来源：http://dali.dianchejie.cn/Article/details/gtcbezzcyi.html
+
+[R40] 追加写日志
+来源：http://dali.hongshengwenyu.top/Article/details/gtyecklvsd.html
+
+echo "log" >> out.log
+来源：http://dali.smart0.xyz/Article/details/gtsyeyouqg.html
+
+[R41] 丢弃输出
+来源：http://dali.nanxuanxn.top/Article/details/gtmpcjgviq.html
+
+cmd >/dev/null 2>&1
+来源：http://dali.9152youxi.cn/Article/details/gtmjqkjkaw.html
+
+[R42] 输入重定向
+来源：http://dali.cheryme.top/Article/details/gtygmdaorb.html
+
+wc -l < a.txt
+来源：http://dali.jinghuilouyu.cn/Article/details/gtdmvxmiqf.html
+
+[R43] 按名字查找文件
+来源：http://dali.pengpengdd.cyou/Article/details/gturomtbqw.html
+
+find . -name "*.log" -type f
+来源：http://dali.daxiang520.top/Article/details/gtikdnktlx.html
+
+[R44] 按修改时间查找
+来源：http://dali.dianchejie.cn/Article/details/gtjvedcmby.html
+
+find . -mtime -7 -type f
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtkmjovnhw.html
+
+[R45] 批量删除
+来源：http://dali.jyoumei.cn/Article/details/gtqctgsqdu.html
+
+find . -name "*.tmp" -delete
+来源：http://dali.hongshengwenyu.top/Article/details/gtygfuyjqu.html
+
+[R46] 递归替换文件内容
+来源：http://dali.xinyue.icu/Article/details/gtyxmxsayq.html
+
+grep -rl 'old' . | xargs sed -i 's/old/new/g'
+来源：http://dali.aibaodan.cn/Article/details/gtpjylkrch.html
+
+[R47] sed 单行替换
+来源：http://dali.sxryk.cn/Article/details/gtrgltkuup.html
+
+sed -i 's/foo/bar/g' a.txt
+来源：http://dali.cashguo.top/Article/details/gtgfvkuxsp.html
+
+[R48] awk 取指定列
+来源：http://dali.ppjwa.cn/Article/details/gttpmutfcj.html
+
+awk '{print $1, $3}' a.txt
+来源：http://dali.jiagoushi.top/Article/details/gteppqikee.html
+
+[R49] awk 带条件
+来源：http://dali.bjfxy.top/Article/details/gtxibwpjox.html
+
+awk -F, '$3 > 100 {print $1}' a.csv
+来源：http://dali.c1oappe.top/Article/details/gtxxdyqugi.html
+
+[R50] awk 求和
+来源：http://dali.cashguo.top/Article/details/gttyizieji.html
+
+awk '{s += $2} END {print s}' a.txt
+来源：http://dali.9152youxi.cn/Article/details/gtqlydncex.html
+
+[R51] 排序去重取前几
+来源：http://dali.nwbrower.top/Article/details/gtuiyhbqsl.html
+
+sort a.txt | uniq -c | sort -rn | head
+来源：http://dali.xinyue.icu/Article/details/gtuvqhfvle.html
+
+[R52] 统计行数
+来源：http://dali.sweek.top/Article/details/gtbtvznnrt.html
+
+wc -l a.txt
+来源：http://dali.xziqi.cn/Article/details/gtplggwfpo.html
+
+[R53] 查看文件头与实时尾
+来源：http://dali.ppjwa.cn/Article/details/gtaohmsrfk.html
+
+head -n 20 a.txt;  tail -f -n 100 app.log
+来源：http://dali.xziqi.cn/Article/details/gtohxfjvbf.html
+
+[R54] 比较两个文件
+来源：http://dali.xylfe.cn/Article/details/gtunognrkc.html
+
+diff a.txt b.txt
+来源：http://dali.9152youxi.cn/Article/details/gtiicxjoml.html
+
+[R55] 压缩与解压
+来源：http://dali.ydzc1.top/Article/details/gtmymueorr.html
+
+tar -czf x.tar.gz dir/;  tar -xzf x.tar.gz
+来源：http://dali.yangfankeji.com/Article/details/gtamjitznm.html
+
+[R56] 远程拷贝
+来源：http://dali.hfpthk.cn/Article/details/gtmdxmjjwz.html
+
+scp file user@host:/path/
+来源：http://dali.hongshengwenyu.top/Article/details/gtqmkubytj.html
+
+[R57] 远程执行命令
+来源：http://dali.jlsjyb.cn/Article/details/gtlzsxovne.html
+
+ssh user@host 'uptime'
+来源：http://dali.zdqjudy.top/Article/details/gthempyxmh.html
+
+[R58] 下载文件
+来源：http://dali.yanxiufei.cn/Article/details/gtjqxqekcu.html
+
+curl -LO https://a.com/file.zip;  wget https://a.com/file.zip
+来源：http://dali.dashuyun.cn/Article/details/gtgcuzkjnw.html
+
+[R59] 发 POST JSON
+来源：http://dali.sxryk.cn/Article/details/gtdccknrgt.html
+
+curl -X POST -H 'Content-Type: application/json' -d '{"a":1}' https://api.example.com
+来源：http://dali.svipenyu.cn/Article/details/gtdzkxlcbm.html
+
+[R60] 只看 HTTP 状态码
+来源：http://dali.zhongyouzk.top/Article/details/gtigxklwzi.html
+
+curl -s -o /dev/null -w "%{http_code}\n" https://a.com
+来源：http://dali.meibo888.top/Article/details/gtiulufjpw.html
+
+[R61] 磁盘占用
+来源：http://dali.snrcjt.cn/Article/details/gtxlxacvew.html
+
+df -h;  du -sh *
+来源：http://dali.c1oappe.top/Article/details/gtcjzckchd.html
+
+[R62] 找最占空间的文件
+来源：http://dali.fengsongda.top/Article/details/gtuglvejqm.html
+
+du -ah . | sort -rh | head -10
+来源：http://dali.yj20258.top/Article/details/gtwonbiosv.html
+
+[R63] 内存与进程
+来源：http://dali.yuanzhike.top/Article/details/gthqcodjui.html
+
+free -h;  ps aux | grep nginx
+来源：http://dali.jqgfzy.top/Article/details/gtoatvnqgk.html
+
+[R64] 结束进程
+来源：http://dali.wangshuangyany.cn/Article/details/gtlxwcokib.html
+
+kill -9 $(pgrep -f app.py)
+来源：http://dali.zhoulong.xyz/Article/details/gtfxjulhul.html
+
+[R65] 查看端口占用
+来源：http://dali.wangshuangyany.cn/Article/details/gtituxhxgt.html
+
+ss -tlnp | grep 8080;  lsof -i:8080
+来源：http://dali.xziqi.cn/Article/details/gtkwbeggkj.html
+
+[R66] 定时任务
+来源：http://dali.shzxlz.cn/Article/details/gtouanfrdw.html
+
+crontab -e;  crontab -l
+来源：http://dali.vqdsnc.cn/Article/details/gthcbzusdz.html
+
+[R67] 生成随机十六进制串
+来源：http://dali.yongpay.top/Article/details/gtcmfebsam.html
+
+openssl rand -hex 16
+来源：http://dali.redwolf501.top/Article/details/gthkyvexgb.html
+
+[R68] 计算文件校验值
+来源：http://dali.cdnleiting.top/Article/details/gtcrhddasi.html
+
+sha256sum a.txt;  md5sum a.txt
+来源：http://dali.yonumen.top/Article/details/gtxshtpbxp.html
+
+[R69] 生成随机密码
+来源：http://dali.bjfxy.top/Article/details/gtfbaznmtz.html
+
+head -c 16 /dev/urandom | base64
+来源：http://dali.9152youxi.cn/Article/details/gtyclkjsgo.html
+
+[R70] 时间戳与互转
+来源：http://dali.svipenyu.cn/Article/details/gtpccehhit.html
+
+date +%s;  date -d @1700000000
+来源：http://dali.tian-w.cn/Article/details/gtuuljkkfv.html
+
+[R71] 日期格式化
+来源：http://dali.shzxlz.cn/Article/details/gtmjmihesv.html
+
+date +"%Y-%m-%d %H:%M:%S"
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gtvbjcrqfo.html
+
+[R72] 等待端口就绪
+来源：http://dali.haohaochexian.top/Article/details/gtdyogyqnm.html
+
+until nc -z localhost 3306; do sleep 1; done
+来源：http://dali.jianghu66.top/Article/details/gtkiljwfte.html
+
+[R73] 分割大日志
+来源：http://dali.zhengqikj.top/Article/details/gtdhsmxrjq.html
+
+split -l 1000 big.log part_
+来源：http://dali.xinyue.icu/Article/details/gtxutotnph.html
+
+[R74] 批量重命名
+来源：http://dali.jinqigufen.top/Article/details/gtekwerkpb.html
+
+for f in *.jpeg; do mv "$f" "${f%.jpeg}.jpg"; done
+来源：http://dali.aizwys.cn/Article/details/gtpdagnbab.html
+
+[R75] 导出环境变量
+来源：http://dali.316326.xyz/Article/details/gtcqobqmyt.html
+
+export PATH="$HOME/bin:$PATH"
+来源：http://dali.zhixingplan.top/Article/details/gtdrnommpr.html
+
+[R76] 使用临时文件
+来源：http://dali.nanxuanxn.top/Article/details/gtclldfotx.html
+
+tmp=$(mktemp); trap 'rm -f "$tmp"' EXIT
+来源：http://dali.pycfn.com/Article/details/gtcweodqpz.html
+
+[R77] 读取用户输入
+来源：http://dali.yanxiufei.cn/Article/details/gtdvdmpcpp.html
+
+read -rp "请输入: " ans
+来源：http://dali.ivvv.top/Article/details/gttltvgsdl.html
+
+[R78] 交互式菜单
+来源：http://dali.aizwys.cn/Article/details/gtdeyxguwc.html
+
+select opt in a b c; do echo "$opt"; break; done
+来源：http://dali.zhixingplan.top/Article/details/gtykulhbbf.html
+
+[R79] 解析命令行选项
+来源：http://dali.iojbl.cn/Article/details/gtovidxxcg.html
+
+while getopts "v:f:" o; do case $o in v) V=$OPTARG ;; f) F=$OPTARG ;; esac; done
+来源：http://dali.yuanzhike.top/Article/details/gtxzmgtnjk.html
+
+[R80] 查看脚本执行耗时
+来源：http://dali.cdnleiting.top/Article/details/gtspnkifyl.html
+
+time ./run.sh
+来源：http://dali.xinyue.icu/Article/details/gteuvnnkmp.html
+
+================================================================================
+来源：http://dali.hnxiangtu.top/Article/details/gtmzkngjug.html
+
+S. C / C++ 专题
+来源：http://dali.feifeiyinyue.top/Article/details/gtbnefxfxk.html
+
+================================================================================
+来源：http://dali.yj20258888.top/Article/details/gtbdnansmu.html
+
+[S01] C：Hello World
+来源：http://dali.zhongyouzk.top/Article/details/gttczpxeuq.html
+
+#include <stdio.h>
+来源：http://dali.dashuyun.cn/Article/details/gtgwlvucer.html
+
+
+<!-- 参考信息 -->

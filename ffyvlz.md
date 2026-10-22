@@ -1,0 +1,904 @@
+代发 wailian999
+
+C#:   (int)'A'; (char)65
+来源：http://dali.yj20258888.top/Article/details/gtwyxaefva.html
+
+[A19] 交换两个变量
+来源：http://dali.gzhubu.top/Article/details/gtvrndjrnn.html
+
+Py:   a, b = b, a
+来源：http://dali.zhongyouzk.top/Article/details/gtgntpylkd.html
+
+PHP:  [$a, $b] = [$b, $a];
+来源：http://dali.tianlin.xyz/Article/details/gtfkkxfvgh.html
+
+JS:   [a, b] = [b, a];
+来源：http://dali.0kj1m.cn/Article/details/gtmkivbdgz.html
+
+TS:   [a, b] = [b, a];
+来源：http://dali.fzhhl.top/Article/details/gtavbhfuhb.html
+
+Java: int t = a; a = b; b = t;
+来源：http://dali.wangshuangyany.cn/Article/details/gttxmuyvjl.html
+
+Go:   a, b = b, a
+来源：http://dali.cqqwz.cn/Article/details/gtmsetftrd.html
+
+Ruby: a, b = b, a
+来源：http://dali.iojbl.cn/Article/details/gtpfkoudmh.html
+
+C#:   (a, b) = (b, a);
+来源：http://dali.tanke756.top/Article/details/gtnkfrddej.html
+
+[A20] 读取标准输入
+来源：http://dali.fengsongda.top/Article/details/gtnodvsaeu.html
+
+Py:   name = input("请输入：")
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtovukmzlk.html
+
+PHP:  $name = trim(fgets(STDIN));
+来源：http://dali.tanke756.top/Article/details/gtwzoyibrc.html
+
+JS:   // Node.js：readline 模块或 process.stdin
+来源：http://dali.yj202588.top/Article/details/gtaanbehpe.html
+
+TS:   // Node.js：readline 模块
+来源：http://dali.zhijiandao.cn/Article/details/gtfjqqzwve.html
+
+Java: new Scanner(System.in).nextLine()
+来源：http://dali.cqqwz.cn/Article/details/gtdikdmjkr.html
+
+Go:   fmt.Scanln(&name)               // 或 bufio.NewReader(os.Stdin)
+来源：http://dali.hnqzz.top/Article/details/gtyahzqoet.html
+
+Ruby: gets.chomp
+来源：http://dali.zhixingplan.top/Article/details/gtpipxyzdl.html
+
+C#:   Console.ReadLine();
+来源：http://dali.zhoulong.xyz/Article/details/gtlbuehzcu.html
+
+[A21] 保留指定小数位输出
+来源：http://dali.jyoumei.cn/Article/details/gtydasoabf.html
+
+Py:   f"{3.14159:.2f}"
+来源：http://dali.aizwys.cn/Article/details/gtmdwzxlgd.html
+
+PHP:  number_format(3.14159, 2); sprintf("%.2f", 3.14159)
+来源：http://dali.ehwqpu.com/Article/details/gtngzcpsfh.html
+
+JS:   (3.14159).toFixed(2)
+来源：http://dali.redwolf501.top/Article/details/gtqjvwsxqz.html
+
+TS:   (3.14159).toFixed(2)
+来源：http://dali.bjfxy.top/Article/details/gtibsjvwqk.html
+
+Java: String.format("%.2f", 3.14159)
+来源：http://dali.aizwys.cn/Article/details/gtmkjzzywp.html
+
+Go:   fmt.Sprintf("%.2f", 3.14159)
+来源：http://dali.pycfn.com/Article/details/gttndfgxui.html
+
+Ruby: format("%.2f", 3.14159)
+来源：http://dali.yuxming.cn/Article/details/gtnrkrqhwf.html
+
+C#:   3.14159.ToString("F2")
+来源：http://dali.dianchejie.cn/Article/details/gtlxzptepe.html
+
+[A22] 获取字符串长度
+来源：http://dali.ydzc1.top/Article/details/gtjjjwlzlh.html
+
+Py:   len(s)
+来源：http://dali.snrcjt.cn/Article/details/gtnqavnafd.html
+
+PHP:  strlen($s); mb_strlen($s, "UTF-8")   # 中文要用 mb_
+来源：http://dali.tianlin.xyz/Article/details/gtgnnxfzqr.html
+
+JS:   s.length                          # 按 UTF-16 单元计
+来源：http://dali.jqgufenzy.top/Article/details/gtgqmrajrs.html
+
+TS:   s.length
+来源：http://dali.jinyuanbaomall.cn/Article/details/gtfzbfmreh.html
+
+Java: s.length()
+来源：http://dali.ppjwa.cn/Article/details/gtbztmyoah.html
+
+Go:   len(s); utf8.RuneCountInString(s)
+来源：http://dali.tianlin.xyz/Article/details/gtputsysei.html
+
+Ruby: s.length
+来源：http://dali.yj20258.top/Article/details/gtofhbcohd.html
+
+C#:   s.Length
+来源：http://dali.0kj1m.cn/Article/details/gtiytqlucr.html
+
+[A23] 大小写转换
+来源：http://dali.zhengqikj.top/Article/details/gtvspwlszg.html
+
+Py:   s.upper(); s.lower(); s.title()
+来源：http://dali.xuanzx.com/Article/details/gtmegsjgnh.html
+
+PHP:  strtoupper($s); strtolower($s); ucfirst($s)
+来源：http://dali.wangdashe.top/Article/details/gtayzlfwko.html
+
+JS:   s.toUpperCase(); s.toLowerCase()
+来源：http://dali.yuxming.cn/Article/details/gtdxbclrgb.html
+
+TS:   s.toUpperCase(); s.toLowerCase()
+来源：http://dali.jinyuanbaomall.cn/Article/details/gteqdtppsm.html
+
+Java: s.toUpperCase(); s.toLowerCase()
+来源：http://dali.9152youxi.cn/Article/details/gtnbtmgqbs.html
+
+Go:   strings.ToUpper(s); strings.ToLower(s)
+来源：http://dali.hammf.cn/Article/details/gtnuqafnth.html
+
+Ruby: s.upcase; s.downcase; s.capitalize
+来源：http://dali.yueranfly.top/Article/details/gtcuqwrgcs.html
+
+C#:   s.ToUpper(); s.ToLower()
+来源：http://dali.svipenyu.cn/Article/details/gtcrgsaztq.html
+
+[A24] 去除首尾空白
+来源：http://dali.shangyingyoupin.top/Article/details/gtoyhiuwsk.html
+
+Py:   s.strip(); s.lstrip(); s.rstrip()
+来源：http://dali.quarkkingdee.top/Article/details/gtndacwzgc.html
+
+PHP:  trim($s); ltrim($s); rtrim($s)
+来源：http://dali.guannengcc.top/Article/details/gtbzowcrfu.html
+
+JS:   s.trim(); s.trimStart(); s.trimEnd()
+来源：http://dali.zhiwuduotai.top/Article/details/gtsgkdbeyz.html
+
+TS:   s.trim(); s.trimStart(); s.trimEnd()
+来源：http://dali.pengpengdd.cyou/Article/details/gtkuvlafcd.html
+
+Java: s.trim(); s.strip()             # strip 支持 Unicode
+来源：http://dali.ybcxt.top/Article/details/gtrvckpyyi.html
+
+Go:   strings.TrimSpace(s)
+来源：http://dali.chenlongwang.top/Article/details/gtcodpufft.html
+
+Ruby: s.strip; s.lstrip; s.rstrip
+来源：http://dali.jqgufenzy.top/Article/details/gtuaxfslvw.html
+
+C#:   s.Trim(); s.TrimStart(); s.TrimEnd()
+来源：http://dali.ydzc1.top/Article/details/gtbhrrpxys.html
+
+[A25] 字符串比较
+来源：http://dali.snrcjt.cn/Article/details/gtgcnthfzg.html
+
+Py:   s1 == s2; s1 != s2
+来源：http://dali.fzhhl.top/Article/details/gtnfuktdrn.html
+
+PHP:  $s1 === $s2; strcmp($s1, $s2)
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtwrfbaxol.html
+
+JS:   s1 === s2; s1.localeCompare(s2)
+来源：http://dali.jqgfzy.top/Article/details/gtbblhjyyv.html
+
+TS:   s1 === s2; s1.localeCompare(s2)
+来源：http://dali.zhongyouzk.top/Article/details/gtpofnuqpb.html
+
+Java: s1.equals(s2); s1.compareTo(s2)
+来源：http://dali.sufxvd.cn/Article/details/gtfbdifhiv.html
+
+Go:   s1 == s2; strings.Compare(s1, s2)
+来源：http://dali.cheryme.top/Article/details/gttmwjsnxu.html
+
+Ruby: s1 == s2; s1 <=> s2
+来源：http://dali.chenjidiqi.icu/Article/details/gtmvrvouow.html
+
+C#:   s1 == s2; string.Compare(s1, s2)
+来源：http://dali.bjfxy.top/Article/details/gtqenqgzyf.html
+
+[A26] 类型转换总览
+来源：http://dali.shanyushiyangtech.top/Article/details/gtmabvsdwq.html
+
+Py:   int() float() str() bool() list() dict() tuple()
+来源：http://dali.jqgufenzy.top/Article/details/gttmqktmwy.html
+
+PHP:  (int) (float) (string) (bool) (array) (object)
+来源：http://dali.daxiang520.top/Article/details/gttxiwodhj.html
+
+JS:   Number() String() Boolean() parseInt() parseFloat()
+来源：http://dali.haohaochexian.top/Article/details/gtnhstdpme.html
+
+TS:   Number() String() Boolean() x as number
+来源：http://dali.hfpthk.cn/Article/details/gtjtefkbdi.html
+
+Java: Integer.parseInt() String.valueOf() (int) (double)
+来源：http://dali.bjfxy.top/Article/details/gtgeqybton.html
+
+Go:   int() float64() string() []byte()   // 需显式转换
+来源：http://dali.316326.xyz/Article/details/gtziyxdjki.html
+
+Ruby: to_i to_f to_s to_sym to_a
+来源：http://dali.tian-w.cn/Article/details/gtbzgshoql.html
+
+C#:   Convert.ToInt32() Convert.ToString() (int) (double)
+来源：http://dali.nanxuanxn.top/Article/details/gtdmukfqsp.html
+
+================================================================================
+来源：http://dali.iojbl.cn/Article/details/gtqkqwvjky.html
+
+B. 流程控制
+来源：http://dali.hnqzz.top/Article/details/gteqpcwenx.html
+
+================================================================================
+来源：http://dali.fzhhl.top/Article/details/gtsoskdinc.html
+
+[B01] 条件判断 if / else
+来源：http://dali.aibaodan.cn/Article/details/gtvxmqnwjc.html
+
+Py:   result = "正" if x > 0 else "非正"
+来源：http://dali.daria6918.cn/Article/details/gtvzaeeyog.html
+
+PHP:  if ($x > 0) { $r = "正"; } else { $r = "非正"; }
+来源：http://dali.yvedp.cn/Article/details/gtzqabculs.html
+
+JS:   const r = x > 0 ? "正" : "非正";
+来源：http://dali.zdqjudy.top/Article/details/gtviskqego.html
+
+TS:   const r = x > 0 ? "正" : "非正";
+来源：http://dali.tianlin.xyz/Article/details/gtajoqwosv.html
+
+Java: String r = x > 0 ? "正" : "非正";
+来源：http://dali.yuanzhike.top/Article/details/gtsqsqnspl.html
+
+Go:   if x > 0 { r = "正" } else { r = "非正" }
+来源：http://dali.svipenyu.cn/Article/details/gtaklvadur.html
+
+Ruby: r = x > 0 ? "正" : "非正"
+来源：http://dali.sufxvd.cn/Article/details/gtdpzftsgn.html
+
+C#:   var r = x > 0 ? "正" : "非正";
+来源：http://dali.nwbrower.top/Article/details/gtotchehly.html
+
+[B02] 多分支 else if / elif
+来源：http://dali.chenjidiqi.icu/Article/details/gtksyjjusi.html
+
+Py:   s = "正" if x > 0 else ("负" if x < 0 else "零")
+来源：http://dali.sysykeji.top/Article/details/gtfvqnlhbt.html
+
+PHP:  if ($x > 0) { $s = "正"; } elseif ($x < 0) { $s = "负"; } else { $s = "零"; }
+来源：http://dali.snrcjt.cn/Article/details/gtvehvmvxa.html
+
+JS:   x > 0 ? "正" : x < 0 ? "负" : "零";
+来源：http://dali.yj20258.top/Article/details/gtmkoagqpr.html
+
+TS:   x > 0 ? "正" : x < 0 ? "负" : "零";
+来源：http://dali.cashguo.top/Article/details/gtptvhbmfl.html
+
+Java: x > 0 ? "正" : x < 0 ? "负" : "零";
+来源：http://dali.ybcxt.top/Article/details/gtfksnmesu.html
+
+Go:   if x > 0 { s = "正" } else if x < 0 { s = "负" } else { s = "零" }
+来源：http://dali.gzhubu.top/Article/details/gtaopxisxt.html
+
+Ruby: s = if x > 0 then "正" elsif x < 0 then "负" else "零" end
+来源：http://dali.cqqwz.cn/Article/details/gtabmtljon.html
+
+C#:   var s = x > 0 ? "正" : x < 0 ? "负" : "零";
+来源：http://dali.fengsongda.top/Article/details/gtxfceqnwe.html
+
+[B03] switch / match / case
+来源：http://dali.zhixingplan.top/Article/details/gtvgtzrbty.html
+
+Py:   {"a": 1, "b": 2}.get(key, 0)         # 3.10+ 也可用 match
+来源：http://dali.jianghu66.top/Article/details/gtgvuwdkni.html
+
+PHP:  switch ($x) { case 1: $r = "一"; break; default: $r = "其他"; }
+来源：http://dali.hongshengwenyu.top/Article/details/gtqitlufrh.html
+
+JS:   switch (x) { case 1: r = "一"; break; default: r = "其他"; }
+来源：http://dali.haohaochexian.top/Article/details/gtqdfgjpaa.html
+
+TS:   switch (x) { case 1: r = "一"; break; default: r = "其他"; }
+来源：http://dali.tian-w.cn/Article/details/gtgmuxpjix.html
+
+Java: switch (x) { case 1 -> r = "一"; default -> r = "其他"; }
+来源：http://dali.guowangkeji.top/Article/details/gtejakzfqy.html
+
+Go:   switch x { case 1: r = "一"; default: r = "其他" }
+来源：http://dali.jinqigfzy.top/Article/details/gtzofluash.html
+
+Ruby: case x when 1 then r = "一" else r = "其他" end
+来源：http://dali.cdnleiting.top/Article/details/gtbpknjeot.html
+
+C#:   var r = x switch { 1 => "一", _ => "其他" };
+来源：http://dali.ydzc1.top/Article/details/gtslcbaoyu.html
+
+[B04] for 计数循环
+来源：http://dali.yanxiufei.cn/Article/details/gtxjzdtaxj.html
+
+Py:   for i in range(10): print(i)
+来源：http://dali.iojbl.cn/Article/details/gtweuqnjex.html
+
+PHP:  for ($i = 0; $i < 10; $i++) { echo $i; }
+来源：http://dali.feifeiyinyue.top/Article/details/gtjzhiloer.html
+
+JS:   for (let i = 0; i < 10; i++) { console.log(i); }
+来源：http://dali.yvedp.cn/Article/details/gtpxndxhzk.html
+
+TS:   for (let i = 0; i < 10; i++) { console.log(i); }
+来源：http://dali.jinghuilouyu.cn/Article/details/gtcfnlidhz.html
+
+Java: for (int i = 0; i < 10; i++) { System.out.println(i); }
+来源：http://dali.bjfxy.top/Article/details/gtfvlaexeo.html
+
+Go:   for i := 0; i < 10; i++ { fmt.Println(i) }
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gtmpumlcci.html
+
+Ruby: 10.times { |i| puts i }
+来源：http://dali.jyoumei.cn/Article/details/gtybgqluel.html
+
+C#:   for (int i = 0; i < 10; i++) { Console.WriteLine(i); }
+来源：http://dali.yongpay.top/Article/details/gtnwxjvqwd.html
+
+[B05] 遍历数组 / 列表
+来源：http://dali.xuetiantiany.cn/Article/details/gtfxdxisvc.html
+
+Py:   for item in arr: print(item)
+来源：http://dali.kuanghao11.cn/Article/details/gthwuyggjm.html
+
+PHP:  foreach ($arr as $item) { echo $item; }
+来源：http://dali.yj202588.top/Article/details/gtgjtfebea.html
+
+JS:   for (const item of arr) { console.log(item); }
+来源：http://dali.shuidangran.top/Article/details/gtcwjoibej.html
+
+TS:   for (const item of arr) { console.log(item); }
+来源：http://dali.316326.xyz/Article/details/gtpkxddlik.html
+
+Java: for (var item : arr) { System.out.println(item); }
+来源：http://dali.nanxuanxn.top/Article/details/gtoxxmwizr.html
+
+Go:   for _, item := range arr { fmt.Println(item) }
+来源：http://dali.shuidangran.top/Article/details/gtkhkttjyr.html
+
+Ruby: arr.each { |item| puts item }
+来源：http://dali.hammf.cn/Article/details/gtzyokbqgx.html
+
+C#:   foreach (var item in arr) { Console.WriteLine(item); }
+来源：http://dali.dianchejie.cn/Article/details/gteeqzppxd.html
+
+[B06] 遍历字典 / 对象
+来源：http://dali.shuidangran.top/Article/details/gtgqzgqnow.html
+
+Py:   for k, v in d.items(): print(k, v)
+来源：http://dali.yuxming.cn/Article/details/gtyqgbkuxt.html
+
+PHP:  foreach ($d as $k => $v) { echo "$k=$v"; }
+来源：http://dali.xuanzx.com/Article/details/gtpflxoxer.html
+
+JS:   for (const [k, v] of Object.entries(obj)) { console.log(k, v); }
+来源：http://dali.ivvv.top/Article/details/gtpoydaqfh.html
+
+TS:   for (const [k, v] of Object.entries(obj)) { console.log(k, v); }
+来源：http://dali.hongshengwenyu.top/Article/details/gtpmhtbjvq.html
+
+Java: for (var e : map.entrySet()) { System.out.println(e.getKey() + "=" + e.getValue()); }
+来源：http://dali.havefunace.top/Article/details/gttfrkfzwc.html
+
+Go:   for k, v := range m { fmt.Println(k, v) }
+来源：http://dali.0kj1m.cn/Article/details/gtmzlejqmq.html
+
+Ruby: d.each { |k, v| puts "#{k}=#{v}" }
+来源：http://dali.yj202588.top/Article/details/gtvrjjoaax.html
+
+C#:   foreach (var (k, v) in dict) { Console.WriteLine($"{k}={v}"); }
+来源：http://dali.hnxiangtu.top/Article/details/gtrpxkvfdx.html
+
+[B07] while 循环
+来源：http://dali.jinqigfzy.top/Article/details/gtduoxzolg.html
+
+Py:   while i < 10: i += 1
+来源：http://dali.chenzaomai.com/Article/details/gtkkkeymmj.html
+
+PHP:  while ($i < 10) { $i++; }
+来源：http://dali.shzxlz.cn/Article/details/gtfyoegvxd.html
+
+JS:   while (i < 10) { i++; }
+来源：http://dali.chenjidiqi.icu/Article/details/gtjuwziyzj.html
+
+TS:   while (i < 10) { i++; }
+来源：http://dali.pengpengdd.cyou/Article/details/gthpnelytw.html
+
+Java: while (i < 10) { i++; }
+来源：http://dali.jqgufenzy.top/Article/details/gtdlxkzcjv.html
+
+Go:   for i < 10 { i++ }              # Go 没有 while，用单条件 for
+来源：http://dali.dianchejie.cn/Article/details/gtldbeoxuk.html
+
+Ruby: while i < 10; i += 1; end
+来源：http://dali.xinyue.icu/Article/details/gtjtrtgpmi.html
+
+C#:   while (i < 10) { i++; }
+来源：http://dali.shangyingyoupin.top/Article/details/gtmpidffid.html
+
+[B08] do-while（至少执行一次）
+来源：http://dali.vqdsnc.cn/Article/details/gtlbuyeiqz.html
+
+Py:   # 无 do-while：用 while True + break
+来源：http://dali.jinqigfzy.top/Article/details/gtptedlgil.html
+
+PHP:  do { $i++; } while ($i < 10);
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtwoopwxgk.html
+
+JS:   do { i++; } while (i < 10);
+来源：http://dali.zhengqikj.top/Article/details/gtagkobzwk.html
+
+TS:   do { i++; } while (i < 10);
+来源：http://dali.zdqjudy.top/Article/details/gtioigfgjq.html
+
+Java: do { i++; } while (i < 10);
+来源：http://dali.sufxvd.cn/Article/details/gtieqnpxnz.html
+
+Go:   for { i++; if i >= 10 { break } }
+来源：http://dali.cqqwz.cn/Article/details/gtenczdlmm.html
+
+Ruby: begin; i += 1; end while i < 10
+来源：http://dali.nwbrower.top/Article/details/gtsejxbktw.html
+
+C#:   do { i++; } while (i < 10);
+来源：http://dali.redwolf501.top/Article/details/gtqswssoiv.html
+
+[B09] break 与 continue
+来源：http://dali.cucudq.cn/Article/details/gtsnqqkmil.html
+
+Py:   for x in arr: if x < 0: continue     # break 直接退出循环
+来源：http://dali.xuetiantiany.cn/Article/details/gtmjdnxdea.html
+
+PHP:  foreach ($arr as $x) { if ($x < 0) continue; if ($x > 9) break; }
+来源：http://dali.316326.xyz/Article/details/gtinxegvbr.html
+
+JS:   for (const x of arr) { if (x < 0) continue; if (x > 9) break; }
+来源：http://dali.sxryk.cn/Article/details/gtjueuydzk.html
+
+TS:   for (const x of arr) { if (x < 0) continue; if (x > 9) break; }
+来源：http://dali.daria6918.cn/Article/details/gthqnqsmjx.html
+
+Java: for (int x : arr) { if (x < 0) continue; if (x > 9) break; }
+来源：http://dali.cheryme.top/Article/details/gtcgxoicel.html
+
+Go:   for _, x := range arr { if x < 0 { continue }; if x > 9 { break } }
+来源：http://dali.cheryme.top/Article/details/gtnjephshk.html
+
+Ruby: arr.each { |x| next if x < 0; break if x > 9 }
+来源：http://dali.yangfankeji.com/Article/details/gtbuknaoad.html
+
+C#:   foreach (var x in arr) { if (x < 0) continue; if (x > 9) break; }
+来源：http://dali.tanke756.top/Article/details/gtyhgxqahs.html
+
+[B10] 遍历同时拿索引
+来源：http://dali.xinyue.icu/Article/details/gtqbxfdbyy.html
+
+Py:   for i, item in enumerate(arr): print(i, item)
+来源：http://dali.jlsjyb.cn/Article/details/gtadzgkorz.html
+
+PHP:  foreach ($arr as $i => $item) { echo "$i: $item"; }
+来源：http://dali.sufxvd.cn/Article/details/gtusfzyjig.html
+
+JS:   arr.forEach((item, i) => console.log(i, item));
+来源：http://dali.jyoumei.cn/Article/details/gtmhqhflbj.html
+
+TS:   arr.forEach((item: string, i: number) => console.log(i, item));
+来源：http://dali.ehwqpu.com/Article/details/gtjqgkhscd.html
+
+Java: for (int i = 0; i < arr.size(); i++) { System.out.println(i + ":" + arr.get(i)); }
+来源：http://dali.tanke756.top/Article/details/gtcyxifzwf.html
+
+Go:   for i, item := range arr { fmt.Println(i, item) }
+来源：http://dali.chenlongwang.top/Article/details/gtlfszoykf.html
+
+Ruby: arr.each_with_index { |item, i| puts "#{i}: #{item}" }
+来源：http://dali.iojbl.cn/Article/details/gtdpzsmuuy.html
+
+C#:   for (int i = 0; i < arr.Length; i++) { Console.WriteLine($"{i}:{arr[i]}"); }
+来源：http://dali.cqqwz.cn/Article/details/gtnsnnoxfg.html
+
+[B11] 生成数字序列 / 区间
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gtczwybdxv.html
+
+Py:   list(range(0, 10, 2))
+来源：http://dali.shanyushiyangtech.top/Article/details/gtoycxozhr.html
+
+PHP:  range(0, 10, 2);
+来源：http://dali.xylfe.cn/Article/details/gtahebtekq.html
+
+JS:   Array.from({ length: 5 }, (_, i) => i * 2);
+来源：http://dali.jlsjyb.cn/Article/details/gtmhbmgpqa.html
+
+TS:   Array.from({ length: 5 }, (_, i) => i * 2);
+来源：http://dali.vqdsnc.cn/Article/details/gtufmebjfz.html
+
+Java: IntStream.range(0, 10).boxed().toList()
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtpkwhacbh.html
+
+Go:   for i := 0; i < 10; i += 2 { }   // 无区间生成器
+来源：http://dali.zhongyouzk.top/Article/details/gtrgtykmdi.html
+
+Ruby: (0...10).step(2).to_a
+来源：http://dali.xziqi.cn/Article/details/gtkwpoavwo.html
+
+C#:   Enumerable.Range(0, 10).Where(i => i % 2 == 0)
+来源：http://dali.guowangkeji.top/Article/details/gtgauzfeyp.html
+
+[B12] 跳出多层循环
+来源：http://dali.shuidangran.top/Article/details/gtbjpdjwqs.html
+
+Py:   # 无标签跳转：抽成函数用 return
+来源：http://dali.aizwys.cn/Article/details/gtbvbimilp.html
+
+PHP:  # 无标签：用 goto 或函数返回
+来源：http://dali.bjfxy.top/Article/details/gtofhglxxx.html
+
+JS:   outer: for (...) { for (...) { break outer; } }
+来源：http://dali.fengsongda.top/Article/details/gtqdeafihc.html
+
+TS:   outer: for (...) { for (...) { break outer; } }
+来源：http://dali.yuanzhike.top/Article/details/gtlszkxyze.html
+
+Java: outer: for (...) { for (...) { break outer; } }
+来源：http://dali.yuanzhike.top/Article/details/gtokpnwsbs.html
+
+Go:   # 无标签：用布尔标志或抽成函数
+来源：http://dali.sysykeji.top/Article/details/gtywkeuodn.html
+
+Ruby: # 无标签：用 catch/throw 或方法返回
+来源：http://dali.yanxiufei.cn/Article/details/gtxehkuxyj.html
+
+C#:   # 无标签：用 goto label 或布尔标志
+来源：http://dali.bjfxy.top/Article/details/gtcxavbasw.html
+
+[B13] 判断是否为数字
+来源：http://dali.ehwqpu.com/Article/details/gtoslykxpy.html
+
+Py:   isinstance(x, (int, float))
+来源：http://dali.xziqi.cn/Article/details/gttnnhlpey.html
+
+PHP:  is_numeric($x)
+来源：http://dali.feifeiyinyue.top/Article/details/gtximbqpsr.html
+
+JS:   typeof x === "number" && !Number.isNaN(x)
+来源：http://dali.snrcjt.cn/Article/details/gtqkpfrthn.html
+
+TS:   typeof x === "number" && !Number.isNaN(x)
+来源：http://dali.aibaodan.cn/Article/details/gtztmetfgd.html
+
+Java: x instanceof Number
+来源：http://dali.ehwqpu.com/Article/details/gtfkbdgztr.html
+
+Go:   if _, err := strconv.Atoi(s); err == nil { ok = true }
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtqqquefwg.html
+
+Ruby: x.is_a?(Numeric)
+来源：http://dali.daxiang520.top/Article/details/gtvlqlzmyi.html
+
+C#:   x is int or double or decimal
+来源：http://dali.tian-w.cn/Article/details/gtdeiwvkwv.html
+
+[B14] 判断值是否在集合内
+来源：http://dali.chenzaomai.com/Article/details/gtobmdomtv.html
+
+Py:   x in [1, 2, 3]; x in {"a", "b"}
+来源：http://dali.ppjwa.cn/Article/details/gtwpaiobwg.html
+
+PHP:  in_array($x, [1, 2, 3], true)
+来源：http://dali.xziqi.cn/Article/details/gtxgtxdplt.html
+
+JS:   [1, 2, 3].includes(x)
+来源：http://dali.chenzaomai.com/Article/details/gtxwwstndm.html
+
+TS:   [1, 2, 3].includes(x)
+来源：http://dali.zhaomingkeji.xyz/Article/details/gthnjtvdtu.html
+
+Java: List.of(1, 2, 3).contains(x)
+来源：http://dali.yonumen.top/Article/details/gtwztpzeba.html
+
+Go:   slices.Contains([]int{1, 2, 3}, x)
+来源：http://dali.ydzc1.top/Article/details/gtmzlltziv.html
+
+Ruby: [1, 2, 3].include?(x)
+来源：http://dali.tianlin.xyz/Article/details/gtfxpljwik.html
+
+C#:   new[] { 1, 2, 3 }.Contains(x)
+来源：http://dali.wangdashe.top/Article/details/gttygfimka.html
+
+[B15] 布尔运算与取反
+来源：http://dali.hfpthk.cn/Article/details/gtvrtitlvb.html
+
+Py:   a and b or not c
+来源：http://dali.jqgfzy.top/Article/details/gthzqqvcxe.html
+
+PHP:  $a && $b || !$c
+来源：http://dali.sysykeji.top/Article/details/gtirobyejq.html
+
+JS:   a && b || !c
+来源：http://dali.wangshuangyany.cn/Article/details/gtsnswkjev.html
+
+TS:   a && b || !c
+来源：http://dali.jinqigufen.top/Article/details/gticvxdnzh.html
+
+Java: a && b || !c
+来源：http://dali.xziqi.cn/Article/details/gtlcamnkfz.html
+
+Go:   a && b || !c
+来源：http://dali.guowangkeji.top/Article/details/gtvmadkexh.html
+
+Ruby: a && b || !c
+来源：http://dali.jianghu66.top/Article/details/gtlusgkhvd.html
+
+C#:   a && b || !c
+来源：http://dali.yueranfly.top/Article/details/gtujzvobql.html
+
+[B16] 卫语句：不满足条件提前返回
+来源：http://dali.guannengcc.top/Article/details/gtzzehghkc.html
+
+Py:   if not data: return
+来源：http://dali.gzhubu.top/Article/details/gtznrwwdbt.html
+
+PHP:  if (!$data) { return; }
+来源：http://dali.aizwys.cn/Article/details/gtpaeepovd.html
+
+JS:   if (!data) return;
+来源：http://dali.yvedp.cn/Article/details/gtoedxzecb.html
+
+TS:   if (!data) return;
+来源：http://dali.hongshengwenyu.top/Article/details/gtsnnfyosz.html
+
+Java: if (data == null) return;
+来源：http://dali.birdmap.top/Article/details/gtnzumawyw.html
+
+Go:   if data == nil { return }
+来源：http://dali.bjfxy.top/Article/details/gtqhzpzrou.html
+
+Ruby: return if data.nil?
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gthcdekbuq.html
+
+C#:   if (data == null) return;
+来源：http://dali.haohaochexian.top/Article/details/gtxvdoszyv.html
+
+================================================================================
+来源：http://dali.hnxiangtu.top/Article/details/gtgdxexbwj.html
+
+C. 函数与作用域
+来源：http://dali.bjfxy.top/Article/details/gtqvevtzab.html
+
+================================================================================
+来源：http://dali.cheryme.top/Article/details/gtrhnfwlbo.html
+
+[C01] 定义函数
+来源：http://dali.havefunace.top/Article/details/gtiahqdtql.html
+
+Py:   def add(a, b): return a + b
+来源：http://dali.wangdashe.top/Article/details/gtjltlhfvt.html
+
+PHP:  function add(int $a, int $b): int { return $a + $b; }
+来源：http://dali.yuxming.cn/Article/details/gtzatuuauv.html
+
+JS:   function add(a, b) { return a + b; }
+来源：http://dali.cqqwz.cn/Article/details/gtijzavtjx.html
+
+TS:   function add(a: number, b: number): number { return a + b; }
+来源：http://dali.cheryme.top/Article/details/gtdxitulbq.html
+
+Java: static int add(int a, int b) { return a + b; }
+来源：http://dali.ydzc1.top/Article/details/gthoifygzt.html
+
+Go:   func add(a, b int) int { return a + b }
+来源：http://dali.hammf.cn/Article/details/gttxjwjsfd.html
+
+Ruby: def add(a, b); a + b; end
+来源：http://dali.yonumen.top/Article/details/gtmbnxkkia.html
+
+C#:   static int Add(int a, int b) { return a + b; }
+来源：http://dali.svipenyu.cn/Article/details/gtzahedthj.html
+
+[C02] 默认参数
+来源：http://dali.hnqzz.top/Article/details/gtuhzhmnqe.html
+
+Py:   def greet(name="World"): return name
+来源：http://dali.jinqigufen.top/Article/details/gtaoflngxy.html
+
+PHP:  function greet($name = "World") { return $name; }
+来源：http://dali.xuetiantiany.cn/Article/details/gtewaiyaap.html
+
+JS:   function greet(name = "World") { return name; }
+来源：http://dali.ydzc1.top/Article/details/gtaipodynj.html
+
+TS:   function greet(name: string = "World") { return name; }
+来源：http://dali.jqgfzy.top/Article/details/gtlxxzjyjx.html
+
+Java: // 无默认参数：方法重载或 Optional
+来源：http://dali.pengpengdd.cyou/Article/details/gtiynsetyp.html
+
+Go:   // 无默认参数：传零值或另写一个包装函数
+来源：http://dali.daxiang520.top/Article/details/gtookplvfz.html
+
+Ruby: def greet(name = "World") = name
+来源：http://dali.daria6918.cn/Article/details/gtaosoahjg.html
+
+C#:   string Greet(string name = "World") => name;
+来源：http://dali.tian-w.cn/Article/details/gtlgzpmscl.html
+
+[C03] 可变参数
+来源：http://dali.zhiwuduotai.top/Article/details/gtotegaavl.html
+
+Py:   def total(*args): return sum(args)
+来源：http://dali.gaohongyu789.top/Article/details/gttoqbuwiq.html
+
+PHP:  function total(...$nums) { return array_sum($nums); }
+来源：http://dali.sufxvd.cn/Article/details/gtusmznmsd.html
+
+JS:   function total(...nums) { return nums.reduce((a, b) => a + b, 0); }
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtslkrcvgh.html
+
+TS:   function total(...nums: number[]): number { return nums.reduce((a, b) => a + b, 0); }
+来源：http://dali.cheryme.top/Article/details/gtbtsccgqp.html
+
+Java: static int total(int... nums) { return Arrays.stream(nums).sum(); }
+来源：http://dali.jinghuilouyu.cn/Article/details/gtdfwwjiup.html
+
+Go:   func total(nums ...int) int { s := 0; for _, n := range nums { s += n }; return s }
+来源：http://dali.xinyue.icu/Article/details/gtbzmodlag.html
+
+Ruby: def total(*nums); nums.sum; end
+来源：http://dali.ydzc1.top/Article/details/gtojijdfzv.html
+
+C#:   static int Total(params int[] nums) => nums.Sum();
+来源：http://dali.zhijiandao.cn/Article/details/gtvnfllvzm.html
+
+[C04] 命名参数 / 关键字参数
+来源：http://dali.zhengqikj.top/Article/details/gtxccosfms.html
+
+Py:   def f(a, b, *, c=0): ...    # 调用 f(1, 2, c=3)
+来源：http://dali.shzxlz.cn/Article/details/gtoeknfgoc.html
+
+PHP:  f(a: 1, b: 2)             // PHP 8 命名参数
+来源：http://dali.zhiwuduotai.top/Article/details/gtffujiseb.html
+
+JS:   // 无命名参数：传配置对象 function f({ a, b }) {}
+来源：http://dali.tanke756.top/Article/details/gtckwzuxkc.html
+
+TS:   f({ a: 1, b: 2 })          // 同上
+来源：http://dali.tianlin.xyz/Article/details/gturfsluoq.html
+
+Java: // 无：用 Builder 模式或 record
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtbidhyuwe.html
+
+Go:   // 无：用配置结构体参数
+来源：http://dali.feifeiyinyue.top/Article/details/gtibeaktlx.html
+
+Ruby: f(a: 1, b: 2)
+来源：http://dali.ybcxt.top/Article/details/gtgixcvkcf.html
+
+C#:   f(a: 1, b: 2)
+来源：http://dali.iojbl.cn/Article/details/gtnfaapwfi.html
+
+[C05] 返回多个值
+来源：http://dali.aizwys.cn/Article/details/gtpjuonibo.html
+
+Py:   return a, b
+来源：http://dali.shanyushiyangtech.top/Article/details/gtbjlwcsib.html
+
+PHP:  return [$a, $b];
+来源：http://dali.pycfn.com/Article/details/gtwvsxxgor.html
+
+JS:   return [a, b];             // 或 return { a, b };
+来源：http://dali.daria6918.cn/Article/details/gthxzczevs.html
+
+TS:   return { a, b };
+来源：http://dali.zycfv.cn/Article/details/gthjnydyvl.html
+
+Java: record Pair(int a, int b) {}  // 或 return new int[]{a, b};
+来源：http://dali.zhijiandao.cn/Article/details/gtugpqsgbx.html
+
+Go:   return a, b
+来源：http://dali.jlsjyb.cn/Article/details/gthgmkytqh.html
+
+Ruby: return a, b
+来源：http://dali.316326.xyz/Article/details/gtykwxsmeh.html
+
+C#:   return (a, b);              // ValueTuple
+来源：http://dali.ehwqpu.com/Article/details/gtxqcoomkb.html
+
+[C06] 匿名函数 / lambda
+来源：http://dali.hnqzz.top/Article/details/gtuhfsrvsf.html
+
+Py:   square = lambda x: x * x
+来源：http://dali.nanxinkj.top/Article/details/gtizgptxup.html
+
+PHP:  $square = fn($x) => $x * $x;
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtrqornlgk.html
+
+JS:   const square = x => x * x;
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtkkiurkiw.html
+
+TS:   const square = (x: number): number => x * x;
+来源：http://dali.hnxiangtu.top/Article/details/gtpwjnddxr.html
+
+Java: Function<Integer, Integer> sq = x -> x * x;
+来源：http://dali.pycfn.com/Article/details/gtdzzgvhrg.html
+
+Go:   sq := func(x int) int { return x * x }
+来源：http://dali.0kj1m.cn/Article/details/gtpnrkqxzd.html
+
+Ruby: square = ->(x) { x * x }
+来源：http://dali.tanke756.top/Article/details/gtvblwdsra.html
+
+C#:   Func<int, int> square = x => x * x;
+来源：http://dali.jqgufenzy.top/Article/details/gtprqameyf.html
+
+[C07] 把函数作为参数传入
+来源：http://dali.xylfe.cn/Article/details/gtsblqtaxf.html
+
+Py:   list(map(str.upper, arr)); sorted(arr, key=len)
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtbezlfzqj.html
+
+PHP:  array_map("strtoupper", $arr);
+来源：http://dali.wangshuangyany.cn/Article/details/gtylqmnran.html
+
+JS:   arr.map(String).sort((a, b) => a.length - b.length)
+来源：http://dali.hnqzz.top/Article/details/gtdwljxuvg.html
+
+TS:   arr.map(String)
+来源：http://dali.wangdashe.top/Article/details/gtelllwhqc.html
+
+Java: arr.stream().map(String::toUpperCase).toList()
+来源：http://dali.yanxiufei.cn/Article/details/gtnjrknyxp.html
+
+Go:   // 无 map 内置：手写循环或用 golang.org/x/exp/slices
+来源：http://dali.ydzc1.top/Article/details/gtyjurkybs.html
+
+Ruby: arr.map(&:upcase)
+来源：http://dali.yonumen.top/Article/details/gtosfyqbkx.html
+
+C#:   arr.Select(s => s.ToUpper())
+来源：http://dali.ppjwa.cn/Article/details/gtgmozsked.html
+
+[C08] 闭包
+来源：http://dali.hfpthk.cn/Article/details/gtyyhwzekj.html
+
+Py:   from itertools import count; inc = lambda c=count(1): next(c)   # 计数器
+来源：http://dali.yanxiufei.cn/Article/details/gtjpyecumx.html
+
+PHP:  function counter() { $n = 0; return function () use (&$n) { return ++$n; }; }
+来源：http://dali.aizwys.cn/Article/details/gtjioyhyle.html
+
+JS:   function counter() { let n = 0; return () => ++n; }
+来源：http://dali.aibaodan.cn/Article/details/gtzqlzotod.html
+
+TS:   function counter(): () => number { let n = 0; return () => ++n; }
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gtivlyvjrl.html
+
+Java: // 只能捕获 effectively final：用 int[] 或 AtomicInteger
+来源：http://dali.meibo888.top/Article/details/gttfkmgrmu.html
+
+Go:   func counter() func() int { n := 0; return func() int { n++; return n } }
+来源：http://dali.ybcxt.top/Article/details/gtlinbyszk.html
+
+Ruby: def counter; n = 0; -> { n += 1 }; end
+来源：http://dali.havefunace.top/Article/details/gtgwoaykry.html
+
+C#:   static Func<int> Counter() { int n = 0; return () => ++n; }
+来源：http://dali.zhengqikj.top/Article/details/gtmatpcbnb.html
+
+[C09] 递归
+来源：http://dali.yuanzhike.top/Article/details/gtfetwykws.html
+
+Py:   def fact(n): return 1 if n <= 1 else n * fact(n - 1)
+来源：http://dali.sweek.top/Article/details/gtpjnjjfqs.html
+
+PHP:  function fact(int $n): int { return $n <= 1 ? 1 : $n * fact($n - 1); }
+来源：http://dali.guannengcc.top/Article/details/gtbntakmvh.html
+
+JS:   const fact = n => (n <= 1 ? 1 : n * fact(n - 1));
+来源：http://dali.gogol.net.cn/Article/details/gtxsonvdre.html
+
+TS:   const fact = (n: number): number => (n <= 1 ? 1 : n * fact(n - 1));
+来源：http://dali.svipenyu.cn/Article/details/gtkwckshah.html
+
+
+<!-- 参考信息 -->

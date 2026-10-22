@@ -1,0 +1,904 @@
+代发 wailian999
+
+JS:   [...a, ...b];  a.concat(b);
+来源：http://dali.yj20258.top/Article/details/gtkqvhogvs.html
+
+TS:   [...a, ...b];
+来源：http://dali.ybcxt.top/Article/details/gtwrvmyykk.html
+
+Java: Stream.concat(a.stream(), b.stream()).toList()
+来源：http://dali.gotoacloud.top/Article/details/gtmpqrracw.html
+
+Go:   append(a, b...)
+来源：http://dali.bjfxy.top/Article/details/gtypjizdpq.html
+
+Ruby: a + b;  a.concat(b)
+来源：http://dali.ppjwa.cn/Article/details/gttlbzsjnh.html
+
+C#:   a.Concat(b).ToList()
+来源：http://dali.birdmap.top/Article/details/gtvnxmwgxg.html
+
+[D09] 排序（升序）
+来源：http://dali.wangshuangyany.cn/Article/details/gtdlfqytqy.html
+
+Py:   sorted(arr);  arr.sort()
+来源：http://dali.zycfv.cn/Article/details/gtebcyzryu.html
+
+PHP:  sort($arr);
+来源：http://dali.yj20258888.top/Article/details/gtbyhkdoxv.html
+
+JS:   [...arr].sort((x, y) => x - y)     // 默认按字符串比较，数字必须给比较器
+来源：http://dali.cashguo.top/Article/details/gtrtcdstoz.html
+
+TS:   [...arr].sort((x, y) => x - y);
+来源：http://dali.jiagoushi.top/Article/details/gtiqyngetv.html
+
+Java: Collections.sort(list);  list.sort(null);
+来源：http://dali.birdmap.top/Article/details/gtiiwbxafq.html
+
+Go:   sort.Ints(arr);  slices.Sort(arr)
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gtbbgmjnlt.html
+
+Ruby: arr.sort
+来源：http://dali.chenjidiqi.icu/Article/details/gtjvidzvzq.html
+
+C#:   list.Sort();
+来源：http://dali.tianlin.xyz/Article/details/gtmrvkrqul.html
+
+[D10] 自定义排序（按字段 / 多条件）
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gtigksggdt.html
+
+Py:   arr.sort(key=lambda x: x["age"]);  sorted(arr, key=len, reverse=True)
+来源：http://dali.quarkkingdee.top/Article/details/gtaxqicwbi.html
+
+PHP:  usort($arr, fn($a, $b) => $a["age"] <=> $b["age"]);
+来源：http://dali.hammf.cn/Article/details/gttancfbga.html
+
+JS:   arr.sort((a, b) => a.age - b.age)
+来源：http://dali.jinqigfzy.top/Article/details/gttaqbjrpp.html
+
+TS:   arr.sort((a, b) => a.age - b.age)
+来源：http://dali.316326.xyz/Article/details/gtnmodokli.html
+
+Java: list.sort(Comparator.comparing(Person::age));
+来源：http://dali.aizwys.cn/Article/details/gtcoptfltx.html
+
+Go:   sort.Slice(items, func(i, j int) bool { return items[i].Age < items[j].Age })
+来源：http://dali.zdqjudy.top/Article/details/gtvdfgfjdv.html
+
+Ruby: arr.sort_by { |x| x[:age] }
+来源：http://dali.yuxming.cn/Article/details/gtzvrqypwf.html
+
+C#:   list.Sort((a, b) => a.Age.CompareTo(b.Age));
+来源：http://dali.yuanzhike.top/Article/details/gtdjrmozex.html
+
+[D11] 反转数组
+来源：http://dali.cheryme.top/Article/details/gtdsopahau.html
+
+Py:   arr[::-1];  arr.reverse()
+来源：http://dali.jiagoushi.top/Article/details/gtsdtpmkgi.html
+
+PHP:  array_reverse($arr);
+来源：http://dali.316326.xyz/Article/details/gtgespncef.html
+
+JS:   [...arr].reverse();  arr.toReversed()
+来源：http://dali.yuxming.cn/Article/details/gtximofijk.html
+
+TS:   [...arr].reverse();
+来源：http://dali.yuxming.cn/Article/details/gtcyvvgeim.html
+
+Java: Collections.reverse(list);
+来源：http://dali.jinqigfzy.top/Article/details/gtnqhbjfyi.html
+
+Go:   slices.Reverse(arr)
+来源：http://dali.ehwqpu.com/Article/details/gtxhjniuqx.html
+
+Ruby: arr.reverse
+来源：http://dali.havefunace.top/Article/details/gtspdlafni.html
+
+C#:   list.Reverse();
+来源：http://dali.jinghuilouyu.cn/Article/details/gtpkpzxfcy.html
+
+[D12] 查找元素下标
+来源：http://dali.nanxuanxn.top/Article/details/gtzgkiwtku.html
+
+Py:   arr.index(x);  x in arr
+来源：http://dali.gzhubu.top/Article/details/gtppitdaok.html
+
+PHP:  array_search($x, $arr);  in_array($x, $arr);
+来源：http://dali.hfpthk.cn/Article/details/gtryjbroba.html
+
+JS:   arr.indexOf(x);  arr.findIndex(v => v > 3)
+来源：http://dali.sweek.top/Article/details/gtiyhnzcvi.html
+
+TS:   arr.indexOf(x);  arr.findIndex(v => v > 3)
+来源：http://dali.0kj1m.cn/Article/details/gtzskivoqj.html
+
+Java: list.indexOf(x);  IntStream.range(0, list.size()).filter(i -> list.get(i) > 3).findFirst()
+来源：http://dali.zhengqikj.top/Article/details/gtebsnpfae.html
+
+Go:   slices.Index(arr, x)
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtesgcfioz.html
+
+Ruby: arr.index(x)
+来源：http://dali.jinyuanbaomall.cn/Article/details/gtjpcgjwap.html
+
+C#:   list.IndexOf(x);
+来源：http://dali.zhaomingkeji.xyz/Article/details/gtlmovtcxm.html
+
+[D13] 过滤（保留满足条件的）
+来源：http://dali.ybcxt.top/Article/details/gtdntwbtiy.html
+
+Py:   [x for x in arr if x > 3];  list(filter(lambda x: x > 3, arr))
+来源：http://dali.316326.xyz/Article/details/gttxmmyugi.html
+
+PHP:  array_filter($arr, fn($x) => $x > 3);
+来源：http://dali.birdmap.top/Article/details/gteeiconzi.html
+
+JS:   arr.filter(x => x > 3)
+来源：http://dali.daria6918.cn/Article/details/gtniexainv.html
+
+TS:   arr.filter(x => x > 3)
+来源：http://dali.dashuyun.cn/Article/details/gtjyjpyvuf.html
+
+Java: list.stream().filter(x -> x > 3).toList()
+来源：http://dali.birdmap.top/Article/details/gtutfhqnji.html
+
+Go:   // 手写循环，把满足条件的 append 到新切片
+来源：http://dali.vqdsnc.cn/Article/details/gtrcvpyish.html
+
+Ruby: arr.select { |x| x > 3 }
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtkkvscymg.html
+
+C#:   list.Where(x => x > 3).ToList()
+来源：http://dali.zhixingplan.top/Article/details/gtcyxgpbki.html
+
+[D14] 映射转换（每个元素变形）
+来源：http://dali.c1oappe.top/Article/details/gttoyxqmld.html
+
+Py:   [x * 2 for x in arr];  list(map(lambda x: x * 2, arr))
+来源：http://dali.daria6918.cn/Article/details/gtsmdikycs.html
+
+PHP:  array_map(fn($x) => $x * 2, $arr);
+来源：http://dali.wangdashe.top/Article/details/gtsnxpzqia.html
+
+JS:   arr.map(x => x * 2)
+来源：http://dali.haohaochexian.top/Article/details/gtidefezzz.html
+
+TS:   arr.map(x => x * 2)
+来源：http://dali.cqqwz.cn/Article/details/gtmbjvbzfn.html
+
+Java: list.stream().map(x -> x * 2).toList()
+来源：http://dali.0kj1m.cn/Article/details/gtyugcwslf.html
+
+Go:   // 手写循环
+来源：http://dali.iojbl.cn/Article/details/gtnbxlvsoo.html
+
+Ruby: arr.map { |x| x * 2 }
+来源：http://dali.jinqigfzy.top/Article/details/gtwxkzqdhu.html
+
+C#:   list.Select(x => x * 2).ToList()
+来源：http://dali.hysaishi.cn/Article/details/gtifbjwznc.html
+
+[D15] 去重
+来源：http://dali.jqgfzy.top/Article/details/gtigckpgom.html
+
+Py:   list(set(arr))        # 不保序；保序用 list(dict.fromkeys(arr))
+来源：http://dali.andypj.xyz/Article/details/gtqtgxxito.html
+
+PHP:  array_unique($arr);
+来源：http://dali.zhongyouzk.top/Article/details/gtuohldzjz.html
+
+JS:   [...new Set(arr)]
+来源：http://dali.jqgfzy.top/Article/details/gtwjjmflmt.html
+
+TS:   [...new Set(arr)]
+来源：http://dali.chenlongwang.top/Article/details/gtpgfwhcmb.html
+
+Java: new ArrayList<>(new LinkedHashSet<>(list))
+来源：http://dali.ivvv.top/Article/details/gtskypgwcn.html
+
+Go:   // 用 map[T]struct{} 手写
+来源：http://dali.yueranfly.top/Article/details/gtthlbzfzx.html
+
+Ruby: arr.uniq
+来源：http://dali.chenlongwang.top/Article/details/gtryqylqby.html
+
+C#:   list.Distinct().ToList()
+来源：http://dali.hnqzz.top/Article/details/gthgzomihq.html
+
+[D16] 求和与平均值
+来源：http://dali.pengpengdd.cyou/Article/details/gtynqqpbqm.html
+
+Py:   sum(arr);  sum(arr) / len(arr)
+来源：http://dali.tianlin.xyz/Article/details/gthvyvazjb.html
+
+PHP:  array_sum($arr);  array_sum($arr) / count($arr);
+来源：http://dali.dashuyun.cn/Article/details/gtlifhpfgz.html
+
+JS:   arr.reduce((a, b) => a + b, 0)
+来源：http://dali.aibaodan.cn/Article/details/gtbzkhklpd.html
+
+TS:   arr.reduce((a, b) => a + b, 0)
+来源：http://dali.fengsongda.top/Article/details/gtcokkcoss.html
+
+Java: list.stream().mapToInt(Integer::intValue).sum()
+来源：http://dali.mhx1999.top/Article/details/gtgfsfseoy.html
+
+Go:   // 手写循环累加
+来源：http://dali.svipenyu.cn/Article/details/gterrkdtvr.html
+
+Ruby: arr.sum;  arr.sum.to_f / arr.size
+来源：http://dali.cucudq.cn/Article/details/gthrqtlunu.html
+
+C#:   list.Sum();  list.Average()
+来源：http://dali.yuxming.cn/Article/details/gtkbkusfja.html
+
+[D17] 最大值与最小值
+来源：http://dali.guowangkeji.top/Article/details/gtlwsbywsw.html
+
+Py:   max(arr);  min(arr)
+来源：http://dali.fengsongda.top/Article/details/gtopshpikg.html
+
+PHP:  max($arr);  min($arr);
+来源：http://dali.yangfankeji.com/Article/details/gtheohpbah.html
+
+JS:   Math.max(...arr);  Math.min(...arr)
+来源：http://dali.gotoacloud.top/Article/details/gtjvexxhwj.html
+
+TS:   Math.max(...arr);
+来源：http://dali.zhixingplan.top/Article/details/gtecdpgcqu.html
+
+Java: Collections.max(list);  Collections.min(list);
+来源：http://dali.ehwqpu.com/Article/details/gtcbctzsja.html
+
+Go:   slices.Max(arr);  slices.Min(arr)
+来源：http://dali.meibo888.top/Article/details/gtfdidntyc.html
+
+Ruby: arr.max;  arr.min
+来源：http://dali.chenjidiqi.icu/Article/details/gtdjzkddfr.html
+
+C#:   list.Max();  list.Min()
+来源：http://dali.sufxvd.cn/Article/details/gtfredjmbt.html
+
+[D18] 扁平化嵌套数组
+来源：http://dali.ywan-chungtsiang.top/Article/details/gtdmlrpell.html
+
+Py:   [y for xs in nested for y in xs];  sum(nested, [])
+来源：http://dali.yvedp.cn/Article/details/gtrbdcxbqf.html
+
+PHP:  array_merge(...$nested);
+来源：http://dali.sufxvd.cn/Article/details/gtswmhrgkn.html
+
+JS:   nested.flat();  nested.flat(Infinity)
+来源：http://dali.yuanzhike.top/Article/details/gtgwwyotwk.html
+
+TS:   nested.flat();
+来源：http://dali.aizwys.cn/Article/details/gtyozcfhlm.html
+
+Java: nested.stream().flatMap(List::stream).toList()
+来源：http://dali.zycfv.cn/Article/details/gtslokpbrh.html
+
+Go:   // 手写双层循环
+来源：http://dali.yj20258888.top/Article/details/gtipurkqft.html
+
+Ruby: nested.flatten
+来源：http://dali.jyoumei.cn/Article/details/gtissedznn.html
+
+C#:   nested.SelectMany(x => x).ToList()
+来源：http://dali.xziqi.cn/Article/details/gtubdgewpz.html
+
+[D19] 按字段分组
+来源：http://dali.jiagoushi.top/Article/details/gtjwtxmqbl.html
+
+Py:   defaultdict(list)：for x in arr: groups[x["type"]].append(x)
+来源：http://dali.jinyuanbaomall.cn/Article/details/gtyjbwcvcj.html
+
+PHP:  // 手写 foreach，归入 $groups[$key][]
+来源：http://dali.zhixingplan.top/Article/details/gtwiwxsejf.html
+
+JS:   Object.groupBy(arr, x => x.type)    // ES2024；旧环境手写 reduce
+来源：http://dali.iojbl.cn/Article/details/gtoxgzrsob.html
+
+TS:   Object.groupBy(arr, x => x.type)
+来源：http://dali.c1oappe.top/Article/details/gtvghratwo.html
+
+Java: list.stream().collect(Collectors.groupingBy(Person::type))
+来源：http://dali.redwolf501.top/Article/details/gtdkhhqwxz.html
+
+Go:   // 手写 map[string][]T
+来源：http://dali.zdqjudy.top/Article/details/gtbcjjttry.html
+
+Ruby: arr.group_by { |x| x[:type] }
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtlyxfbyqs.html
+
+C#:   list.GroupBy(x => x.Type).ToDictionary(g => g.Key, g => g.ToList())
+来源：http://dali.hysaishi.cn/Article/details/gtltqvsrac.html
+
+[D20] 统计每个元素出现次数
+来源：http://dali.0kj1m.cn/Article/details/gtkfooqhux.html
+
+Py:   Counter(arr)
+来源：http://dali.yangfankeji.com/Article/details/gtscioipbd.html
+
+PHP:  array_count_values($arr);
+来源：http://dali.c1oappe.top/Article/details/gtdvxoofpn.html
+
+JS:   arr.reduce((m, x) => (m[x] = (m[x] || 0) + 1, m), {})
+来源：http://dali.xuetiantiany.cn/Article/details/gtebhspfnx.html
+
+TS:   arr.reduce<Record<string, number>>((m, x) => (m[x] = (m[x] || 0) + 1, m), {})
+来源：http://dali.ybcxt.top/Article/details/gttkabfopy.html
+
+Java: list.stream().collect(Collectors.groupingBy(x -> x, Collectors.counting()))
+来源：http://dali.xylfe.cn/Article/details/gtfbskyxqi.html
+
+Go:   // 手写 map[T]int
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtufefjmxt.html
+
+Ruby: arr.tally
+来源：http://dali.hnqzz.top/Article/details/gtcywspkqb.html
+
+C#:   list.GroupBy(x => x).ToDictionary(g => g.Key, g => g.Count())
+来源：http://dali.iojbl.cn/Article/details/gtpkuzlfla.html
+
+[D21] 判断是否包含某元素
+来源：http://dali.yj202588.top/Article/details/gtgjagmwly.html
+
+Py:   x in arr
+来源：http://dali.meibo888.top/Article/details/gtonipsqqu.html
+
+PHP:  in_array($x, $arr, true);
+来源：http://dali.yj20258888.top/Article/details/gtiigcptzb.html
+
+JS:   arr.includes(x)
+来源：http://dali.zhixingplan.top/Article/details/gtyrqbvzde.html
+
+TS:   arr.includes(x)
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtxjojikwm.html
+
+Java: list.contains(x)
+来源：http://dali.ydzc1.top/Article/details/gtgmzfwrge.html
+
+Go:   slices.Contains(arr, x)
+来源：http://dali.cqqwz.cn/Article/details/gtbhhkeltn.html
+
+Ruby: arr.include?(x)
+来源：http://dali.yuanzhike.top/Article/details/gtpdsfwvyj.html
+
+C#:   list.Contains(x)
+来源：http://dali.gotoacloud.top/Article/details/gtexxapeyl.html
+
+[D22] 复制数组（避免共享引用）
+来源：http://dali.snrcjt.cn/Article/details/gtkplwnqdo.html
+
+Py:   arr.copy();  arr[:];  list(arr)
+来源：http://dali.feifeiyinyue.top/Article/details/gtwtieoojn.html
+
+PHP:  $copy = $arr;        // 数组是值类型，赋值即复制
+来源：http://dali.snrcjt.cn/Article/details/gtsdbhvzua.html
+
+JS:   [...arr];  arr.slice();  structuredClone(arr)
+来源：http://dali.hammf.cn/Article/details/gtfwqfcmbt.html
+
+TS:   [...arr];
+来源：http://dali.yj20258.top/Article/details/gtrugelltj.html
+
+Java: new ArrayList<>(list);
+来源：http://dali.yongpay.top/Article/details/gtxqrjthvz.html
+
+Go:   copied := append([]int(nil), arr...)
+来源：http://dali.zdqjudy.top/Article/details/gtzikdwqph.html
+
+Ruby: arr.dup;  arr.clone
+来源：http://dali.yvedp.cn/Article/details/gtgxtfuucr.html
+
+C#:   new List<int>(list);
+来源：http://dali.xziqi.cn/Article/details/gtipxhihqq.html
+
+[D23] reduce 累积计算
+来源：http://dali.tianlin.xyz/Article/details/gtfpjktncf.html
+
+Py:   functools.reduce(lambda a, b: a + b, arr, 0)
+来源：http://dali.cqqwz.cn/Article/details/gtdpxjwoza.html
+
+PHP:  array_reduce($arr, fn($carry, $x) => $carry + $x, 0);
+来源：http://dali.shangyingyoupin.top/Article/details/gtoegskgss.html
+
+JS:   arr.reduce((acc, x) => acc + x, 0)
+来源：http://dali.sysykeji.top/Article/details/gtyhaezqmn.html
+
+TS:   arr.reduce((acc, x) => acc + x, 0)
+来源：http://dali.sysykeji.top/Article/details/gtdmiliqrv.html
+
+Java: list.stream().reduce(0, Integer::sum)
+来源：http://dali.ybcxt.top/Article/details/gtdfoseinz.html
+
+Go:   // 手写循环
+来源：http://dali.zdqjudy.top/Article/details/gtmvszqyll.html
+
+Ruby: arr.reduce(0) { |acc, x| acc + x };  arr.sum
+来源：http://dali.hywenlv.cn/Article/details/gtwcllmxgd.html
+
+C#:   list.Aggregate(0, (acc, x) => acc + x)
+来源：http://dali.ppjwa.cn/Article/details/gticcxxynd.html
+
+[D24] 字典 / Map 基本操作
+来源：http://dali.ivvv.top/Article/details/gtspipfvlc.html
+
+Py:   d["k"] = 1;  d.get("k");  "k" in d;  d.pop("k")
+来源：http://dali.zhongyouzk.top/Article/details/gtmznrqooh.html
+
+PHP:  $d["k"] = 1;  $d["k"] ?? null;  isset($d["k"]);  unset($d["k"]);
+来源：http://dali.jiagoushi.top/Article/details/gtinjivwwo.html
+
+JS:   obj.k = 1;  "k" in obj;  delete obj.k;  new Map().set("k", 1)
+来源：http://dali.chenzaomai.com/Article/details/gthonlsdhw.html
+
+TS:   const d: Record<string, number> = {};  d["k"] = 1;
+来源：http://dali.cdnleiting.top/Article/details/gtswdjtmhw.html
+
+Java: map.put("k", 1);  map.get("k");  map.containsKey("k");  map.remove("k")
+来源：http://dali.aibaodan.cn/Article/details/gtwvdjwmuc.html
+
+Go:   m := map[string]int{};  m["k"] = 1;  v, ok := m["k"];  delete(m, "k")
+来源：http://dali.gaohongyu789.top/Article/details/gtzztlytii.html
+
+Ruby: h["k"] = 1;  h["k"];  h.key?("k");  h.delete("k")
+来源：http://dali.hfpthk.cn/Article/details/gtaqfwlsns.html
+
+C#:   dict["k"] = 1;  dict.TryGetValue("k", out var v);  dict.Remove("k");
+来源：http://dali.havefunace.top/Article/details/gtcfytrcvt.html
+
+[D25] Set 集合去重与交并差
+来源：http://dali.snrcjt.cn/Article/details/gtvphclyde.html
+
+Py:   s = {1, 2, 3};  s | {3, 4};  s & {2};  s - {1}
+来源：http://dali.jlsjyb.cn/Article/details/gtcynkrwee.html
+
+PHP:  // 无原生 Set：用数组键或 SplObjectStorage 变通
+来源：http://dali.yvedp.cn/Article/details/gtfrbafren.html
+
+JS:   const s = new Set([1, 2, 3]);  s.add(4);  s.has(1);  s.delete(1)
+来源：http://dali.316326.xyz/Article/details/gtthphrbjm.html
+
+TS:   const s = new Set<number>([1, 2, 3]);
+来源：http://dali.cqqwz.cn/Article/details/gtuszwyevc.html
+
+Java: var s = new HashSet<>(List.of(1, 2, 3));  s.add(4);  s.contains(1)
+来源：http://dali.jianghu66.top/Article/details/gtfukpelux.html
+
+Go:   // 无原生 Set：用 map[int]struct{}
+来源：http://dali.nanxinkj.top/Article/details/gthswkcrkr.html
+
+Ruby: s = Set[1, 2, 3];  s.add(4);  s.include?(1)
+来源：http://dali.zhengqikj.top/Article/details/gtdxhwyjie.html
+
+C#:   var s = new HashSet<int> { 1, 2, 3 };  s.Add(4);  s.Contains(1)
+来源：http://dali.iojbl.cn/Article/details/gtpmufrotp.html
+
+[D26] 数组转字符串
+来源：http://dali.0kj1m.cn/Article/details/gtxxnozluk.html
+
+Py:   ", ".join(map(str, arr))
+来源：http://dali.chenzaomai.com/Article/details/gtlsddkbcs.html
+
+PHP:  implode(", ", $arr);
+来源：http://dali.pengpengdd.cyou/Article/details/gtufzoeiyr.html
+
+JS:   arr.join(", ")
+来源：http://dali.haohaochexian.top/Article/details/gtnkoxtplq.html
+
+TS:   arr.join(", ")
+来源：http://dali.shangyingyoupin.top/Article/details/gthjavgmwk.html
+
+Java: String.join(", ", list)
+来源：http://dali.316326.xyz/Article/details/gtbmoucenq.html
+
+Go:   strings.Join(strs, ", ")
+来源：http://dali.yanxiufei.cn/Article/details/gtuohydbzm.html
+
+Ruby: arr.join(", ")
+来源：http://dali.haohaochexian.top/Article/details/gtxpoecszk.html
+
+C#:   string.Join(", ", list)
+来源：http://dali.jqgfzy.top/Article/details/gtubtikfqm.html
+
+================================================================================
+来源：http://dali.chenzaomai.com/Article/details/gtmosyzlxu.html
+
+E. 字符串处理
+来源：http://dali.feifeiyinyue.top/Article/details/gttgkhqezq.html
+
+================================================================================
+来源：http://dali.hnxiangtu.top/Article/details/gtqtvifywx.html
+
+[E01] 拼接字符串
+来源：http://dali.yvedp.cn/Article/details/gtaxblauuq.html
+
+Py:   "a" + "b";  "".join(["a", "b"])
+来源：http://dali.xinyue.icu/Article/details/gtlblnwhev.html
+
+PHP:  "a" . "b";  implode("", ["a", "b"]);
+来源：http://dali.nwbrower.top/Article/details/gteohwijzb.html
+
+JS:   "a" + "b";  ["a", "b"].join("")
+来源：http://dali.haohaochexian.top/Article/details/gtupgekskx.html
+
+TS:   "a" + "b";  ["a", "b"].join("")
+来源：http://dali.xuetiantiany.cn/Article/details/gtprujlejk.html
+
+Java: "a" + "b";  String.join("", List.of("a", "b"))
+来源：http://dali.gotoacloud.top/Article/details/gtahhgpdkk.html
+
+Go:   "a" + "b";  strings.Join([]string{"a", "b"}, "")
+来源：http://dali.feifeiyinyue.top/Article/details/gtsucewimt.html
+
+Ruby: "a" + "b";  ["a", "b"].join
+来源：http://dali.yvedp.cn/Article/details/gtzbaebeqg.html
+
+C#:   "a" + "b";  string.Concat("a", "b")
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtmxbqsazc.html
+
+[E02] 重复字符串
+来源：http://dali.xylfe.cn/Article/details/gtyujiemjo.html
+
+Py:   "ab" * 3
+来源：http://dali.yuanzhike.top/Article/details/gtuqpiiskp.html
+
+PHP:  str_repeat("ab", 3);
+来源：http://dali.hammf.cn/Article/details/gtjgvxfgwa.html
+
+JS:   "ab".repeat(3)
+来源：http://dali.cucudq.cn/Article/details/gtxywpqbhx.html
+
+TS:   "ab".repeat(3)
+来源：http://dali.sufxvd.cn/Article/details/gtmcydwhfj.html
+
+Java: "ab".repeat(3)
+来源：http://dali.xziqi.cn/Article/details/gtvzhewgkr.html
+
+Go:   strings.Repeat("ab", 3)
+来源：http://dali.yj202588.top/Article/details/gtosknlpjn.html
+
+Ruby: "ab" * 3
+来源：http://dali.andypj.xyz/Article/details/gtcsjqipia.html
+
+C#:   string.Concat(Enumerable.Repeat("ab", 3))
+来源：http://dali.xinyue.icu/Article/details/gtisscckqc.html
+
+[E03] 截取子串
+来源：http://dali.yongpay.top/Article/details/gtgmnudhmq.html
+
+Py:   s[1:4];  s[:3];  s[3:]
+来源：http://dali.zdqjudy.top/Article/details/gtllgribpw.html
+
+PHP:  substr($s, 1, 3);  mb_substr($s, 1, 3, "UTF-8");
+来源：http://dali.quarkkingdee.top/Article/details/gtdqlljhft.html
+
+JS:   s.slice(1, 4);  s.substring(1, 4)
+来源：http://dali.pycfn.com/Article/details/gtmhddrwku.html
+
+TS:   s.slice(1, 4)
+来源：http://dali.yueranfly.top/Article/details/gtuatbrnxn.html
+
+Java: s.substring(1, 4)
+来源：http://dali.zhijiandao.cn/Article/details/gtibclmvhp.html
+
+Go:   s[1:4]        // 按字节；中文用 []rune(s)[1:4] 再转回 string
+来源：http://dali.yj202588.top/Article/details/gtpirbxlsv.html
+
+Ruby: s[1, 3];  s[1..3]
+来源：http://dali.havefunace.top/Article/details/gtzqblhjpz.html
+
+C#:   s.Substring(1, 3)
+来源：http://dali.yanxiufei.cn/Article/details/gttmquavsf.html
+
+[E04] 查找子串位置
+来源：http://dali.andypj.xyz/Article/details/gtzopzvuxl.html
+
+Py:   s.find("x");  s.index("x")
+来源：http://dali.fengsongda.top/Article/details/gtpmifnrvy.html
+
+PHP:  strpos($s, "x");
+来源：http://dali.daria6918.cn/Article/details/gtiuimgznb.html
+
+JS:   s.indexOf("x");  s.search(/x/)
+来源：http://dali.wangdashe.top/Article/details/gtpfjnxgxw.html
+
+TS:   s.indexOf("x")
+来源：http://dali.zdqjudy.top/Article/details/gtcvdovkfd.html
+
+Java: s.indexOf("x")
+来源：http://dali.svipenyu.cn/Article/details/gtarhvirus.html
+
+Go:   strings.Index(s, "x")
+来源：http://dali.shuidangran.top/Article/details/gteikevpgu.html
+
+Ruby: s.index("x")
+来源：http://dali.jqgfzy.top/Article/details/gtniohkkdf.html
+
+C#:   s.IndexOf("x")
+来源：http://dali.guannengcc.top/Article/details/gthupzbcff.html
+
+[E05] 判断包含 / 前缀 / 后缀
+来源：http://dali.kuanghao11.cn/Article/details/gtrhvkeiie.html
+
+Py:   "x" in s;  s.startswith("a");  s.endswith("z")
+来源：http://dali.yanxiufei.cn/Article/details/gtffhmebps.html
+
+PHP:  str_contains($s, "x");  str_starts_with($s, "a");  str_ends_with($s, "z");
+来源：http://dali.jlsjyb.cn/Article/details/gtqgbgmliw.html
+
+JS:   s.includes("x");  s.startsWith("a");  s.endsWith("z")
+来源：http://dali.xingfuxueyuan.xyz/Article/details/gtwmjlpmdt.html
+
+TS:   s.includes("x");  s.startsWith("a")
+来源：http://dali.zhengqikj.top/Article/details/gttrsnsodx.html
+
+Java: s.contains("x");  s.startsWith("a");  s.endsWith("z")
+来源：http://dali.sufxvd.cn/Article/details/gtfyrirrnz.html
+
+Go:   strings.Contains(s, "x");  strings.HasPrefix(s, "a");  strings.HasSuffix(s, "z")
+来源：http://dali.chenjidiqi.icu/Article/details/gtvlvkxejn.html
+
+Ruby: s.include?("x");  s.start_with?("a");  s.end_with?("z")
+来源：http://dali.hongshengwenyu.top/Article/details/gtjjtokzbb.html
+
+C#:   s.Contains("x");  s.StartsWith("a");  s.EndsWith("z")
+来源：http://dali.gogol.net.cn/Article/details/gtpvfmctxl.html
+
+[E06] 替换子串
+来源：http://dali.316326.xyz/Article/details/gtkssmwmcd.html
+
+Py:   s.replace("a", "b");  s.replace("a", "b", 1)
+来源：http://dali.mhx1999.top/Article/details/gtuudjohnw.html
+
+PHP:  str_replace("a", "b", $s);
+来源：http://dali.sysykeji.top/Article/details/gtxjfdcran.html
+
+JS:   s.replace("a", "b");  s.replaceAll("a", "b")
+来源：http://dali.mhx1999.top/Article/details/gtblarevak.html
+
+TS:   s.replaceAll("a", "b")
+来源：http://dali.kuanghao11.cn/Article/details/gtkeqeicck.html
+
+Java: s.replace("a", "b");  s.replaceAll("a", "b")
+来源：http://dali.svipenyu.cn/Article/details/gtbxampqfn.html
+
+Go:   strings.ReplaceAll(s, "a", "b");  strings.Replace(s, "a", "b", 1)
+来源：http://dali.haohaochexian.top/Article/details/gttzpfokhj.html
+
+Ruby: s.gsub("a", "b");  s.sub("a", "b")
+来源：http://dali.yvedp.cn/Article/details/gtnazucyuy.html
+
+C#:   s.Replace("a", "b")
+来源：http://dali.snrcjt.cn/Article/details/gtdjwxbpbv.html
+
+[E07] 按分隔符拆分
+来源：http://dali.xziqi.cn/Article/details/gtxdbjxvhx.html
+
+Py:   s.split(",");  s.split()      # 无参按任意空白拆
+来源：http://dali.gotoacloud.top/Article/details/gtbqgizief.html
+
+PHP:  explode(",", $s);  preg_split('/\s+/', $s);
+来源：http://dali.jiagoushi.top/Article/details/gttgmkeawj.html
+
+JS:   s.split(",");  s.split(/\s+/)
+来源：http://dali.guowangkeji.top/Article/details/gtdnetzmwa.html
+
+TS:   s.split(",")
+来源：http://dali.yongpay.top/Article/details/gtepzygous.html
+
+Java: s.split(",");  s.split("\\s+")
+来源：http://dali.hnqzz.top/Article/details/gtcnrphxqp.html
+
+Go:   strings.Split(s, ",");  strings.Fields(s)
+来源：http://dali.zhiwuduotai.top/Article/details/gtzrtywmjq.html
+
+Ruby: s.split(",");  s.split
+来源：http://dali.nanxinkj.top/Article/details/gteghtqhpg.html
+
+C#:   s.Split(',');  s.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
+来源：http://dali.aizwys.cn/Article/details/gtjegpyxgm.html
+
+[E08] 数组按分隔符合并
+来源：http://dali.c1oappe.top/Article/details/gtwcmvzkzq.html
+
+Py:   ",".join(items)
+来源：http://dali.zhoulong.xyz/Article/details/gtiaunmscc.html
+
+PHP:  implode(",", $items);
+来源：http://dali.dashuyun.cn/Article/details/gtrcfpddhq.html
+
+JS:   items.join(",")
+来源：http://dali.sufxvd.cn/Article/details/gtpdhabclx.html
+
+TS:   items.join(",")
+来源：http://dali.jlsjyb.cn/Article/details/gthqdbtcsb.html
+
+Java: String.join(",", items)
+来源：http://dali.ehwqpu.com/Article/details/gtdpqgkzgz.html
+
+Go:   strings.Join(items, ",")
+来源：http://dali.gotoacloud.top/Article/details/gtzscwfyzl.html
+
+Ruby: items.join(",")
+来源：http://dali.ydzc1.top/Article/details/gthwbxnxfn.html
+
+C#:   string.Join(",", items)
+来源：http://dali.gogol.net.cn/Article/details/gtrpkivggg.html
+
+[E09] 去除所有空白字符
+来源：http://dali.jinyuanbaomall.cn/Article/details/gtdfskcgoh.html
+
+Py:   "".join(s.split());  re.sub(r"\s+", "", s)
+来源：http://dali.zhijiandao.cn/Article/details/gtagaxenqj.html
+
+PHP:  preg_replace('/\s+/', '', $s);
+来源：http://dali.yongpay.top/Article/details/gtmxzntuvt.html
+
+JS:   s.replace(/\s+/g, "")
+来源：http://dali.yuxming.cn/Article/details/gtywgvuynq.html
+
+TS:   s.replace(/\s+/g, "")
+来源：http://dali.ivvv.top/Article/details/gtnopdjrgb.html
+
+Java: s.replaceAll("\\s+", "")
+来源：http://dali.shanyushiyangtech.top/Article/details/gtcqhgsaoa.html
+
+Go:   strings.Join(strings.Fields(s), "")
+来源：http://dali.zhiwuduotai.top/Article/details/gtygqzligb.html
+
+Ruby: s.gsub(/\s+/, "")
+来源：http://dali.yanxiufei.cn/Article/details/gtdmpuzwvi.html
+
+C#:   Regex.Replace(s, @"\s+", "")
+来源：http://dali.jyoumei.cn/Article/details/gtciijgrsy.html
+
+[E10] 左侧补零 / 定长填充
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtkxltnwtp.html
+
+Py:   str(7).zfill(3);  "7".rjust(3, "0")
+来源：http://dali.yongpay.top/Article/details/gtpsjpynfk.html
+
+PHP:  str_pad("7", 3, "0", STR_PAD_LEFT);
+来源：http://dali.ppjwa.cn/Article/details/gtmpahxzhi.html
+
+JS:   "7".padStart(3, "0")
+来源：http://dali.yongpay.top/Article/details/gtrplgsemn.html
+
+TS:   "7".padStart(3, "0")
+来源：http://dali.vqdsnc.cn/Article/details/gtvoqejlid.html
+
+Java: String.format("%03d", 7)
+来源：http://dali.havefunace.top/Article/details/gtdlfpctbj.html
+
+Go:   fmt.Sprintf("%03d", 7)
+来源：http://dali.chenlongwang.top/Article/details/gtnlrqosal.html
+
+Ruby: 7.to_s.rjust(3, "0");  format("%03d", 7)
+来源：http://dali.zhixingplan.top/Article/details/gtxbpqkffe.html
+
+C#:   7.ToString("D3");  7.ToString().PadLeft(3, '0')
+来源：http://dali.jlsjyb.cn/Article/details/gtjmtfgmjw.html
+
+[E11] 反转字符串
+来源：http://dali.shzxlz.cn/Article/details/gtekkhrklk.html
+
+Py:   s[::-1]
+来源：http://dali.gogol.net.cn/Article/details/gtrmocradf.html
+
+PHP:  strrev($s);
+来源：http://dali.zdqjudy.top/Article/details/gtbirgbtrq.html
+
+JS:   [...s].reverse().join("")
+来源：http://dali.xuetiantiany.cn/Article/details/gtcyjukhjz.html
+
+TS:   [...s].reverse().join("")
+来源：http://dali.hnqzz.top/Article/details/gtebuothel.html
+
+Java: new StringBuilder(s).reverse().toString()
+来源：http://dali.yuxming.cn/Article/details/gtoqgaoqxo.html
+
+Go:   // 转 []rune 后倒序再转回 string
+来源：http://dali.hnqzz.top/Article/details/gtvysaamjh.html
+
+Ruby: s.reverse
+来源：http://dali.birdmap.top/Article/details/gtolidtylq.html
+
+C#:   new string(s.Reverse().ToArray())
+来源：http://dali.wangdashe.top/Article/details/gtaiqizlvy.html
+
+[E12] 统计某字符出现次数
+来源：http://dali.pycfn.com/Article/details/gtintkibwe.html
+
+Py:   s.count("a")
+来源：http://dali.jinyuanbaomall.cn/Article/details/gtkbhlgzbt.html
+
+PHP:  substr_count($s, "a");
+来源：http://dali.cucudq.cn/Article/details/gtmndqmfkg.html
+
+JS:   s.split("a").length - 1
+来源：http://dali.hywenlv.cn/Article/details/gtupkixwif.html
+
+TS:   s.split("a").length - 1
+来源：http://dali.shangyingyoupin.top/Article/details/gtqmxlxllt.html
+
+Java: s.chars().filter(c -> c == 'a').count()
+来源：http://dali.jqgfzy.top/Article/details/gtncjioppj.html
+
+Go:   strings.Count(s, "a")
+来源：http://dali.yueranfly.top/Article/details/gtgybhadwt.html
+
+Ruby: s.count("a")
+来源：http://dali.jiagoushi.top/Article/details/gthxrouljx.html
+
+C#:   s.Count(c => c == 'a')
+来源：http://dali.wangshuangyany.cn/Article/details/gtmtxvroqw.html
+
+[E13] 逐字符遍历
+来源：http://dali.zhiwuduotai.top/Article/details/gtwvynnmuy.html
+
+Py:   for ch in s: print(ch)
+来源：http://dali.redwolf501.top/Article/details/gtxyryfvxt.html
+
+PHP:  foreach (mb_str_split($s) as $ch) { echo $ch; }
+来源：http://dali.xuetiantiany.cn/Article/details/gtgqfbepnh.html
+
+JS:   for (const ch of s) { console.log(ch); }
+来源：http://dali.vqdsnc.cn/Article/details/gtszepjiqq.html
+
+TS:   for (const ch of s) { console.log(ch); }
+来源：http://dali.ehwqpu.com/Article/details/gtyemdxmsx.html
+
+Java: for (char ch : s.toCharArray()) { System.out.println(ch); }
+来源：http://dali.ppjwa.cn/Article/details/gtkyhmqpix.html
+
+Go:   for _, ch := range s { fmt.Println(string(ch)) }   // 按 rune 遍历
+来源：http://dali.ppjwa.cn/Article/details/gtstaqmlpb.html
+
+Ruby: s.each_char { |ch| puts ch }
+来源：http://dali.quarkkingdee.top/Article/details/gtjmyxwigt.html
+
+C#:   foreach (var ch in s) { Console.WriteLine(ch); }
+来源：http://dali.dianchejie.cn/Article/details/gtgqbrtvzu.html
+
+[E14] URL 编码与 Base64
+来源：http://dali.daxiang520.top/Article/details/gtfzscgtkz.html
+
+Py:   urllib.parse.quote(s);  base64.b64encode(b).decode()
+来源：http://dali.quarkkingdee.top/Article/details/gtdtoayzkn.html
+
+PHP:  urlencode($s);  base64_encode($s);
+来源：http://dali.yj20258.top/Article/details/gtqhwsiytw.html
+
+JS:   encodeURIComponent(s);  btoa(s);  atob(b64)
+来源：http://dali.nanxuanxn.top/Article/details/gtyclwewue.html
+
+TS:   encodeURIComponent(s);  btoa(s)
+来源：http://dali.yonumen.top/Article/details/gtengyvojj.html
+
+Java: URLEncoder.encode(s, StandardCharsets.UTF_8);  Base64.getEncoder().encodeToString(bytes)
+来源：http://dali.yvedp.cn/Article/details/gttfuliypd.html
+
+Go:   url.QueryEscape(s);  base64.StdEncoding.EncodeToString([]byte(s))
+来源：http://dali.pycfn.com/Article/details/gtvofjkdjz.html
+
+Ruby: URI.encode_www_form_component(s);  [s].pack("m0")
+来源：http://dali.shanyushiyangkeji.top/Article/details/gtpvsjbglk.html
+
+C#:   Uri.EscapeDataString(s);  Convert.ToBase64String(bytes)
+来源：http://dali.jinghuilouyu.cn/Article/details/gtulydners.html
+
+[E15] HTML 转义 / 反转义
+来源：http://dali.iojbl.cn/Article/details/gttmebrzqb.html
+
+Py:   html.escape(s);  html.unescape(s)
+来源：http://dali.jinghuilouyu.cn/Article/details/gtwdyojeoo.html
+
+PHP:  htmlspecialchars($s, ENT_QUOTES, "UTF-8");  htmlspecialchars_decode($s);
+来源：http://dali.gaohongyu789.top/Article/details/gtsgafjcjh.html
+
+
+<!-- 参考信息 -->
